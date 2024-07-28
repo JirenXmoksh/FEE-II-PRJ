@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/index.css">
+        <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
+        <script src="../styles/js/bootstrap.bundle.min.js"></script>
+        <style>
+         
+        </style>
+    </head>
+    <body style="height:2000px">
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark" style="background-color: black">
+          <div class="container">
+            <a 
+            class="navbar-brand mb-0 h1" 
+            href="index.htm">
+              <img 
+              src="logo.png" 
+              width="30" 
+              height="30" 
+              class="d-inline-block align-top">
+              exercisio
+            </a>
+            <!-- collapse toggle button -->
+            <button 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            class="navbar-toggler"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle Navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div 
+            class="collapse navbar-collapse" 
+            id="navbarNav">
+                <ul class="navbar-nav mx-5">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Navi1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Navi2</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a 
+                        href="#" 
+                        class="nav-link dropdown-toggle" 
+                        id="navDrop" 
+                        role="button" 
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Navi3
+                      </a>
+                      <ul class="dropdown-menu"
+                      aria-labelledby="navDrop">
+                      <li><a href="#" class="dropdown-item">navDrop1</a></li>
+                      <li><a href="#" class="dropdown-item">navDrop2</a></li>
+                      <li><a href="#" class="dropdown-item">navDrop3</a></li>
+                      <li><a href="#" class="dropdown-item">navDrop4</a></li>
+
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Navi4</a>
+                    </li>
+                  </ul>
+            </div>
+            <form class="d-flex">
+              <input type="text" class="form-control me-2">
+              <button type="submit" class="btn btn-outline-warning">Search</button>
+            </form>
+          </div>
+        </nav>
+    </body>
+</html>
