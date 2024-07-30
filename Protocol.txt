@@ -1,0 +1,1 @@
+Create a branch for your work named as 'Your Name' and push, then only that branch shall be merged with the master branch.
