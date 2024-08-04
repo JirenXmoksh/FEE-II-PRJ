@@ -1,6 +1,28 @@
+@font-face{
+    font-family: Montserrat-SemiBold;
+    src: url(../assets/Fonts/Montserrat-SemiBold.ttf);
+}
+@font-face{
+    font-family: Montserrat-Light;
+    src: url(../assets/Fonts/Montserrat-Light.ttf);
+}
+@font-face{
+    font-family: Montserrat-LightItalic;
+    src: url(../assets/Fonts/Montserrat-LightItalic.ttf);
+}
+@font-face{
+    font-family: Montserrat-Medium;
+    src: url(../assets/Fonts/Montserrat-Medium.ttf);
+}
 .navbar ul li a{
     color: white;
+    font-family: Montserrat-Medium;
 }
 .navbar ul li a:hover{
-    color: goldenrod;
+    color: rgb(81, 81, 253);
+    
+    transition: 0.4s;
+}
+::placeholder{
+    font-family: Montserrat-LightItalic;
 }
