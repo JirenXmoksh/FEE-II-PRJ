@@ -14,15 +14,46 @@
     font-family: Montserrat-Medium;
     src: url(../assets/Fonts/Montserrat-Medium.ttf);
 }
+@font-face{
+    font-family: Montserrat-Bold;
+    src: url(../assets/Fonts/Montserrat-Bold.ttf);
+}
 .navbar ul li a{
     color: white;
     font-family: Montserrat-Medium;
 }
 .navbar ul li a:hover{
     color: rgb(81, 81, 253);
-    
     transition: 0.4s;
 }
 ::placeholder{
     font-family: Montserrat-LightItalic;
+}
+
+#hero{
+    height: 600px;
+}
+
+#content{
+    height: 600px;
+}
+#footer{
+    height: 400px;
+    font-family: Montserrat-Light;
+    background-color: black;
+}
+
+#foothead1{
+    background:  linear-gradient(to right, #1677ff, #0753a4, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#foothead2{
+    background: linear-gradient(to right, #007BFF, #ff0d00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#medialink:hover{
+    transition: 0.4s;
+    transform: scale(0.965);
 }
