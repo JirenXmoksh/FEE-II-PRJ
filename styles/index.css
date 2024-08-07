@@ -31,7 +31,18 @@
 }
 
 #hero{
-    height: 600px;
+    height: 850px;
+    padding: 0px;
+    margin: 0px;
+}
+.carousel-item img {
+    /* Ensure images cover the entire area */
+   
+    height: 850px;
+    /* Make sure the image takes full height */
+    object-fit: fill;
+    width: 100%; /* Make sure the image takes full width */
+    box-shadow:inset 100px 100px 200px 2000px rgba(0, 0, 0, 1);
 }
 
 #content{
