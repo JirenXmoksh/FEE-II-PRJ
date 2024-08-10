@@ -11,11 +11,13 @@
         <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
         <link rel="icon" type="image/x-icon" href="../assets/Images/fficon.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
         <link rel="stylesheet" href="../styles/fosm/css/font-awesome.min.css">
+
         <script src="../styles/js/bootstrap.bundle.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <script src="../scripting/index.js"></script>
+        
         <style>
          
         </style>
@@ -32,7 +34,7 @@
               width="40px"
               height="40px" 
               class="d-inline-block align-right border border-2 border-dark rounded ">
-              <strong class="mx-3" style="font-family: Montserrat-SemiBold">FIT FUSION</strong>
+              <strong class="mx-3" style="font-family: Montserrat-Bold" id="fit-fusion">FIT FUSION</strong>
             </a>
             <!-- collapse toggle button -->
             <button 
@@ -92,6 +94,11 @@
             </form>
           </div>
         </nav>
+        <!-- The scroll reveal animation -->
+        <script>
+          ScrollReveal().reveal('.navbar', {duration: 1000 });
+        </script>
+        
         <!-- Navbar -->
 
         <!-- Hero Section -->
@@ -136,12 +143,20 @@
             </button>
           </div>
         </div>
+        <!-- The scroll reveal animation -->
+        <script>
+          ScrollReveal().reveal('#hero', {duration: 2000});
+        </script>
         <!-- Hero Section -->
 
         <!-- Content Section -->
         <div class="container-fluid bg bg-light border border-dark" id="content">
 
         </div>
+         <!-- The scroll reveal animation -->
+         <script>
+          ScrollReveal().reveal('#content', {duration: 2000});
+        </script>
         <!-- Content Section -->
         
         <!-- footer -->
@@ -200,11 +215,19 @@
               <div class="row">
                 <div class="col-12 text-center">
                   <p class="mb-0"> <i class="fa fa-copyright"></i> 2024 Fit Fusion | All rights reserved.</p>
-                  <p class="mb-0"><a href=# class="text-decoration-none fw-bold text-primary">Terms of Service</a> | <a href=# class="text-decoration-none fw-bold text-primary">Privacy Policy</a></p>
+                  <p class="mb-0"><a href="#" class="text-decoration-none fw-bold text-primary">Terms of Service</a> | <a href=# class="text-decoration-none fw-bold text-primary">Privacy Policy</a></p>
                 </div>
               </div>
             </div>
         </div>
+
+        <!-- the scroll reveal animation -->
+        <script>
+          ScrollReveal().reveal('#footer', {duration: 2000 });
+        </script>
         <!-- footer -->
+        <button onclick="topFunction()" id="returnToTop" title="Go to top">
+          <i class="fa fa-arrow-up"></i>
+        </button>
     </body>
 </html>
