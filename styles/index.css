@@ -18,6 +18,54 @@
     font-family: Montserrat-Bold;
     src: url(../assets/Fonts/Montserrat-Bold.ttf);
 }
+@media (max-width: 740px) and (min-width: 710px){
+  .overlay h1{
+    font-size: 20px;
+  }
+  .overlay p{
+    font-size: 10px;
+  }
+  #explore{
+    font-size: 12px;
+  }
+  #learnmore{
+    font-size: 12px;
+  }
+}
+@media (max-width: 710px) and (min-width: 610px){
+  .overlay{
+    background-color: black;
+  }
+  .overlay h1{
+    font-size: 18px;
+  }
+  .overlay p{
+    font-size: 8px;
+  }
+  #explore{
+    font-size: 10px;
+  }
+  #learnmore{
+    font-size: 10px;
+  }
+}
+@media (max-width: 610px){
+  .overlay{
+    background-color: black;
+  }
+  .overlay h1{
+    font-size: 18px;
+  }
+  .overlay p{
+    font-size: 8px;
+  }
+  #explore{
+    font-size: 10px;
+  }
+  #learnmore{
+    font-size: 10px;
+  }
+}
 .navbar ul li a{
     color: white;
     font-family: Montserrat-Medium;
@@ -31,7 +79,7 @@
 }
 
 #hero{
-    height: 850px;
+    height: 100vh;
     padding: 0px;
     margin: 0px;
 }
@@ -44,7 +92,61 @@
     width: 100%; /* Make sure the image takes full width */
     box-shadow:inset 100px 100px 200px 2000px rgba(0, 0, 0, 1);
 }
+#backgroundVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
 
+.overlay {
+font-family: Montserrat-Semibold;
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  top: 65%;
+  transform: translateY(-50%);
+}
+#explore{
+font-family: Montserrat-Light;
+border: 1px solid white;
+background: linear-gradient(
+      to right,
+      #000,
+      #007BFF,
+      #007BFF,
+      #000
+    );
+    background-size: 300% 100%;
+    color: white;
+    transition: 0.4s;
+}
+#explore:hover{
+transform: scale(0.98);
+}
+#learnmore{
+  font-family: Montserrat-Light;
+  border: 1px solid white;
+  background: linear-gradient(
+        to right,
+        #007BFF,
+        #000,
+        #007BFF,
+        #000
+      );
+      background-size: 300% 100%;
+      color: white;
+      transition: 0.4s;
+}
+#learnmore:hover{
+  transform: scale(0.98);
+}
 #content{
     height: 600px;
 }
@@ -154,11 +256,11 @@
       background-position: 300% 50%;
     }
   }
-  @keyframes fill-text {
+  /* @keyframes fill-text {
     0% {
       width: 0%;
     }
     100% {
       width: 100%;
     }
-  }
+  } */
