@@ -93,6 +93,7 @@
     box-shadow:inset 100px 100px 200px 2000px rgba(0, 0, 0, 1);
 }
 #backgroundVideo {
+  opacity: 0.7;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -114,13 +115,14 @@ font-family: Montserrat-Semibold;
   transform: translateY(-50%);
 }
 #explore{
+  font-size: 14px;
 font-family: Montserrat-Light;
 border: 1px solid white;
 background: linear-gradient(
       to right,
       #000,
-      #007BFF,
-      #007BFF,
+      #ff0d00,
+      #fff,
       #000
     );
     background-size: 300% 100%;
@@ -131,6 +133,7 @@ background: linear-gradient(
 transform: scale(0.98);
 }
 #learnmore{
+  font-size: 14px;
   font-family: Montserrat-Light;
   border: 1px solid white;
   background: linear-gradient(
