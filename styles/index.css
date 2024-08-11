@@ -117,38 +117,45 @@ font-family: Montserrat-Semibold;
 #explore{
   font-size: 14px;
 font-family: Montserrat-Light;
+background-color: rgba(0, 0, 0, 0.6);
+transition: 0.3s ease-in-out;
+color: white;
 border: 1px solid white;
-background: linear-gradient(
-      to right,
-      #000,
-      #ff0d00,
-      #fff,
-      #000
-    );
-    background-size: 300% 100%;
-    color: white;
-    transition: 0.4s;
 }
+
 #explore:hover{
-transform: scale(0.98);
+  transform: scale(0.98);
+  background: linear-gradient(
+        to right,
+        #ff0d00,
+        #000,
+        #000,
+        #007BFF
+      );
+      background-size: 170% 100%;
+      color: white;
+      
 }
+
 #learnmore{
   font-size: 14px;
-  font-family: Montserrat-Light;
-  border: 1px solid white;
+font-family: Montserrat-Light;
+background-color: rgba(0, 0, 0, 0.6);
+transition: 0.3s ease-in-out;
+color: white;
+border: 1px solid white;
+}
+#learnmore:hover{
+  transform: scale(0.98);
   background: linear-gradient(
         to right,
         #007BFF,
         #000,
-        #007BFF,
-        #000
+        #000,
+        #ff0d00
       );
-      background-size: 300% 100%;
+      background-size: 170% 100%;
       color: white;
-      transition: 0.4s;
-}
-#learnmore:hover{
-  transform: scale(0.98);
 }
 #content{
     height: 600px;
