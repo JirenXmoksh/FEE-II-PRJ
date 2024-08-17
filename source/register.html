@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Register FF</title>
+
+        <!-- CSS FILES -->                
+         <link href="../styles/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../styles/css/bootstrap-icons.css" rel="stylesheet">
+        <!-- <link href="../styles/css/tooplate-kool-form-pack.css" rel="stylesheet"> -->
+
+        <link rel="stylesheet" href="../styles/register.css">
+        <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
+        <link rel="icon" type="image/x-icon" href="../assets/Images/fficon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="../styles/fosm/css/font-awesome.min.css">
+
+        <script src="../styles/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <script src="../scripting/index.js"></script>
+        <script src="../scripting/jquery.min.js"></script>
+        <script src="../scripting/bootstrap.bundle.min.js"></script>
+        <script src="../scripting/register.js"></script>
+    </head>
+    
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black">
+            <div class="container">
+              <a 
+              class="navbar-brand mb-0 h1" 
+              href="index.htm">
+                <img 
+                src="../assets/Images/fficon.png" 
+                width="40px"
+                height="40px" 
+                class="d-inline-block align-right border border-2 border-dark rounded ">
+                <strong class="mx-3" style="font-family: Montserrat-Bold" id="fit-fusion">FIT FUSION</strong>
+              </a>
+              <!-- collapse toggle button -->
+              <button 
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              class="navbar-toggler"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle Navigation"
+              >
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div 
+              class="collapse navbar-collapse" 
+              id="navbarNav">
+                  <ul class="navbar-nav mx-5">
+                      <li class="nav-item active">
+                          <a href="index.htm" class="nav-link">Home </a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a 
+                          href="#" 
+                          class="nav-link dropdown-toggle" 
+                          id="navDrop" 
+                          role="button" 
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Training
+                        </a>
+                        <ul class="dropdown-menu border border-dark"
+                        aria-labelledby="navDrop">
+                        <li><a href="#" class="dropdown-item text text-dark">Hypertrophy</a></li>
+                        <li><a href="#" class="dropdown-item text text-dark">Strength</a></li>
+                        <li><a href="#" class="dropdown-item text text-dark">General</a></li>
+                        <li><a href="#" class="dropdown-item text text-dark">Others</a></li>
+  
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a href="AboutUs.html" target="_blank" class="nav-link">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="register.html" target="_blank" class="nav-link">Sign up </a>
+                      </li>
+                      <li class="nav-item">
+                      <a href="login.html" class="nav-link">Login</a>
+                      </li>
+                    </ul>
+              </div>
+              <form class="d-flex">
+                <input type="text" class="form-control me-2" placeholder="Type something...">
+                <button type="submit" class="btn btn-outline-primary border border-2 border-primary" style="font-family: Montserrat-Semibold; text-wrap: nowrap"> <i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </nav>
+            <!-- The scroll reveal animation -->
+        <script>
+          ScrollReveal().reveal('.navbar', {duration: 1000 });
+        </script>
+
+        <!-- Navbar ends -->
+        <section class="hero-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-12 mx-auto">
+                            <form class="custom-form account-form" role="form" method="post">
+                                <h2 class="hero-title text-center mb-4 pb-2">SIGNUP</h2>
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-floating text-light mb-4" style="font-family: Montserrat-Light">
+                                            <input type="text" name="full-name" id="full-name" class="form-control" placeholder="Full Name" required="">
+                                            <label for="full-name">Full Name</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-floating text-light mb-4" style="font-family: Montserrat-Light">
+                                            <input type="password" name="password" id="password" class="form-control" placeholder="Password" required="">
+                                            <label for="password">Password</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-12" style="font-family: Montserrat-Light">
+                                        <div class="form-floating text-light mb-4">
+                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
+                                            <label for="email">Email address</label>
+                                        </div>
+                                    </div>
+
+
+                                    <label class="cont d-flex text-center justify-content-center">
+                                      <input type="checkbox"><span id="foothead2" style="font-family: Montserrat-Semibold; font-size: 18px">I agree to the terms of services</span>
+                                      <div class="checkmark"></div>
+                                    </label>
+
+                                    <div class="row justify-content-center text-center align-items-center p-2 mt-4">
+                                        <div class="col-lg-5 col-12">
+                                            <button type="submit" class="btn form-control m-2 py-2 px-4" id="booton">CREATE</button>
+                                        </div>
+                                        <div class="col-lg-5 col-12">
+                                          <button class="btn form-control m-2 py-2 px-4" href="login.html" id="booton"><a href="login.html" class="text-decoration-none text-light">LOGIN</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </section>
+       
+         <!-- footer -->
+         <div class="container-fluid py-5 text-white" id="footer">
+          <div class="container  p-2">
+            <div class="row">
+              <div class="col-md-3 mb-4">
+                <a class="text-decoration-none text-primary navbar-brand"
+                  href="index.htm">
+                    <img 
+                    src="../assets/Images/fficon.png" 
+                    width="80px"
+                    height="70px" 
+                    class="d-inline-block align-right border border-2 border-dark rounded">
+                  <h1 style="font-family: Montserrat-Bold" class="mt-2" id="foothead1">FIT FUSION</h1>
+                </a>
+                <p class="text-left-sm" style="font-size: 12px">Science over Bro-Science</p>
+              </div>
+              <div class="col-md-3 mb-4">
+                <h3 style="font-family: Montserrat-Medium" id="foothead2">Quick Links</h3>
+                <ul class="list-unstyled">
+                  <li><a href="index.htm" class="text-white text-decoration-none" ><i class="fa fa-home" aria-hidden="true"> </i> Home</a></li>
+                  <li><a href="#AboutUs.htm" class="text-white text-decoration-none"> <i class="fa fa-question" aria-hidden="true"></i> About</a></li>
+                  <li><a href="#" class="text-white text-decoration-none"> <i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+                  <li><a href="#register.htm" class="text-white text-decoration-none"> <i class="fa fa-user-plus" aria-hidden="true"></i >  Sign up</a></li>
+                  <li><a href="#login.htm" class="text-white text-decoration-none"> <i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 mb-4">
+                <h3 style="font-family: Montserrat-Medium" id="foothead2">Connect with us</h3>
+                <div class="our-team">
+                  <!-- <a href="#" class="btn btn-primary square btn-sm m-1"><i class="fab fa-facebook"></i></a>-->     
+                    <a href="https://www.facebook.com/MoXMogZ" target="_blank" ><img src="../assets/Images/fbook.svg" id="medialink" width="40" height="40"></a>                   
+                    <a href="https://www.instagram.com/moxmogz?igsh=emtxaWZ0dTVubDBv" target="_blank" ><img src="../assets/Images/insta.svg" id="medialink" width="40" height="40"></a>
+                    <a href="https://www.linkedin.com/in/vishwanath-singh-7bb593298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="../assets/Images/linkedin.svg" id="medialink"  width="40" height="40"></a>
+                    <a href="https://discord.gg/tw29QC2a" target="_blank "><img src="../assets/Images/discord.svg" id="medialink" width="40" height="40"></a>
+                    <a href="https://github.com/Himanshu1237" target="_blank" ><img src="../assets/Images/github.svg" id="medialink" width="40" height="40"></a>
+                    
+                  <!-- <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  <i class="fa fa-discord" aria-hidden="true"></i> --> <!-- alternate icons (fontawesome cdn)-->
+                </div>
+              </div>
+              <div class="col-md-3 mb-4">
+                <h3 style="font-family: Montserrat-Medium" id="foothead2">Explore Training</h3>
+                <ul class="list-unstyled">
+                  <li id="linkk"><a href="index.htm" class="text-white text-decoration-none" id="linkk">Hypertrophy</a></li>
+                  <li><a href="#" class="text-white text-decoration-none">Strength</a></li>
+                  <li><a href="#" class="text-white text-decoration-none">General</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="container mt-4">
+            <div class="row">
+              <div class="col-12 text-center">
+                <p class="mb-0"> <i class="fa fa-copyright"></i> 2024 Fit Fusion | All rights reserved.</p>
+                <p class="mb-0"><a href="#" class="text-decoration-none fw-bold text-primary">Terms of Service</a> | <a href=# class="text-decoration-none fw-bold text-primary">Privacy Policy</a></p>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- the scroll reveal animation -->
+      <script>
+        ScrollReveal().reveal('#footer', {duration: 2000 });
+      </script>
+      <!-- footer -->
+      <button onclick="topFunction()" id="returnToTop" title="Go to top">
+        <i class="fa fa-arrow-up"></i>
+      </button>
+    </body>
+    
+</html>
+
+

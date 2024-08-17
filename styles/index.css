@@ -18,6 +18,20 @@
     font-family: Montserrat-Bold;
     src: url(../assets/Fonts/Montserrat-Bold.ttf);
 }
+@media (max-width: 1024px) and (min-width: 741px){
+  .overlay h1{
+    font-size: 20px;
+  }
+  .overlay p{
+    font-size: 10px;
+  }
+  #explore{
+    font-size: 12px;
+  }
+  #learnmore{
+    font-size: 12px;
+  }
+}
 @media (max-width: 740px) and (min-width: 710px){
   .overlay h1{
     font-size: 20px;
@@ -93,7 +107,7 @@
     box-shadow:inset 100px 100px 200px 2000px rgba(0, 0, 0, 1);
 }
 #backgroundVideo {
-  opacity: 0.7;
+  opacity: 1;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -104,73 +118,93 @@
   z-index: -1;
   transform: translate(-50%, -50%);
 }
-
 .overlay {
 font-family: Montserrat-Semibold;
   position: relative;
   z-index: 1;
   color: white;
   text-align: center;
-  top: 65%;
+  top: 50%;
   transform: translateY(-50%);
 }
+.overlay h1{
+  font-size: 180px;
+  text-align: left;
+  color: black;
+  text-wrap: wrap;
+
+}
+.overlay p{
+  font-size: 40px;
+  text-align: left;
+  margin-left: 10px;
+  color: white;
+}
+
 #explore{
-  font-size: 14px;
-font-family: Montserrat-Light;
-background-color: rgba(0, 0, 0, 0.6);
-transition: 0.3s ease-in-out;
-color: white;
-border: 1px solid white;
+  font-size: 30px;
+  font-family: Montserrat-Light;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: .4s ease-in-out;
+  color: white;
+  border-radius: 0%;
+  width: 50%;
+  padding: 40px;
+  display: inline-flex;
+  justify-content: center;
+  box-shadow: inset 0 0 0 0 rgba(255, 0, 0, 0.65);
 }
 
 #explore:hover{
-  transform: scale(0.98);
-  background: linear-gradient(
-        to right,
-        #ff0d00,
-        #000,
-        #000,
-        #007BFF
-      );
-      background-size: 170% 100%;
-      color: white;
-      
+  transform: scale(0.997);
+  box-shadow: inset 1000px 0 0 0 rgba(255, 255, 255, 1);
+  color: black;
 }
 
 #learnmore{
-  font-size: 14px;
-font-family: Montserrat-Light;
-background-color: rgba(0, 0, 0, 0.6);
-transition: 0.3s ease-in-out;
-color: white;
-border: 1px solid white;
+  font-size: 30px;
+  font-family: Montserrat-Light;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: .4s ease-in-out;
+  color: white;
+  border-radius: 0%;
+  width: 50%;
+  padding: 40px;
+  display: inline-flex;
+  justify-content: center;
+  box-shadow: inset 0 0 0 0 rgba(0, 0, 255, 0.65);
+
 }
 #learnmore:hover{
-  transform: scale(0.98);
-  background: linear-gradient(
-        to right,
-        #007BFF,
-        #000,
-        #000,
-        #ff0d00
-      );
-      background-size: 170% 100%;
-      color: white;
+  transform: scale(0.997);
+  box-shadow: inset -1000px 0 0 0 rgba(255, 255, 255, 1);
+  color: black;
 }
+
 #content{
-    height: 1500px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: Montserrat-Medium;
+    background-color: white;
+    border-bottom: 1px solid white;
+
 }
+/* .contenthead{
+  font-family: Montserrat-Bold;
+  font-size: 180px;
+  background:  linear-gradient(to right, #f00, #00f, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+} */
 #footer{
     height: auto;
     font-family: Montserrat-Light;
     background-color: black;
 }
 
-#foothead1{
-    background:  linear-gradient(to right, #1677ff, #0753a4, #FFFFFF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 #foothead2{
     background: linear-gradient(to right, #007BFF, #ff0d00);
     -webkit-background-clip: text;
@@ -229,6 +263,25 @@ border: 1px solid white;
     overflow: hidden;
     animation: fill-text 1.5s ease-in-out infinite alternate;
   } */
+.slide-text1 {
+    transform: translateX(100%);
+    animation: slideIn 2s forwards;
+}
+.slide-text2 {
+  transform: translateX(-100%);
+  animation: slideIn 2s forwards;
+  animation-delay: 1s;
+}
+.slide-text3 {
+  transform: translateX(-100%);
+  animation: slideIn 2s forwards;
+  animation-delay: 2s;
+}
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+    }
+}
   #fit-fusion{
     background: linear-gradient(
       to right,
@@ -242,7 +295,6 @@ border: 1px solid white;
     background-clip: text;
     color: transparent;
     animation: gradient-wave 5s linear infinite;
-   
   }
   #foothead1{
     background: linear-gradient(

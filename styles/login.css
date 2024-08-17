@@ -1,0 +1,287 @@
+@font-face{
+    font-family: Montserrat-SemiBold;
+    src: url(../assets/Fonts/Montserrat-SemiBold.ttf);
+}
+@font-face{
+    font-family: Montserrat-Light;
+    src: url(../assets/Fonts/Montserrat-Light.ttf);
+}
+@font-face{
+    font-family: Montserrat-LightItalic;
+    src: url(../assets/Fonts/Montserrat-LightItalic.ttf);
+}
+@font-face{
+    font-family: Montserrat-Medium;
+    src: url(../assets/Fonts/Montserrat-Medium.ttf);
+}
+@font-face{
+    font-family: Montserrat-Bold;
+    src: url(../assets/Fonts/Montserrat-Bold.ttf);
+}
+.navbar ul li a{
+    color: white;
+    font-family: Montserrat-Medium;
+}
+.navbar ul li a:hover{
+    color: rgb(81, 81, 253);
+    transition: 0.4s;
+}
+::placeholder{
+    font-family: Montserrat-LightItalic;
+}
+body{
+    width: 100%;
+    height: 100%;
+    /* Add your background pattern here */
+    /* background-color: lightblue; */
+    background-image: radial-gradient(black 55%, #0000),
+      /* radial-gradient(black 55%, #0000), */
+        linear-gradient(
+          135deg,
+          red,
+          blue
+        );
+    background-size: 100% 0.5%, contain;
+    /* background-blend-mode: hard-light; */
+    /* background-position: 0 0, 1em 1em, 0 0; */
+}
+.login-form {
+    background-color: black;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.65);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 15px rgba(240, 240, 240, 1);
+}
+.login-form h2,
+.login-form button {
+    font-family: Montserrat-Medium;
+}
+#email{
+    font-family: Montserrat-Medium;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+#email:hover{
+    border: 1px solid grey;
+}
+#password{
+    font-family: Montserrat-Medium;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+#password:hover{
+    border: 1px solid grey;
+}
+.form-control{
+    color: white;
+}
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('') no-repeat center center fixed;
+    background-size: cover;
+}
+.hero-title {
+    color: #fff;
+}
+.custom-form .form-control {
+    border-radius: 30px;
+}
+.custom-btn {
+    border-radius: 30px;
+}
+
+#returnToTop {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 10px; /* Place the button 20px from the bottom */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: 2px solid white; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(0, 0, 0, 0.6); /* Green background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 60%; /* Rounded corners */
+    font-size: 14px; /* Increase font size */
+    height: 55px;
+    width: 55px;
+    transition: 0.3s ease-in-out;
+}
+  
+#returnToTop:hover {
+    transform: scale(0.996); /* Add a dark-grey background on hover */
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+}
+#footer{
+    height: auto;
+    font-family: Montserrat-Light;
+    background-color: black;
+}
+#foothead2{
+    background: linear-gradient(to right, #007BFF, #ff0d00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Remember me checkbox */
+/* Hide the default checkbox */
+.cont input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+   }
+   
+   .cont {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+   }
+   
+   /* Create a custom checkbox */
+   .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.1em;
+    width: 1.1em;
+    margin-left: 10px;
+    background: #000;
+    border: 2px solid white;
+    border-radius: 50px;
+    transition: all 0.7s;
+    --spread: 20px;
+   }
+   
+   /* When the checkbox is checked, add a blue background */
+   .cont input:checked ~ .checkmark {
+    background: black;
+    box-shadow: -5px -5px var(--spread) 0px red, 5px -5px var(--spread) 0px #f00, 5px -5px var(--spread) 0px #f00, 5px 0 var(--spread) 0px #00f, 5px 5px var(--spread) 0px #00f, 0 5px var(--spread) 0px #00f, -5px 5px var(--spread) 0px #00f;
+   }
+   
+   /* Create the checkmark/indicator (hidden when not checked) */
+   .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+   }
+   
+   /* Show the checkmark when checked */
+   .cont input:checked ~ .checkmark:after {
+    display: block;
+   }
+   
+   /* Style the checkmark/indicator */
+   .cont .checkmark:after {
+    left: 0.3em;
+    top: 0.1em;
+    width: 0.3em;
+    height: 0.6em;
+    border: solid #fff;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+   }
+/* Remember me checkbox */
+
+#fit-fusion{
+    background: linear-gradient(
+      to right,
+      #007BFF,
+      #ff0d00,
+      #007BFF,
+      #ff0d00
+    );
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-wave 5s linear infinite;
+  }
+  #foothead1{
+    background: linear-gradient(
+      to right,
+      #007BFF,
+      #ff0d00,
+      #007BFF,
+      #ff0d00
+    );
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-wave 6s linear infinite;
+  }
+  @keyframes gradient-wave {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 300% 50%;
+    }
+  }
+  #medialink:hover{
+    transition: 0.4s;
+    transform: scale(0.965);
+}
+/* login signup button effect */
+#booton {
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    gap: 12px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  #booton::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -4px;
+    top: -1px;
+    margin: auto;
+    width: 128px;
+    height: 48px;
+    border-radius: 50px;
+    background: linear-gradient(-45deg, #00f 0%, #f00 100% );
+    z-index: -10;
+    pointer-events: none;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  #booton::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #00f 0%, #f00 100% );
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+  }
+
+  
+  #booton:hover::before {
+    transform: rotate(-180deg);
+  }
+  
+  #booton:active::before {
+    scale: 0.7;
+  }
+  
+  
+/* login signup button effect */

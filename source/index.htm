@@ -19,7 +19,6 @@
         <script src="../scripting/index.js"></script>
         
         <style>
-          
         </style>
     </head>
     <body>
@@ -75,17 +74,18 @@
                       </ul>
                     </li>
                     <li class="nav-item">
-                      <a href="AboutUs.html" class="nav-link">About</a>
+
+                        <a href="AboutUs.html" target="_blank" class="nav-link">About</a>
 
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item">
-                      <a href="#" class="nav-link">Sign up </a>
+                      <a href="register.html" target="_blank" class="nav-link">Sign up </a>
                     </li>
                     <li class="nav-item">
-                    <a href="#" class="nav-link">Login</a>
+                    <a href="login.html"  target="_blank" class="nav-link">Login</a>
                     </li>
                   </ul>
             </div>
@@ -148,10 +148,12 @@
             This was supposed to be the hero section but apparently your browser won't allow us to function properly :P
         </video>
         <div class="overlay">
-            <h1>Welcome to <span id="foothead2" style="-webkit-text-stroke: 0.51px white">FIT FUSION</span></h1>
-            <p style="font-family: Montserrat-Medium; color: black" >The ultimate guide to a stronger, sexier you</p>
-            <a href="#explore" class="btn" id="explore">Explore Now</a>
-            <a href="#learnmore" class="btn" id="learnmore">Why are you here?</a>
+            <h1 class="slide-text1"><span id="foothead2">FIT FUSION</span></h1>
+            <p style="font-family: Montserrat-Light;" class="slide-text2">The ultimate guide to a stronger, sexier you</p>
+            <div style="display:flex; position: relative; margin-top: 10%" class="slide-text3">
+              <a href="#explore" class="btn" id="explore">Explore Now</a>
+              <a href="#learnmore" class="btn" id="learnmore">Why are you here?</a>
+            </div>
         </div>
         </div>
         <!-- The scroll reveal animation -->
@@ -161,12 +163,17 @@
         <!-- Hero Section -->
 
         <!-- Content Section -->
-        <div class="container-fluid bg bg-light border border-dark" id="content">
-
+        <div class="container-fluid"  id="content">
+            <!-- <div class="contenthead">
+              Let's get started!
+            </div>
+            <script>
+              ScrollReveal().reveal('.contenthead', {delay: 1500}, {duration: 1500});
+            </script> -->
         </div>
          <!-- The scroll reveal animation -->
          <script>
-          ScrollReveal().reveal('#content', {duration: 2000});
+          ScrollReveal().reveal('#content', {duration: 1000});
         </script>
         <!-- Content Section -->
         
@@ -190,10 +197,10 @@
                   <h3 style="font-family: Montserrat-Medium" id="foothead2">Quick Links</h3>
                   <ul class="list-unstyled">
                     <li><a href="index.htm" class="text-white text-decoration-none" ><i class="fa fa-home" aria-hidden="true"> </i> Home</a></li>
-                    <li><a href="#" class="text-white text-decoration-none"> <i class="fa fa-question" aria-hidden="true"></i> About</a></li>
+                    <li><a href="#AboutUs.htm" class="text-white text-decoration-none"> <i class="fa fa-question" aria-hidden="true"></i> About</a></li>
                     <li><a href="#" class="text-white text-decoration-none"> <i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
-                    <li><a href="#" class="text-white text-decoration-none"> <i class="fa fa-user-plus" aria-hidden="true"></i >  Sign up</a></li>
-                    <li><a href="#" class="text-white text-decoration-none"> <i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+                    <li><a href="#register.htm" class="text-white text-decoration-none"> <i class="fa fa-user-plus" aria-hidden="true"></i >  Sign up</a></li>
+                    <li><a href="#login.htm" class="text-white text-decoration-none"> <i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
                   </ul>
                 </div>
                 <div class="col-md-3 mb-4">
