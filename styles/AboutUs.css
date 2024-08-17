@@ -1,0 +1,45 @@
+/* Styles for About Us Section */
+#content {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: #333; /* Dark gray text */
+    line-height: 1.6;
+  }
+  
+  #content h6 {
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-size: 1.5em;
+    color: #007bff; 
+    margin-bottom: 20px;
+  }
+  
+  #content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  
+  #content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  #content ul li {
+    margin-bottom: 10px;
+  }
+  
+  #content ul li strong {
+    color: #007bff; 
+  }
+  
+  #foothead2 {
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    color: #343a40; /* Dark gray */
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    #content {
+        padding: 60px 100px; /* Increased padding for larger screens */
+    }
+  }
