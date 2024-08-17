@@ -204,11 +204,6 @@ font-family: Montserrat-Semibold;
     background-color: black;
 }
 
-#foothead1{
-    background:  linear-gradient(to right, #1677ff, #0753a4, #FFFFFF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 #foothead2{
     background: linear-gradient(to right, #007BFF, #ff0d00);
     -webkit-background-clip: text;

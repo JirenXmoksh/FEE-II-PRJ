@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Login - FitFusion</title>
+    <title>Login FF</title>
    
      <link href="../styles/css/bootstrap.min.css" rel="stylesheet">
     <link href="../styles/css/bootstrap-icons.css" rel="stylesheet">
-    <link href="../styles/css/tooplate-kool-form-pack.css" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/index.css">
+    <!-- <link href="../styles/css/tooplate-kool-form-pack.css" rel="stylesheet"> --> <!-- this caused trouble -->
+    <link rel="stylesheet" href="../styles/login.css">
     <link rel="icon" type="image/x-icon" href="../assets/Images/fficon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../styles/fosm/css/font-awesome.min.css">
@@ -18,87 +18,88 @@
     <script src="../styles/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4"></script>
-    <script src="../scripting/index.js"></script>
     <script src="../scripting/jquery.min.js"></script>
-    <script src="../scripting/bootstrap.bundle.min.js"></script>
+    <script src="../scripting/login.js"></script>
 
-    <style>
-        .login-form {
-            border: 2px solid #ccc;
-            border-radius: 50px;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.65);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 15px rgba(204, 204, 204, 0.9);
-        }
-        .login-form h2,
-        .login-form button {
-            font-family: Montserrat-Bold;
-        }
-        .hero-section {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: url('') no-repeat center center fixed;
-            background-size: cover;
-        }
-        .hero-title {
-            color: #fff;
-            font-family: Montserrat-Bold;
-        }
-        .custom-form .form-control {
-            border-radius: 30px;
-        }
-        .custom-btn {
-            border-radius: 30px;
-        }
-        </style>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black">
-        <div class="container">
-            <a class="navbar-brand mb-0 h1" href="index.htm">
-                <img src="../assets/Images/fficon.png" width="40px" height="40px" class="d-inline-block align-right border border-2 border-dark rounded">
-                <strong class="mx-3" style="font-family: Montserrat-Bold" id="fit-fusion">FIT FUSION</strong>
-            </a>
-            <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-5">
-                    <li class="nav-item active">
-                        <a href="index.htm" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" id="navDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Training</a>
-                        <ul class="dropdown-menu border border-dark" aria-labelledby="navDrop">
-                            <li><a href="#" class="dropdown-item text text-dark">Hypertrophy</a></li>
-                            <li><a href="#" class="dropdown-item text text-dark">Strength</a></li>
-                            <li><a href="#" class="dropdown-item text text-dark">General</a></li>
-                            <li><a href="#" class="dropdown-item text text-dark">Others</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="AboutUs.html" target="_blank" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="register.html" target="_blank" class="nav-link">Sign up</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="login.html" class="nav-link">Login</a>
-                    </li>
-                </ul>
-            </div>
-            <form class="d-flex">
-                <input type="text" class="form-control me-2" placeholder="Type something...">
-                <button type="submit" class="btn btn-outline-primary border border-2 border-primary" style="font-family: Montserrat-Semibold; text-wrap: nowrap"> <i class="fa fa-search"></i></button>
-            </form>
+      <div class="container">
+        <a 
+        class="navbar-brand mb-0 h1" 
+        href="index.htm">
+          <img 
+          src="../assets/Images/fficon.png" 
+          width="40px"
+          height="40px" 
+          class="d-inline-block align-right border border-2 border-dark rounded ">
+          <strong class="mx-3" style="font-family: Montserrat-Bold" id="fit-fusion">FIT FUSION</strong>
+        </a>
+        <!-- collapse toggle button -->
+        <button 
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        class="navbar-toggler"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle Navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div 
+        class="collapse navbar-collapse" 
+        id="navbarNav">
+            <ul class="navbar-nav mx-5">
+                <li class="nav-item active">
+                    <a href="index.htm" class="nav-link">Home </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a 
+                    href="#" 
+                    class="nav-link dropdown-toggle" 
+                    id="navDrop" 
+                    role="button" 
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Training
+                  </a>
+                  <ul class="dropdown-menu border border-dark"
+                  aria-labelledby="navDrop">
+                  <li><a href="#" class="dropdown-item text text-dark">Hypertrophy</a></li>
+                  <li><a href="#" class="dropdown-item text text-dark">Strength</a></li>
+                  <li><a href="#" class="dropdown-item text text-dark">General</a></li>
+                  <li><a href="#" class="dropdown-item text text-dark">Others</a></li>
+
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="AboutUs.html" target="_blank" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a href="register.html" target="_blank" class="nav-link">Sign up </a>
+                </li>
+                <li class="nav-item">
+                <a href="login.html"  target="_blank"class="nav-link">Login</a>
+                </li>
+              </ul>
         </div>
+        <form class="d-flex">
+          <input type="text" class="form-control me-2" placeholder="Type something...">
+          <button type="submit" class="btn btn-outline-primary border border-2 border-primary" style="font-family: Montserrat-Semibold; text-wrap: nowrap"> <i class="fa fa-search"></i></button>
+        </form>
+      </div>
     </nav>
+    <!-- The scroll reveal animation -->
+    <script>
+      ScrollReveal().reveal('.navbar', {duration: 1000 });
+    </script>
+    
+    <!-- Navbar -->
 
     <!-- Login Form -->
     <section class="hero-section">
@@ -106,30 +107,35 @@
             <div class="row">
                 <div class="col-lg-5 col-12 mx-auto">
                     <form class="custom-form login-form" role="form" method="post">
-                        <h2 class="hero-title text-center mb-4 pb-2">Login Form</h2>
+                        <h2 class="hero-title text-center m-2 pb-4">LOGIN</h2>
 
-                        <div class="form-floating mb-4 p-0">
+                        <div class="form-floating text-light mb-4" style="font-family: Montserrat-Light">
                             <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
                             <label for="email">Email address</label>
                         </div>
 
-                        <div class="form-floating p-0">
+                        <div class="form-floating text-light mb-4" style="font-family: Montserrat-Light">
                             <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
                             <label for="password">Password</label>
                         </div>
 
-                        <div class="form-check mb-4">
+                        <!-- <div class="form-check mb-4">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">Remember me</label>
-                        </div>
+                            <label class="form-check-label" for="flexCheckDefault" id="foothead2" style="font-family: Montserrat-Semibold">Remember me</label>
+                        </div> -->
 
-                        <div class="row justify-content-center align-items-center">
+                        <label class="cont d-flex">
+                          <input type="checkbox"><span id="foothead2" style="font-family: Montserrat-Semibold; font-size: 18px">Remember me</span>
+                          <div class="checkmark"></div>
+                        </label>
+
+                        <div class="row justify-content-center p-2 mt-4 text-center align-items-center">
                             <div class="col-lg-5 col-12">
-                                <button type="submit" class="btn form-control">Login</button>
+                                <button type="submit" class="btn form-control m-2 py-2 px-4" id="booton" >LOGIN</button>
                             </div>
 
-                            <div class="col-lg-5 col-12">
-                                <a href="register.html" class="btn custom-btn custom-border-btn">Register</a>
+                            <div class="col-lg-5 col-12" >
+                                <button href="register.html" class="btn form-control m-2 py-2 px-4" id="booton"><a href="register.html" class="text-decoration-none text-light">SIGN UP</a></button>
                             </div>
                         </div>
                     </form>
@@ -137,6 +143,8 @@
             </div>
         </div>
     </section>
+    <!-- Login Form -->
+     
    <!-- footer -->
    <div class="container-fluid py-5 text-white" id="footer">
     <div class="container  p-2">
@@ -157,10 +165,10 @@
           <h3 style="font-family: Montserrat-Medium" id="foothead2">Quick Links</h3>
           <ul class="list-unstyled">
             <li><a href="index.htm" class="text-white text-decoration-none" ><i class="fa fa-home" aria-hidden="true"> </i> Home</a></li>
-            <li><a href="#" class="text-white text-decoration-none"> <i class="fa fa-question" aria-hidden="true"></i> About</a></li>
+            <li><a href="#AboutUs.htm" class="text-white text-decoration-none"> <i class="fa fa-question" aria-hidden="true"></i> About</a></li>
             <li><a href="#" class="text-white text-decoration-none"> <i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
-            <li><a href="#" class="text-white text-decoration-none"> <i class="fa fa-user-plus" aria-hidden="true"></i >  Sign up</a></li>
-            <li><a href="#" class="text-white text-decoration-none"> <i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+            <li><a href="#register.htm" class="text-white text-decoration-none"> <i class="fa fa-user-plus" aria-hidden="true"></i >  Sign up</a></li>
+            <li><a href="#login.htm" class="text-white text-decoration-none"> <i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
           </ul>
         </div>
         <div class="col-md-3 mb-4">
@@ -200,12 +208,12 @@
 </div>
 
 <!-- the scroll reveal animation -->
-<script>
-  ScrollReveal().reveal('#footer', {duration: 2000 });
-</script>
-<!-- footer ends -->
-<button onclick="topFunction()" id="returnToTop" title="Go to top">
-  <i class="fa fa-arrow-up"></i>
-</button>
+  <script>
+    ScrollReveal().reveal('#footer', {duration: 2000 });
+  </script>
+  <!-- footer ends -->
+  <button onclick="topFunction()" id="returnToTop" title="Go to top">
+    <i class="fa fa-arrow-up"></i>
+  </button>
 </body>
 </html>
