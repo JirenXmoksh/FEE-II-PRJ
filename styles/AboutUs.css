@@ -1,3 +1,35 @@
+@font-face{
+  font-family: Montserrat-SemiBold;
+  src: url(../assets/Fonts/Montserrat-SemiBold.ttf);
+}
+@font-face{
+  font-family: Montserrat-Light;
+  src: url(../assets/Fonts/Montserrat-Light.ttf);
+}
+@font-face{
+  font-family: Montserrat-LightItalic;
+  src: url(../assets/Fonts/Montserrat-LightItalic.ttf);
+}
+@font-face{
+  font-family: Montserrat-Medium;
+  src: url(../assets/Fonts/Montserrat-Medium.ttf);
+}
+@font-face{
+  font-family: Montserrat-Bold;
+  src: url(../assets/Fonts/Montserrat-Bold.ttf);
+}
+.navbar ul li a{
+  color: white;
+  font-family: Montserrat-Medium;
+}
+.navbar ul li a:hover{
+  color: rgb(81, 81, 253);
+  transition: 0.4s;
+}
+::placeholder{
+  font-family: Montserrat-LightItalic;
+}
+
 /* Styles for About Us Section */
 #content {
     background-color: #f8f9fa; /* Light background color */
@@ -41,5 +73,80 @@
   @media (min-width: 768px) {
     #content {
         padding: 60px 100px; /* Increased padding for larger screens */
+    }
+  }
+  #footer{
+    height: auto;
+    font-family: Montserrat-Light;
+    background-color: black;
+}
+
+#foothead2{
+    background: linear-gradient(to right, #007BFF, #ff0d00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#medialink:hover{
+    transition: 0.4s;
+    transform: scale(0.965);
+}
+#returnToTop {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 10px; /* Place the button 20px from the bottom */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: 2px solid white; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(0, 0, 0, 0.6); /* Green background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 60%; /* Rounded corners */
+    font-size: 14px; /* Increase font size */
+    height: 55px;
+    width: 55px;
+    transition: 0.3s ease-in-out;
+}
+  
+  #returnToTop:hover {
+    transform: scale(0.996); /* Add a dark-grey background on hover */
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+  }
+  #fit-fusion{
+    background: linear-gradient(
+      to right,
+      #007BFF,
+      #ff0d00,
+      #007BFF,
+      #ff0d00
+    );
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-wave 5s linear infinite;
+  }
+  #foothead1{
+    background: linear-gradient(
+      to right,
+      #007BFF,
+      #ff0d00,
+      #007BFF,
+      #ff0d00
+    );
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-wave 6s linear infinite;
+  }
+  @keyframes gradient-wave {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 300% 50%;
     }
   }
