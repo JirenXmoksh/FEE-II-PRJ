@@ -31,122 +31,396 @@
 }
 
 /* Styles for About Us Section */
-#content {
-    background-color: #f8f9fa; /* Light background color */
-    padding: 40px;
-    font-family: 'Montserrat', sans-serif;
-    color: #333; /* Dark gray text */
-    line-height: 1.6;
-  }
-  
-  #content h6 {
-    font-family: 'Montserrat-SemiBold', sans-serif;
-    font-size: 1.5em;
-    color: #007bff; 
-    margin-bottom: 20px;
-  }
-  
-  #content p {
-    font-size: 1.1em;
-    margin-bottom: 20px;
-  }
-  
-  #content ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  #content ul li {
-    margin-bottom: 10px;
-  }
-  
-  #content ul li strong {
-    color: #007bff; 
-  }
-  
-  #foothead2 {
-    font-family: 'Montserrat-SemiBold', sans-serif;
-    color: #343a40; /* Dark gray */
-    margin-bottom: 20px;
-  }
-  
-  @media (min-width: 768px) {
-    #content {
-        padding: 60px 100px; /* Increased padding for larger screens */
-    }
-  }
-  #footer{
-    height: auto;
-    font-family: Montserrat-Light;
-    background-color: black;
+#about-content {
+  background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(240, 240, 240, 0.9) 100%
+  ), url('https://example.com/your-background-image.jpg') no-repeat center center/cover; /* Add your own image URL here */
+  padding: 60px;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  line-height: 1.8;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
 }
 
+#about-content::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(0, 123, 255, 0.1), transparent);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+#about-content::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(255, 13, 0, 0.1), transparent);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+#about-content h6 {
+  font-family: 'Montserrat-SemiBold', sans-serif;
+  font-size: 2em;
+  color: #007bff;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to right, #007BFF, #ff0d00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#about-content h6::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background-color: #ff6347;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.4s ease, background-color 0.4s ease;
+}
+
+#about-content h6:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  background-color: #007bff;
+}
+
+#about-content p {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+  font-family: 'Montserrat-Medium';
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+#about-content p:hover {
+  color: #007bff;
+}
+
+#about-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#about-content ul li {
+  margin-bottom: 15px;
+  font-family: 'Montserrat-Medium';
+  position: relative;
+  padding-left: 25px;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#about-content ul li::before {
+  content: '\2022';
+  font-size: 1.5em;
+  color: #007bff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-2px);
+}
+
+#about-content ul li:hover {
+  color: #007bff;
+  transform: translateX(10px);
+}
+
+#about-content ul li strong {
+  color: #007bff;
+  font-weight: bold;
+}
+
+#about-head{
+  background: linear-gradient(to right, #007BFF, #ff0d00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+/*styles for navbar etc*/
+@font-face{
+  font-family: Montserrat-SemiBold;
+  src: url(../assets/Fonts/Montserrat-SemiBold.ttf);
+}
+@font-face{
+  font-family: Montserrat-Light;
+  src: url(../assets/Fonts/Montserrat-Light.ttf);
+}
+@font-face{
+  font-family: Montserrat-LightItalic;
+  src: url(../assets/Fonts/Montserrat-LightItalic.ttf);
+}
+@font-face{
+  font-family: Montserrat-Medium;
+  src: url(../assets/Fonts/Montserrat-Medium.ttf);
+}
+@font-face{
+  font-family: Montserrat-Bold;
+  src: url(../assets/Fonts/Montserrat-Bold.ttf);
+}
+@media (max-width: 740px) and (min-width: 710px){
+.overlay h1{
+  font-size: 20px;
+}
+.overlay p{
+  font-size: 10px;
+}
+#explore{
+  font-size: 12px;
+}
+#learnmore{
+  font-size: 12px;
+}
+}
+@media (max-width: 710px) and (min-width: 610px){
+.overlay{
+  background-color: black;
+}
+.overlay h1{
+  font-size: 18px;
+}
+.overlay p{
+  font-size: 8px;
+}
+#explore{
+  font-size: 10px;
+}
+#learnmore{
+  font-size: 10px;
+}
+}
+@media (max-width: 610px){
+.overlay{
+  background-color: black;
+}
+.overlay h1{
+  font-size: 18px;
+}
+.overlay p{
+  font-size: 8px;
+}
+#explore{
+  font-size: 10px;
+}
+#learnmore{
+  font-size: 10px;
+}
+}
+.navbar ul li a{
+  color: white;
+  font-family: Montserrat-Medium;
+}
+.navbar ul li a:hover{
+  color: rgb(81, 81, 253);
+  transition: 0.4s;
+}
+::placeholder{
+  font-family: Montserrat-LightItalic;
+}
+
+#hero{
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+}
+.carousel-item img {
+  /* Ensure images cover the entire area */
+ 
+  height: 850px;
+  /* Make sure the image takes full height */
+  object-fit: fill;
+  width: 100%; /* Make sure the image takes full width */
+  box-shadow:inset 100px 100px 200px 2000px rgba(0, 0, 0, 1);
+}
+#backgroundVideo {
+opacity: 0.7;
+position: absolute;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -1;
+transform: translate(-50%, -50%);
+}
+
+.overlay {
+font-family: Montserrat-Semibold;
+position: relative;
+z-index: 1;
+color: white;
+text-align: center;
+top: 65%;
+transform: translateY(-50%);
+}
+#explore{
+font-size: 14px;
+font-family: Montserrat-Light;
+background-color: rgba(0, 0, 0, 0.6);
+transition: 0.3s ease-in-out;
+color: white;
+border: 1px solid white;
+}
+
+#explore:hover{
+transform: scale(0.98);
+background: linear-gradient(
+      to right,
+      #ff0d00,
+      #000,
+      #000,
+      #007BFF
+    );
+    background-size: 170% 100%;
+    color: white;
+    
+}
+
+#learnmore{
+font-size: 14px;
+font-family: Montserrat-Light;
+background-color: rgba(0, 0, 0, 0.6);
+transition: 0.3s ease-in-out;
+color: white;
+border: 1px solid white;
+}
+#learnmore:hover{
+transform: scale(0.98);
+background: linear-gradient(
+      to right,
+      #007BFF,
+      #000,
+      #000,
+      #ff0d00
+    );
+    background-size: 170% 100%;
+    color: white;
+}
+#content{
+  height: 1500px;
+}
+#footer{
+  height: auto;
+  font-family: Montserrat-Light;
+  background-color: black;
+}
+
+#foothead1{
+  background:  linear-gradient(to right, #1677ff, #0753a4, #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 #foothead2{
-    background: linear-gradient(to right, #007BFF, #ff0d00);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, #007BFF, #ff0d00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #medialink:hover{
-    transition: 0.4s;
-    transform: scale(0.965);
+  transition: 0.4s;
+  transform: scale(0.965);
 }
 #returnToTop {
-    position: fixed; /* Fixed/sticky position */
-    bottom: 10px; /* Place the button 20px from the bottom */
-    right: 20px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: 2px solid white; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: rgba(0, 0, 0, 0.6); /* Green background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 60%; /* Rounded corners */
-    font-size: 14px; /* Increase font size */
-    height: 55px;
-    width: 55px;
-    transition: 0.3s ease-in-out;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 10px; /* Place the button 20px from the bottom */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: 2px solid white; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(0, 0, 0, 0.6); /* Green background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 60%; /* Rounded corners */
+  font-size: 14px; /* Increase font size */
+  height: 55px;
+  width: 55px;
+  transition: 0.3s ease-in-out;
 }
-  
-  #returnToTop:hover {
-    transform: scale(0.996); /* Add a dark-grey background on hover */
-    background-color: white;
-    color: black;
-    border: 2px solid white;
+
+#returnToTop:hover {
+  transform: scale(0.996); /* Add a dark-grey background on hover */
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+}
+
+/* This is the code for text to fill in its outline (stroke) */
+
+/* #fit-fusion {
+  font-family: 'Montserrat-Light', sans-serif;
+  font-weight: bold;
+  position: relative;
+  color: transparent;
+  -webkit-text-stroke: 0px black;
+} */
+/* #fit-fusion::before {
+  content: 'FIT FUSION';
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #007BFF, #ff0d00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  overflow: hidden;
+  animation: fill-text 1.5s ease-in-out infinite alternate;
+} */
+#fit-fusion{
+  background: linear-gradient(
+    to right,
+    #007BFF,
+    #ff0d00,
+    #007BFF,
+    #ff0d00
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-wave 5s linear infinite;
+ 
+}
+#foothead1{
+  background: linear-gradient(
+    to right,
+    #007BFF,
+    #ff0d00,
+    #007BFF,
+    #ff0d00
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-wave 6s linear infinite;
+}
+@keyframes gradient-wave {
+  0% {
+    background-position: 0% 50%;
   }
-  #fit-fusion{
-    background: linear-gradient(
-      to right,
-      #007BFF,
-      #ff0d00,
-      #007BFF,
-      #ff0d00
-    );
-    background-size: 300% 100%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: gradient-wave 5s linear infinite;
+  100% {
+    background-position: 300% 50%;
   }
-  #foothead1{
-    background: linear-gradient(
-      to right,
-      #007BFF,
-      #ff0d00,
-      #007BFF,
-      #ff0d00
-    );
-    background-size: 300% 100%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: gradient-wave 6s linear infinite;
-  }
-  @keyframes gradient-wave {
-    0% {
-      background-position: 0% 50%;
-    }
-    100% {
-      background-position: 300% 50%;
-    }
-  }
+}
