@@ -22,8 +22,9 @@
         </style>
     </head>
     <body>
+
         <!-- Navbar -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black">
+        <nav class="navbar fixed-top navbar-expand-xl navbar-dark" style="background-color: black">
           <div class="container">
             <a 
             class="navbar-brand mb-0 h1" 
@@ -74,27 +75,64 @@
                       </ul>
                     </li>
                     <li class="nav-item">
-
-                        <a href="AboutUs.html" target="_blank" class="nav-link">About</a>
-
+                      <a href="AboutUs.html" target="_blank" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="ContactUs.html" class="nav-link">Contact</a>
+                      <a href="ContactUs.html" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item">
                       <a href="register.html" target="_blank" class="nav-link">Sign up </a>
                     </li>
                     <li class="nav-item">
-                    <a href="login.html"  target="_blank" class="nav-link">Login</a>
+                      <a href="login.html"  target="_blank" class="nav-link">Login</a>
                     </li>
                   </ul>
             </div>
-            <form class="d-flex">
-              <input type="text" class="form-control me-2" placeholder="Type something...">
-              <button type="submit" class="btn btn-outline-primary border border-2 border-primary" style="font-family: Montserrat-Semibold; text-wrap: nowrap"> <i class="fa fa-search"></i></button>
-            </form>
+            <div class="d-flex">
+              <input type="text" class="form-control me-2 d-none d-lg-block" placeholder="Type something...">
+              <button type="button" class="btn btn-outline-primary border border-2 border-primary d-none d-lg-block" style="font-family: Montserrat-Semibold; text-wrap: nowrap">
+                  <i class="fa fa-search"></i>
+              </button>
+              <button type="button" class="btn btn-outline-primary border border-2 border-primary d-block d-lg-none" style="font-family: Montserrat-Semibold; text-wrap: nowrap" data-bs-toggle="collapse" data-bs-target="#searchCollapse">
+                  <i class="fa fa-search"></i>
+              </button>
+          </div>
+          <div class="collapse" id="searchCollapse">
+              <div class="card card-body">
+                  <form class="d-flex">
+                      <input type="text" class="form-control me-2" placeholder="Type something...">
+                      <button type="submit" class="btn btn-outline-primary border border-2 border-primary" style="font-family: Montserrat-Semibold; text-wrap: nowrap">
+                          <i class="fa fa-search"></i>
+                      </button>
+                  </form>
+              </div>
+          </div>
+
+          
           </div>
         </nav>
+        <script>
+          // Get the search toggle button and the search collapse element
+          const searchToggle = document.getElementById('searchToggle');
+          const searchCollapse = document.getElementById('searchCollapse');
+      
+          // Add click event listener to the search toggle button
+          searchToggle.addEventListener('click', function() {
+              // Toggle the search collapse
+              const bootstrapCollapse = new bootstrap.Collapse(searchCollapse);
+              bootstrapCollapse.toggle();
+          });
+      
+          // Add event listener to close the search form when clicking outside of it
+          document.addEventListener('click', function(event) {
+              // Check if the clicked element is outside the search form and search toggle button
+              if (!event.target.closest('#searchCollapse') && !event.target.closest('#searchToggle')) {
+                  // If clicked outside, hide the search form
+                  const bootstrapCollapse = new bootstrap.Collapse(searchCollapse);
+                  bootstrapCollapse.hide();
+              }
+          });
+      </script>
         <!-- The scroll reveal animation -->
         <script>
           ScrollReveal().reveal('.navbar', {duration: 1000 });
@@ -145,7 +183,7 @@
           </div> -->
           <video autoplay muted loop class="w-100" id="backgroundVideo">
             <source src="../assets/Videos/hero.mp4" type="video/mp4">
-            This was supposed to be the hero section but apparently your browser won't allow us to function properly :P
+            This was supposed to be the hero section but apparently your browser won't allow us to function properly :P.
         </video>
         <div class="overlay">
             <h1 class="slide-text1"><span id="foothead2">FIT FUSION</span></h1>
