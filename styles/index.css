@@ -412,23 +412,164 @@
 }
 
 #content{
-    height: 600px;
-    align-items: center;
+  
+    min-height: 100vh;
+    align-items: flex-start;
+    text-align: center;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
     font-family: Montserrat-Medium;
     background-color: black;
     border-bottom: 1px solid white;
-
 }
-/* .contenthead{
-  font-family: Montserrat-Bold;
-  font-size: 180px;
-  background:  linear-gradient(to right, #f00, #00f, #000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 
-} */
+.contenthead{
+  font-family: Montserrat-Bold;
+  font-size: 100px;
+}
+
+/* card 1 */
+.card1 {
+  width: auto;
+  height: auto;
+  background-image: linear-gradient(153deg, #000 20%, #ff0d00 90%);
+  border-radius: 20px;
+  display: block;
+  transition: all .4s;
+ }
+ 
+ .card12 {
+  width: auto;
+  height: 350px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all .2s;
+ }
+ 
+ .card12:hover {
+  transform: scale(0.995);
+  border-radius: 20px;
+ }
+ 
+ .card1:hover {
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 15px rgba(255, 0, 0, 0.5);
+ }
+ 
+/* card 1 */
+
+/* card 2 */
+.card2 {
+  width: auto;
+  height: auto;
+  background-image: linear-gradient(193deg, #000 20%, #007bff 90%);
+  border-radius: 20px;
+  display: block;
+  transition: all .4s;
+ }
+ 
+ .card22 {
+  width: auto;
+  height: 350px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all .2s;
+ }
+ 
+ .card22:hover {
+  transform: scale(0.995);
+  border-radius: 20px;
+ }
+ 
+ .card2:hover {
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 15px rgba(0, 55, 255, 0.5);
+ }
+
+/* card 2 */
+
+/* card 3 */
+.card3 {
+  width: auto;
+  height: auto;
+  background-image: linear-gradient(23deg, #000 20%, #00ff37 90%);
+  border-radius: 20px;
+  display: block;
+  transition: all .4s;
+ }
+ 
+ .card32 {
+  width: auto;
+  height: 350px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all .2s;
+ }
+ 
+ .card32:hover {
+  transform: scale(0.995);
+  border-radius: 20px;
+ }
+ 
+ .card3:hover {
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 15px rgba(13, 255, 0, 0.5);
+ }
+
+/* card 3 */
+/* card 4 */
+.card4 {
+  width: auto;
+  height: auto;
+  background-image: linear-gradient(333deg, #000 10%, #999 90%);
+  border-radius: 20px;
+  display: block;
+  transition: all .4s;
+ }
+ 
+ .card42 {
+  width: auto;
+  height: 350px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all .2s;
+ }
+ 
+ .card42:hover {
+  transform: scale(0.995);
+  border-radius: 20px;
+ }
+ 
+ .card4:hover {
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 15px rgba(255, 255, 255, 0.5);
+ }
+
+/* card 4 */
+
+.card-text{
+  text-align: justify;
+  font-size: 15px;
+  width: auto;
+  text-wrap: wrap;
+}
+
+/* Go button in content section */
+.Btn{
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: white;
+  transition: 0.4s;
+}
+.Btn:hover{
+  color: black;
+  background-color: white;
+}
+/* Go button in content section */
+
 #footer{
     height: auto;
     font-family: Montserrat-Light;
@@ -440,6 +581,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 #medialink:hover{
     transition: 0.4s;
     transform: scale(0.965);
