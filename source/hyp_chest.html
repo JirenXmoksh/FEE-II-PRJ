@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>FF / Hypertrophy / Pectorals</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../styles/hyp_chest.css">
+        <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
+        <link rel="icon" type="image/x-icon" href="../assets/Images/fficon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="../styles/fosm/css/font-awesome.min.css">
+
+        <script src="../styles/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <script src="../scripting/hyp_chest.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        
+        <style>
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black">
+          <div class="container">
+            <a 
+            class="navbar-brand mb-0 h1" 
+            href="index.htm">
+              <img 
+              src="../assets/Images/fficon.png" 
+              width="40px"
+              height="40px" 
+              class="d-inline-block align-right border border-2 border-dark rounded ">
+              <strong class="mx-3" style="font-family: Montserrat-Bold" id="fit-fusion">FIT FUSION</strong>
+            </a>
+            <!-- collapse toggle button -->
+            <button 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            class="navbar-toggler"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle Navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div 
+            class="collapse navbar-collapse" 
+            id="navbarNav">
+                <ul class="navbar-nav mx-5">
+                    <li class="nav-item active">
+                        <a href="index.htm" class="nav-link">Home </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a 
+                        href="#" 
+                        class="nav-link dropdown-toggle" 
+                        id="navDrop" 
+                        role="button" 
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Training
+                      </a>
+                      <ul class="dropdown-menu border border-dark"
+                      aria-labelledby="navDrop">
+                      <li><a href="#" class="dropdown-item text text-dark">Hypertrophy</a></li>
+                      <li><a href="#" class="dropdown-item text text-dark">Strength</a></li>
+                      <li><a href="#" class="dropdown-item text text-dark">General</a></li>
+                      <li><a href="#" class="dropdown-item text text-dark">Others</a></li>
+
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+
+                        <a href="AboutUs.html" target="_blank" class="nav-link">About</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="ContactUs.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="register.html" target="_blank" class="nav-link">Sign up </a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="login.html"  target="_blank" class="nav-link">Login</a>
+                    </li>
+                  </ul>
+            </div>
+            <form class="d-flex">
+              <input type="text" class="form-control me-2" placeholder="Type something...">
+              <button type="submit" class="btn btn-outline-primary border border-2 border-primary" style="font-family: Montserrat-Semibold; text-wrap: nowrap"> <i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </nav>
+        <!-- The scroll reveal animation -->
+        <script>
+          ScrollReveal().reveal('.navbar', {duration: 1000 });
+        </script>
+        
+        <!-- Navbar -->
+
+        <!-- Content Section -->
+        <div class="container-fluid" id="content">
+            <!-- The content head -->
+            <div class="row d-flex justify-content-between" id="contenthead">
+                <div class="col-12 text-center">
+                    <p class="text-white m-2" style="letter-spacing: 2em; font-size: 1rem;">HYPERTROPHY</p>
+                    <h1 class="text-white mb-2" style="font-size: 5vw; letter-spacing: 0.5em;">CHEST</h1>
+                    <p class="text-white mb-4" style="letter-spacing: 1em; font-size: 1rem;"> ~PECTORALS</p>
+                    <div class="row text-center justify-content-center align-items-center" id="contbuttons">
+                      <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                          <a href="#pecmin" class="text-decoration-none">
+                              <button class="btn btn-primary mx-4 mb-2" id="btn">
+                                  <p class="mb-0">Pectoralis Minor</p>
+                              </button>
+                          </a>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                          <a href="#pecmaj" class="text-decoration-none">
+                              <button class="btn btn-primary mx-4 my-2" id="btn">
+                                  <p class="mb-0">Pectoralis Major</p>
+                              </button>
+                          </a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            
+            <br>
+            <!-- The content description starts -->
+            <div class="col-12 p-5 mt-2 justifythis" id="contdesc">
+              <h1 class="col-12 subhead1">Aesthetic and Physiological Importance of the Pectorals</h1>
+              <p id="text1">
+                The chest, or pectoral muscles, primarily consists of the pectoralis major 
+                and pectoralis minor, which play significant roles in both aesthetics and physiology. 
+                Aesthetically, well-developed pectoral muscles are often associated with strength and 
+                fitness, making them a sought-after feature in bodybuilding and fitness culture. This 
+                prominence is reflected in media portrayals of ideal physiques, where a strong chest 
+                is emblematic of overall physical prowess.
+                Physiologically, the pectoral muscles are crucial for various upper body movements, including 
+                pushing, lifting, and stabilizing the shoulders and arms. The pectoralis major is responsible for
+                actions such as flexion, adduction, and internal rotation of the humerus, while the pectoralis 
+                minor aids in stabilizing the scapula. Strong pectoral muscles contribute to better posture by 
+                supporting proper alignment of the shoulders and upper back, which can help prevent orthopedic 
+                issues like kyphosis. Additionally, they enhance overall upper body strength, facilitating everyday activities 
+                and athletic performance, such as pushing oneself off the ground or swinging a racket in sports. 
+                Thus, the importance of pectoral muscles extends beyond aesthetics to encompass vital functional 
+                roles in daily life and physical activities.
+              </p>
+            </div>
+            <!-- The content description ends -->
+
+            <hr class="stylish-hr mx-5 mt-0 mb-5">
+            
+            <h1 class="text text-light text-uppercase mb-5 mx-5" style="text-align: center" id="INFO">
+              Here are some of the best 
+              <span class="subhead1"> Hypertrophy centered </span> 
+              exercises for the 
+              <span class="subhead1">pectorals </span>
+            </h1>
+      
+            <!-- Pec Minor -->
+            <div class="row mx-5 my-4 p-2" id="pecmin">
+              
+              <h1 class="subhead1 mt-5">PECTORALIS MINOR</h1>
+          
+                <p class="col-12 justifythis" id="text1">
+                  The pectoralis minor is a thin, triangular muscle located beneath the larger pectoralis major in the upper chest. 
+                  It originates from the anterior surfaces of the third to fifth ribs and inserts into the coracoid process of the scapula. 
+                  This muscle plays a crucial role in stabilizing the scapula by drawing it forward and downward against the thoracic wall, 
+                  as well as assisting in respiration by elevating the ribs during inhalation. It is innervated by the medial pectoral nerve 
+                  and is significant in both anatomical and clinical contexts, particularly in relation to the structures of the axilla and upper limb.
+                </p>
+                
+                <!-- EX 1 -->
+                <div class="row mx-2 my-5 p-3 rounded justifythis exdiv" >
+                  <div class="col-lg-6 col-sm-12 text-justify ">
+                    <h3 class="subhead1 mt-4 mx-3">Incline Dumbbell Press</h3>
+                      <p class="p-3 text-justify" id="text1">The incline dumbbell press is an effective upper-body exercise that primarily targets the 
+                        upper chest, shoulders, and triceps. To perform this exercise, begin by setting an adjustable bench to a 30 to 45-degree incline. 
+                        Sit on the bench with your back pressed firmly against it, retract your shoulder blades squeezing the scapulae, holding a dumbbell 
+                        in each hand at shoulder height, with your palms facing forward. As you exhale, press the dumbbells upward until your arms are fully 
+                        extended but not locked. Slowly lower the dumbbells back to the starting position while maintaining control. Keep your feet flat on the 
+                        floor and ensure your core remains engaged throughout the movement for stability. Make sure to control the eccentric part of the movement. 
+                        Go for about 2-4 sets of 10-12 repetitions each, pushing till failure. 
+                        <span class="subhead1">EVERY REP COUNTS</span>
+                      </p>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-5 py-5 embed-responsive embed-responsive-16by9">
+                    <h3 class="subhead1">demonstration</h3>
+                    <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/fGm-ef-4PVk?start=153" allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <!-- EX 2 -->
+                <div class="row mx-2 my-5 p-3 rounded justifythis exdiv" >
+                  <div class="col-lg-6 col-sm-12 text-justify ">
+                    <h3 class="subhead1 mt-4 mx-3">Dumbbell Guillotine Press</h3>
+                      <p class="p-3 text-justify" id="text1">To perform the dumbbell guillotine press, start by lying flat on a bench with a dumbbell 
+                        in each hand, positioned over your chest with your arms extended and palms facing each other. Set your grip so that your 
+                        hands are slightly wider than shoulder-width apart. From this starting position, slowly lower the dumbbells towards your 
+                        neck in a controlled manner, keeping your elbows flared out and maintaining a slight bend in them to protect your joints.
+                        Aim to bring the dumbbells close to your neck without touching it, feeling the stretch in your chest as you descend. 
+                        Once your upper arms are parallel to the floor, press the dumbbells back up to the starting position, focusing on using 
+                        your chest muscles throughout the movement. Ensure that the movement is slow and controlled to maximize muscle engagement 
+                        and reduce the risk of injury. 
+                        Go for about 2-4 sets of 10-12 repetitions each, pushing till failure. 
+                         <span class="subhead1">EVERY REP COUNTS</span> </p>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-5 py-5 embed-responsive embed-responsive-16by9">
+                    <h3 class="subhead1">demonstration</h3>
+                    <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/fGm-ef-4PVk?start=529" allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <!-- EX 3 -->
+                <div class="row mx-2 my-5 p-3 rounded justifythis exdiv" >
+                  <div class="col-lg-6 col-sm-12 text-justify ">
+                    <h3 class="subhead1 mt-4 mx-3">Paused Deficit Pushups</h3>
+                      <p class="p-3 text-justify" id="text1">Paused deficit push-ups are a challenging variation of the traditional push-up that targets the chest, shoulders, 
+                        and triceps while increasing the range of motion. To perform this exercise, start by creating a deficit by placing two sturdy platforms,
+                         such as weight plates or push-up blocks, on the floor. Position your hands on the platforms, ensuring they are slightly wider than 
+                         shoulder-width apart, and your feet are on the ground. Begin in a push-up position with your body in a straight line from head to 
+                         heels. Lower yourself slowly until your chest dips below the level of the platforms, effectively increasing the stretch in your chest 
+                         muscles. Hold this lowered position for a brief pause (1-2 seconds) before pushing yourself back up to the starting position. Focus on 
+                         maintaining control and engaging your core throughout the movement.
+                         Go for about 2-4 sets of 10-12 repetitions each, pushing till failure. 
+                         <span class="subhead1">EVERY REP COUNTS</span> </p></p>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-5 py-5 embed-responsive embed-responsive-16by9">
+                    <h3 class="subhead1">demonstration</h3>
+                    <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/fGm-ef-4PVk?start=405" allowfullscreen></iframe>
+                  </div>
+                </div>
+            </div>
+            
+            <hr class="stylish-hr mt-4 mx-5" style="margin: 20px">
+
+            <!-- Pec Major -->
+            <div class="row mx-5 mb-4 mt-0 p-2" id="pecmaj">
+              <h1 class="subhead1 mt-5">PECTORALIS MAJOR</h1>
+          
+                <p class="col-12 justifythis" id="text1">
+                  The pectoralis major is a large, fan-shaped muscle located on the front of the chest, extending from the clavicle 
+                  and sternum to the humerus. Aesthetically, well-developed pectoralis major muscles contribute to a broad and 
+                  defined upper body appearance, enhancing the "V" shape that is often sought after in fitness and bodybuilding. 
+                  Physiologically, this muscle plays a critical role in shoulder movements, including flexion, adduction, and internal 
+                  rotation, while providing stability to the shoulder joint and facilitating various functional tasks in daily life. 
+                </p>
+                
+                
+                <!-- EX 1 -->
+                <div class="row mx-2 my-5 p-3 rounded justifythis exdiv" >
+                  <div class="col-lg-6 col-sm-12 text-justify ">
+                    <h3 class="subhead1 mt-4 mx-3">Incline Dumbbell Press</h3>
+                    <p class="p-3 text-justify" id="text1">The incline dumbbell press is an effective upper-body exercise that primarily targets the 
+                      upper chest, shoulders, and triceps. To perform this exercise, begin by setting an adjustable bench to a 30 to 45-degree incline. 
+                      Sit on the bench with your back pressed firmly against it, retract your shoulder blades squeezing the scapulae, holding a dumbbell 
+                      in each hand at shoulder height, with your palms facing forward. As you exhale, press the dumbbells upward until your arms are fully 
+                      extended but not locked. Slowly lower the dumbbells back to the starting position while maintaining control. Keep your feet flat on the 
+                      floor and ensure your core remains engaged throughout the movement for stability. Make sure to control the eccentric part of the movement. 
+                      Go for about 2-4 sets of 10-12 repetitions each, pushing till failure. 
+                      <span class="subhead1">EVERY REP COUNTS</span>
+                    </p>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-5 py-5 embed-responsive embed-responsive-16by9">
+                    <h3 class="subhead1">demonstration</h3>
+                    <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/fGm-ef-4PVk?start=153" allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <!-- EX 2 -->
+                <div class="row mx-2 my-5 p-3 rounded justifythis exdiv" >
+                  <div class="col-lg-6 col-sm-12 text-justify ">
+                    <h3 class="subhead1 mt-4 mx-3" >Lower Half Dumbbell Flyes</h3>
+                      <p class="p-3 text-justify" id="text1">To perform lower half dumbbell flyes, begin by lying on your back on 
+                        a flat bench with a dumbbell in each hand, arms extended straight above your chest. Keep a slight bend in your 
+                        elbows to maintain joint safety. Slowly lower the dumbbells outward in a wide arc, keeping your elbows 
+                        slightly bent, until your arms are parallel to the ground or just above it, focusing on feeling the stretch 
+                        in your chest. Ensure your shoulders remain flat against the bench throughout the movement. After reaching 
+                        the lowest point, engage your chest muscles to pull the dumbbells back to the starting position, maintaining 
+                        control and avoiding excessive swinging or momentum. Aim for a controlled tempo to maximize muscle engagement, 
+                        making sure your movements are deliberate and fluid. 
+                        Go for about 2-4 sets of 10-12 repetitions each, pushing till failure. 
+                        <span class="subhead1">EVERY REP COUNTS</span></p>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-5 py-5 embed-responsive embed-responsive-16by9">
+                    <h3 class="subhead1">demonstration</h3>
+                    <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/fGm-ef-4PVk?start=693" allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <!-- EX 3 -->
+                <div class="row mx-2 my-5 p-3 rounded justifythis exdiv" >
+                  <div class="col-lg-6 col-sm-12 text-justify ">
+                    <h3 class="subhead1 mt-4 mx-3" >Seated pec cable flyes</h3>
+                      <p class="p-3 text-justify" id="text1">To perform seated pec cable flyes, begin by adjusting the pulleys on a cable machine to shoulder height and 
+                        setting a bench or seat in between them. Sit on the bench with your back straight and feet flat on the floor,
+                         grasping the handles with both hands, and extend your arms out to the sides at shoulder height, maintaining a slight
+                          bend in your elbows. From this starting position, pull the handles together in front of you in a wide arc, focusing 
+                          on squeezing your chest muscles while keeping tension on the cables throughout the movement. Ensure your shoulders 
+                          remain stable and back to avoid injury. Once your hands meet, slowly return to the starting position, controlling the 
+                          movement to feel the stretch in your chest. Repeat for 8 to 15 repetitions to effectively target the pectoral muscles. 
+                        Go for about 2-4 sets of 10-12 repetitions each, pushing till failure. 
+                        <span class="subhead1">EVERY REP COUNTS</span></p></p>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-5 py-5 embed-responsive embed-responsive-16by9">
+                    <h3 class="subhead1">demonstration</h3>
+                    <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/fGm-ef-4PVk?start=649" allowfullscreen></iframe>
+                  </div>
+                </div>
+            </div>
+
+            <script>
+              ScrollReveal().reveal('.contenthead', {delay: 1000}, {duration: 2000});
+              ScrollReveal().reveal('#contbuttons', {delay: 500}, {duration: 2000});
+              ScrollReveal().reveal('#INFO', {delay: 1000}, {duration: 2000});
+            </script>
+          </div>
+          <!-- The scroll reveal animation -->
+          <script>
+            ScrollReveal().reveal('#content', {duration: 2000});
+            ScrollReveal().reveal('.exdiv', {delay: 100, duration: 2000});
+          </script>
+        <!-- Content Section -->
+        
+
+        <!-- footer -->
+        <div class="container-fluid py-5 text-white" id="footer">
+            <div class="container  p-2">
+              <div class="row">
+                <div class="col-md-3 mb-4">
+                  <a class="text-decoration-none text-primary navbar-brand"
+                    href="index.htm">
+                      <img 
+                      src="../assets/Images/fficon.png" 
+                      width="80px"
+                      height="70px" 
+                      class="d-inline-block align-right border border-2 border-dark rounded">
+                    <h1 style="font-family: Montserrat-Bold" class="mt-2" id="foothead1">FIT FUSION</h1>
+                  </a>
+                  <p class="text-left-sm" style="font-size: 12px">Science over Bro-Science</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h3 style="font-family: Montserrat-Medium" id="foothead2">Quick Links</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="index.htm" class="text-white text-decoration-none" ><i class="fa fa-home" aria-hidden="true"> </i> Home</a></li>
+                    <li><a href="AboutUs.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-question" aria-hidden="true"></i> About</a></li>
+                    <li><a href="ContactUs.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+                    <li><a href="register.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-user-plus" aria-hidden="true"></i >  Sign up</a></li>
+                    <li><a href="login.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h3 style="font-family: Montserrat-Medium" id="foothead2">Connect with us</h3>
+                  <div class="our-team">
+                    <!-- <a href="#" class="btn btn-primary square btn-sm m-1"><i class="fab fa-facebook"></i></a>-->     
+                      <a href="https://www.facebook.com/MoXMogZ" target="_blank" ><img src="../assets/Images/fbook.svg" id="medialink" width="40" height="40"></a>                   
+                      <a href="https://www.instagram.com/moxmogz?igsh=emtxaWZ0dTVubDBv" target="_blank" ><img src="../assets/Images/insta.svg" id="medialink" width="40" height="40"></a>
+                      <a href="https://www.linkedin.com/in/vishwanath-singh-7bb593298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="../assets/Images/linkedin.svg" id="medialink"  width="40" height="40"></a>
+                      <a href="https://discord.gg/tw29QC2a" target="_blank "><img src="../assets/Images/discord.svg" id="medialink" width="40" height="40"></a>
+                      <a href="https://github.com/Himanshu1237" target="_blank" ><img src="../assets/Images/github.svg" id="medialink" width="40" height="40"></a>
+                      
+                    <!-- <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fa fa-discord" aria-hidden="true"></i> --> <!-- alternate icons (fontawesome cdn)-->
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h3 style="font-family: Montserrat-Medium" id="foothead2">Explore Training</h3>
+                  <ul class="list-unstyled">
+                    <li id="linkk"><a href="index.htm" class="text-white text-decoration-none" id="linkk">Hypertrophy</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Strength</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">General</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-4">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <p class="mb-0"> <i class="fa fa-copyright"></i> 2024 Fit Fusion | All rights reserved.</p>
+                  <p class="mb-0"><a href="#" class="text-decoration-none fw-bold text-primary">Terms of Service</a> | <a href=# class="text-decoration-none fw-bold text-primary">Privacy Policy</a></p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- the scroll reveal animation -->
+        <script>
+          ScrollReveal().reveal('#footer', {duration: 2000 });
+        </script>
+        <!-- footer -->
+        <button onclick="topFunction()" id="returnToTop" title="Go to top">
+          <i class="fa fa-arrow-up"></i>
+        </button>
+    </body>
+</html>
