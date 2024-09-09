@@ -401,7 +401,7 @@ body{
     animation: fill-text 1.5s ease-in-out infinite alternate;
   } */
 
-  .commenthead{
+.commenthead{
     font-family: Montserrat-Semibold;
 }
 
