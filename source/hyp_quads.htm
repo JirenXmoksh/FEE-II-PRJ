@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>FF / Hypertrophy / Quads</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../styles/hyp_quads.css">
+        <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
+        <link rel="icon" type="image/x-icon" href="../assets/Images/fficon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="../styles/fosm/css/font-awesome.min.css">
+
+        <script src="../styles/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <script src="../scripting/hyp_quads.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        
+    </head>
+    <body>
+        <!-- Navbar starts-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black">
+          <div class="container">
+            <a 
+            class="navbar-brand mb-0 h1" 
+            href="index.htm">
+              <img 
+              src="../assets/Images/fficon.png" 
+              width="40px"
+              height="40px" 
+              class="d-inline-block align-right border border-2 border-dark rounded ">
+              <strong class="mx-3" style="font-family: Montserrat-Bold" id="fit-fusion">FIT FUSION</strong>
+            </a>
+            <!-- collapse toggle button -->
+            <button 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            class="navbar-toggler"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle Navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div 
+            class="collapse navbar-collapse" 
+            id="navbarNav">
+                <ul class="navbar-nav mx-5">
+                    <li class="nav-item active">
+                        <a href="index.htm" class="nav-link">Home </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a 
+                        href="#" 
+                        class="nav-link dropdown-toggle" 
+                        id="navDrop" 
+                        role="button" 
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Training
+                      </a>
+                      <ul class="dropdown-menu border border-dark"
+                      aria-labelledby="navDrop">
+                      <li><a href="#" class="dropdown-item text text-dark">Hypertrophy</a></li>
+                      <li><a href="#" class="dropdown-item text text-dark">Strength</a></li>
+                      <li><a href="#" class="dropdown-item text text-dark">General</a></li>
+                      <li><a href="#" class="dropdown-item text text-dark">Others</a></li>
+
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="AboutUs.html" target="_blank" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ContactUs.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="register.html" target="_blank" class="nav-link">Sign up </a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="login.html"  target="_blank" class="nav-link">Login</a>
+                    </li>
+                  </ul>
+            </div>
+            <form class="d-flex">
+              <input type="text" class="form-control me-2" placeholder="Type something...">
+              <button type="submit" class="btn btn-outline-primary border border-2 border-primary" style="font-family: Montserrat-Semibold; text-wrap: nowrap"> <i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </nav>
+        <!-- The scroll reveal animation -->
+        <script>
+          ScrollReveal().reveal('.navbar', {duration: 1000 });
+        </script>
+        <!-- Navbar ends-->
+
+        <!-- Content Section starts-->
+        <div class="container-fluid" id="content">
+            <!-- The content head -->
+            <div class="row d-flex justify-content-between" id="contenthead">
+                <div class="col-12 text-center">
+                    <p class="text-white m-2" style="letter-spacing: 2em; font-size: 1rem;">HYPERTROPHY</p>
+                    <h1 class="text-white mb-2" style="font-size: 5vw; letter-spacing: 0.5em;">QUADS</h1>
+                    <p class="text-white mb-4" style="letter-spacing: 1em; font-size: 1rem;">Quadriceps Femoris</p>
+                    <div class="row text-center justify-content-center align-items-center" id="contbuttons">
+                      <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                          <a href="#major" class="text-decoration-none">
+                              <button class="btn btn-primary mx-4 mb-2" id="btn">
+                                  <p class="mb-0">xPlore Now</p>
+                              </button>
+                          </a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            
+            <br>
+            <!-- The content description starts -->
+            <div class="col-12 p-5 mt-2 justifythis" id="contdesc">
+              <h1 class="col-12 subhead1">Aesthetic and Physiological Importance of the Quads</h1>
+              <div class="row my-2" id="text1">
+                <div class="col-12">
+                    The quadriceps femoris is a large muscle group located at the front of the thigh and is 
+                    critical for both aesthetic and physiological functions. This muscle group consists of 
+                    four individual muscles.
+                </div>
+              </div>
+              <div class="row my-2" id="text1">
+                <div class="col-lg-6 col-md-6 col-sm-12 my-1">
+                    <span class="subhead1" style="font-family: Montserrat-Bold">Rectus Femoris</span> 
+                    This muscle not only contributes to a muscular appearance by enhancing 
+                    the overall shape of the thighs but also plays a unique role in both hip flexion and knee extension, 
+                    facilitating powerful movements like kicking and running while aiding in pelvic stability during activities.
+                </div> 
+                <div class="col-lg-6 col-md-6 col-sm-12 my-1">
+                    <span class="subhead1" style="font-family: Montserrat-Bold">Vastus Lateralis</span> 
+                    As a key component of the outer thigh, the vastus lateralis enhances leg aesthetics through definition 
+                    and proportion while primarily focusing on knee extension. This muscle is crucial for 
+                    generating explosive strength in activities like sprinting and jumping while providing stability 
+                    to the knee in dynamic movements.
+                </div>
+              </div>
+              <div class="row my-2" id="text1"> 
+                <div class="col-lg-6 col-md-6 col-sm-12 my-1">
+                    <span class="subhead1" style="font-family: Montserrat-Bold">Vastus Medialis</span>
+                    Positioned on the inner thigh, the vastus medialis contributes to a balanced and aesthetic l
+                    eg appearance while being essential for knee extension and patellar stabilization. Its role 
+                    in maintaining proper knee alignment helps prevent injuries and ensures efficient 
+                    movement during weight-bearing activities.
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 my-1">
+                    <span class="subhead1" style="font-family: Montserrat-Bold">Vastus Intermedius</span>
+                    Located beneath the rectus femoris, the vastus intermedius aids in achieving a well-defined thigh 
+                    aesthetic while focusing on knee extension. This muscle is vital for overall quadriceps strength
+                    and stability, facilitating effective movement in heavy lifting and athletic performance.
+                </div>
+              </div>
+            </div>
+            <!-- The content description ends -->
+
+            <hr class="stylish-hr mx-5 mt-0 mb-5">
+            
+            <h1 class="text text-light text-uppercase mb-5" style="text-align: center" id="INFO">
+              Here are some of the best 
+              <span class="subhead1"> Hypertrophy centered </span> 
+              exercises for the 
+              <span class="subhead1">Quads</span>
+            </h1>
+      
+            <!-- Exercises start. No submuscles because isolating each sub muscle is not possible incase of quads -->
+            <div class="row mx-5 my-4 p-2" id="major">
+          
+                <!-- EX 1 -->
+                <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                  <div class="col-lg-6 col-sm-12 text-justify ">
+                    <h3 class="subhead1 mt-4 mx-3">Barbell Back Squat</h3>
+                      <p class="p-3 text-justify" id="text1">
+                        The barbell back squat is a fundamental strength training exercise targeting the lower body, 
+                        primarily the quadriceps, hamstrings, and glutes. To set up for this exercise, begin by positioning 
+                        a barbell on a squat rack at approximately chest height, ensuring it is balanced and secure. Stand 
+                        under the bar with feet shoulder-width apart, positioning the bar across your upper traps rather 
+                        than your neck. Grip the bar firmly with hands slightly wider than shoulder-width to create stability. 
+                        Engage your core and step back from the rack, placing your feet shoulder-width apart, with toes slightly 
+                        angled out. Keep your chest up and back straight as you initiate the squat by bending your knees 
+                        and lowering your hips, ensuring that your knees track over your toes. Descend until your thighs 
+                        are at least parallel to the ground, then drive through your heels to return to the starting 
+                        position, maintaining proper form throughout the movement. Always warm up before performing 
+                        this exercise and consider using a spotter or safety equipment if lifting heavy weights. 
+                        Get a spotter for the safe side. Go for about 2-4 sets of 10-14 repetitions each, pushing till failure.
+                        <span class="subhead1">EVERY REP COUNTS</span>
+                      </p>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-4 embed-responsive embed-responsive-16by9">
+                    <h3 class="subhead1">demonstration</h3>
+                    <iframe class="embed-responsive-item border border-dark rounded" src="https://youtube.com/embed/kIXcoivzGf8?start=121" allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <!-- EX 2 -->
+                <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                  <div class="col-lg-6 col-sm-12 text-justify ">
+                    <h3 class="subhead1 mt-4 mx-3">Pendulum Squat</h3>
+                      <p class="p-3 text-justify" id="text1">The pendulum squat is a dynamic lower-body exercise that targets the 
+                        quadriceps, hamstrings, and glutes while also engaging the core for stability. To set up for the 
+                        pendulum squat, begin by positioning a barbell across the upper back, ensuring it is secure and 
+                        comfortable. Stand with feet shoulder-width apart and slightly turned out. Initiate the movement by 
+                        shifting your body weight back and lowering into a squat, keeping your chest up and back straight. 
+                        As you descend, allow your torso to lean forward slightly while pushing your hips back and bending 
+                        your knees. Once you reach the lowest point of the squat, explosively push through your heels to rise 
+                        back to the starting position, emphasizing a smooth and controlled movement. For added intensity, the
+                        motion can be made more dynamic by incorporating a pendulum-like swinging of the arms or utilizing a 
+                        squat apparatus designed to facilitate this movement pattern. Always ensure proper form to prevent injury, 
+                        and adjust weight as needed based on your fitness level. 
+                        Go for about 2-4 sets of 10-12 repetitions each, pushing till failure. 
+                         <span class="subhead1">EVERY REP COUNTS</span> </p>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-4 embed-responsive embed-responsive-16by9">
+                    <h3 class="subhead1">demonstration</h3>
+                    <iframe class="embed-responsive-item border border-dark rounded" src="https://youtube.com/embed/kIXcoivzGf8?start=307" allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <!-- EX 3 -->
+                <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                  <div class="col-lg-6 col-sm-12 text-justify ">
+                    <h3 class="subhead1 mt-4 mx-3">Bulgarian Split squat</h3>
+                      <p class="p-3 text-justify" id="text1">The Bulgarian split squat is a unilateral lower body exercise that effectively targets 
+                        the quadriceps, hamstrings, and glutes. To set up, start by standing a couple of feet in front of a 
+                        bench or elevated surface. Extend one leg back and place the top of that foot on the bench or surface, 
+                        ensuring your toes are pointed down. With your core engaged and chest up, lower your hips by bending the 
+                        front knee while keeping it aligned with your ankle. Aim to lower yourself until the thigh of your front 
+                        leg is parallel to the ground or slightly below, ensuring your back knee approaches the floor without resting. 
+                        Push through your front heel to return to the starting position, keeping your movements controlled. It’s essential 
+                        to maintain proper posture throughout the exercise to prevent injury and maximize effectiveness. You can 
+                        also add weights by holding dumbbells or a kettlebell to increase intensity as you progress. 
+                        Go for about 2-4 sets of 10-12 repetitions each, pushing till failure. 
+                        <span class="subhead1">EVERY REP COUNTS</span> </p></p>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                    <h3 class="subhead1">demonstration</h3>
+                    <iframe class="embed-responsive-item border border-dark rounded" src="https://youtube.com/embed/kIXcoivzGf8?start=574" allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <!-- EX 4 -->
+                <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                  <div class="col-lg-6 col-sm-12 text-justify ">
+                    <h3 class="subhead1 mt-4 mx-3">Hack squat</h3>
+                      <p class="p-3 text-justify" id="text1">The hack squat is a lower body exercise that primarily 
+                        targets the quadriceps, hamstrings, and glutes. To set up, begin by positioning yourself on 
+                        a hack squat machine, ensuring your back is against the padded support. Stand with your feet 
+                        shoulder-width apart on the platform, with your toes pointed slightly outward. Adjust the safety 
+                        stops if necessary, and position your shoulders snugly under the shoulder pads. Begin the movement
+                         by unlocking the machine and slowly lowering your body by bending your knees and hips, keeping your 
+                         chest lifted and back straight. Aim to lower yourself until your thighs are parallel to the ground 
+                         or slightly below while ensuring your knees don’t extend beyond your toes. Press through your heels 
+                         to return to the starting position, maintaining control throughout the movement. Proper form is 
+                         essential to avoid injury and maximize effectiveness, so avoid rounding your back and ensure the 
+                         movement is smooth and controlled. 
+                        Go for about 2-4 sets of 10-12 repetitions each, pushing till failure. 
+                        <span class="subhead1">EVERY REP COUNTS</span> </p></p>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-3 embed-responsive embed-responsive-16by9">
+                    <h3 class="subhead1">demonstration</h3>
+                    <iframe class="embed-responsive-item border border-dark rounded" src="https://youtube.com/embed/kIXcoivzGf8?start=276" allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <!-- EX 5 -->
+                <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                  <div class="col-lg-6 col-sm-12 text-justify ">
+                    <h3 class="subhead1 mt-4 mx-3">45 Degree Leg Press</h3>
+                      <p class="p-3 text-justify" id="text1">The 45-degree leg press is a popular exercise for 
+                        targeting the quadriceps, hamstrings, and glutes. To set up, begin by sitting on a 
+                        leg press machine set at a 45-degree angle, ensuring your back is pressed firmly 
+                        against the padded backrest. Place your feet shoulder-width apart on the platform, 
+                        with your heels flat and toes pointed slightly outward for stability. Adjust the 
+                        machine settings to ensure that the safety stops are positioned correctly according 
+                        to your height. Unlock the weight by releasing any safety catches and slowly lower 
+                        the platform by bending your knees, making sure they track in line with your toes. 
+                        Aim to lower the platform until your knees form a 90-degree angle or slightly less, 
+                        keeping your core engaged and your back pressed against the pad. To complete the movement, 
+                        push through your heels to extend your legs back to the starting position without locking 
+                        out your knees. Ensure you perform the exercise in a controlled manner, focusing on proper 
+                        form to prevent injury and maximize effectiveness.  
+                        Go for about 2-4 sets of 10-12 repetitions each, pushing till failure. 
+                        <span class="subhead1">EVERY REP COUNTS</span> </p></p>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-3 embed-responsive embed-responsive-16by9">
+                    <h3 class="subhead1">demonstration</h3>
+                    <iframe class="embed-responsive-item border border-dark rounded" src="https://youtube.com/embed/kIXcoivzGf8?start=350" allowfullscreen></iframe>
+                  </div>
+                </div>
+            </div>
+            <!-- Exercises End. No submuscles because isolating each sub muscle is not possible incase of quads -->
+            <script>
+              ScrollReveal().reveal('.contenthead', {delay: 1000}, {duration: 2000});
+              ScrollReveal().reveal('#contbuttons', {delay: 500}, {duration: 2000});
+              ScrollReveal().reveal('#INFO', {delay: 1000}, {duration: 2000});
+            </script>
+            
+            <div class="container commenthead text-center" id="foothead2">
+                <h2>How'd you like these exercises? Anything we can do better?</h2>
+            </div>
+          </div>
+          <script>
+            ScrollReveal().reveal('#content', {duration: 2000});
+            ScrollReveal().reveal('.exdiv', {delay: 100, duration: 2000});
+          </script>
+        <!-- Content Section ends-->
+
+        <!-- footer -->
+        <div class="container-fluid py-5 text-white" id="footer">
+            <div class="container  p-2">
+              <div class="row">
+                <div class="col-md-3 mb-4">
+                  <a class="text-decoration-none text-primary navbar-brand"
+                    href="index.htm">
+                      <img 
+                      src="../assets/Images/fficon.png" 
+                      width="80px"
+                      height="70px" 
+                      class="d-inline-block align-right border border-2 border-dark rounded">
+                    <h1 style="font-family: Montserrat-Bold" class="mt-2" id="foothead1">FIT FUSION</h1>
+                  </a>
+                  <p class="text-left-sm" style="font-size: 12px">Science over Bro-Science</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h3 style="font-family: Montserrat-Medium" id="foothead2">Quick Links</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="index.htm" class="text-white text-decoration-none" ><i class="fa fa-home" aria-hidden="true"> </i> Home</a></li>
+                    <li><a href="AboutUs.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-question" aria-hidden="true"></i> About</a></li>
+                    <li><a href="ContactUs.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+                    <li><a href="register.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-user-plus" aria-hidden="true"></i >  Sign up</a></li>
+                    <li><a href="login.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h3 style="font-family: Montserrat-Medium" id="foothead2">Connect with us</h3>
+                  <div class="our-team">
+                    <!-- <a href="#" class="btn btn-primary square btn-sm m-1"><i class="fab fa-facebook"></i></a>-->     
+                      <a href="https://www.facebook.com/MoXMogZ" target="_blank" ><img src="../assets/Images/fbook.svg" id="medialink" width="40" height="40"></a>                   
+                      <a href="https://www.instagram.com/moxmogz?igsh=emtxaWZ0dTVubDBv" target="_blank" ><img src="../assets/Images/insta.svg" id="medialink" width="40" height="40"></a>
+                      <a href="https://www.linkedin.com/in/vishwanath-singh-7bb593298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="../assets/Images/linkedin.svg" id="medialink"  width="40" height="40"></a>
+                      <a href="https://discord.gg/tw29QC2a" target="_blank "><img src="../assets/Images/discord.svg" id="medialink" width="40" height="40"></a>
+                      <a href="https://github.com/Himanshu1237" target="_blank" ><img src="../assets/Images/github.svg" id="medialink" width="40" height="40"></a>
+                      
+                    <!-- <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fa fa-discord" aria-hidden="true"></i> --> <!-- alternate icons (fontawesome cdn)-->
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h3 style="font-family: Montserrat-Medium" id="foothead2">Explore Training</h3>
+                  <ul class="list-unstyled">
+                    <li id="linkk"><a href="index.htm" class="text-white text-decoration-none" id="linkk">Hypertrophy</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Strength</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">General</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-4">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <p class="mb-0"> <i class="fa fa-copyright"></i> 2024 Fit Fusion | All rights reserved.</p>
+                  <p class="mb-0"><a href="#" class="text-decoration-none fw-bold text-primary">Terms of Service</a> | <a href=# class="text-decoration-none fw-bold text-primary">Privacy Policy</a></p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- the scroll reveal animation -->
+        <script>
+          ScrollReveal().reveal('#footer', {duration: 2000 });
+        </script>
+        <!-- footer -->
+        <button onclick="topFunction()" id="returnToTop" title="Go to top">
+          <i class="fa fa-arrow-up"></i>
+        </button>
+    </body>
+</html>
