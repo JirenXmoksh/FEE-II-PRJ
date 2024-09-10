@@ -155,6 +155,7 @@ body{
 ::placeholder{
     font-family: Montserrat-LightItalic;
 }
+
 .stylish-hr {
     border: none; /* Remove default border */
     height: 1px; /* Set the height of the line */

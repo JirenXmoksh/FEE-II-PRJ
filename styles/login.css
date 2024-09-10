@@ -29,6 +29,9 @@
 ::placeholder{
     font-family: Montserrat-LightItalic;
 }
+#userDrop ul{
+  background-color: #110f0e;
+}
 body{
     width: 100%;
     height: 100%;
