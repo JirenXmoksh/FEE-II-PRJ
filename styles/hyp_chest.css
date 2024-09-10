@@ -161,6 +161,10 @@ body{
     background: linear-gradient(to right, #007bff, #232323, #007bff); /* Gradient color */
     border-radius: 5px; /* Rounded edges */
 }
+#userDrop ul{
+  background-color: #110f0e;
+}
+
 #content{
     min-height: 100vh;
     width: 100%;
@@ -437,7 +441,4 @@ body{
     100% {
       background-position: 300% 50%;
     }
-  }
-  
-  
-  
+  }    
