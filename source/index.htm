@@ -70,55 +70,24 @@
           </li>
         </ul>
       </div>
-      <div class="d-flex">
-        <input type="text" class="form-control me-2 d-none d-lg-block" placeholder="Type something...">
-        <button type="button" class="btn btn-outline-primary border border-2 border-primary d-none d-lg-block"
-          style="font-family: Montserrat-Semibold; text-wrap: nowrap">
-          <i class="fa fa-search"></i>
-        </button>
-        <button type="button" class="btn btn-outline-primary border border-2 border-primary d-block d-lg-none"
-          style="font-family: Montserrat-Semibold; text-wrap: nowrap" data-bs-toggle="collapse"
-          data-bs-target="#searchCollapse">
-          <i class="fa fa-search"></i>
-        </button>
-      </div>
-      <div class="collapse" id="searchCollapse">
-        <div class="card card-body">
-          <form class="d-flex">
-            <input type="text" class="form-control me-2" placeholder="Type something...">
-            <button type="submit" class="btn btn-outline-primary border border-2 border-primary"
-              style="font-family: Montserrat-Semibold; text-wrap: nowrap">
-              <i class="fa fa-search"></i>
-            </button>
-          </form>
+     
+      <div class="d-flex align-items-center">
+        <div class="dropdown" id="userDrop">
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="../assets/Images/user.jpg" alt="User" width="36" height="36" class="rounded-circle me-2 border border-dark border-2">
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end border border-dark" aria-labelledby="userDropdown">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
         </div>
       </div>
 
 
     </div>
   </nav>
-  <script>
-    // Get the search toggle button and the search collapse element
-    const searchToggle = document.getElementById('searchToggle');
-    const searchCollapse = document.getElementById('searchCollapse');
 
-    // Add click event listener to the search toggle button
-    searchToggle.addEventListener('click', function () {
-      // Toggle the search collapse
-      const bootstrapCollapse = new bootstrap.Collapse(searchCollapse);
-      bootstrapCollapse.toggle();
-    });
-
-    // Add event listener to close the search form when clicking outside of it
-    document.addEventListener('click', function (event) {
-      // Check if the clicked element is outside the search form and search toggle button
-      if (!event.target.closest('#searchCollapse') && !event.target.closest('#searchToggle')) {
-        // If clicked outside, hide the search form
-        const bootstrapCollapse = new bootstrap.Collapse(searchCollapse);
-        bootstrapCollapse.hide();
-      }
-    });
-  </script>
   <!-- The scroll reveal animation -->
   <script>
     ScrollReveal().reveal('.navbar', { duration: 1000 });

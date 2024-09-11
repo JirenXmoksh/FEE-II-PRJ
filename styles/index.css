@@ -330,7 +330,9 @@
 ::placeholder{
     font-family: Montserrat-LightItalic;
 }
-
+#userDrop ul{
+  background-color: #110f0e;
+}
 #hero{
     height: 100vh;
     padding: 0px;

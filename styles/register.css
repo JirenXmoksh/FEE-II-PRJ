@@ -34,6 +34,9 @@ body{
     /* background-blend-mode: hard-light; */
     /* background-position: 0 0, 1em 1em, 0 0; */
 }
+#userDrop ul{
+  background-color: #110f0e;
+}
 .navbar ul li a{
     color: white;
     font-family: Montserrat-Medium;

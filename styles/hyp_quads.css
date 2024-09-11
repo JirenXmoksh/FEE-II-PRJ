@@ -21,6 +21,7 @@
 html, body{
     scroll-behavior: smooth;
 }
+
 @media(min-width: 1441px){
   #INFO{
     font-size: 90px;
@@ -138,7 +139,6 @@ html, body{
     width: 170px;
     height: 90px;
   }
-
 }
 
 body{
@@ -155,7 +155,6 @@ body{
 ::placeholder{
     font-family: Montserrat-LightItalic;
 }
-
 .stylish-hr {
     border: none; /* Remove default border */
     height: 1px; /* Set the height of the line */
@@ -165,7 +164,6 @@ body{
 #userDrop ul{
   background-color: #110f0e;
 }
-
 #content{
     min-height: 100vh;
     width: 100%;
@@ -175,7 +173,6 @@ body{
     padding: 0; /* Remove padding */
     padding-bottom: 50px;
     margin: 0; /* Remove margin */
-    
 }
 #contenthead{
     --sz: 25px;
@@ -339,23 +336,24 @@ body{
     border-left: 2px solid #232323;
     
 }
-  #footer{
+
+#footer{
     height: auto;
     font-family: Montserrat-Light;
     background-color: black;
-  }
+}
   
-  #foothead2{
+#foothead2{
     background: linear-gradient(to right, #007BFF, #ff0d00);
     -webkit-background-clip: text;
     background-clip: none;
     -webkit-text-fill-color: transparent;
-  }
-  #medialink:hover{
+}
+#medialink:hover{
     transition: 0.4s;
     transform: scale(0.965);
-  }
-  #returnToTop {
+}
+#returnToTop {
     position: fixed; /* Fixed/sticky position */
     bottom: 10px; /* Place the button 20px from the bottom */
     right: 20px; /* Place the button 30px from the right */
@@ -371,14 +369,14 @@ body{
     height: 55px;
     width: 55px;
     transition: 0.2s ease-in-out;
-  }
+}
   
-  #returnToTop:hover {
+#returnToTop:hover {
     transform: scale(0.996); /* Add a dark-grey background on hover */
     background-color: #2444fb;
     color: white;
     border: 2px solid #2444fb;
-  }
+}
   
   /* This is the code for text to fill in its outline (stroke) */
   
@@ -404,10 +402,12 @@ body{
     overflow: hidden;
     animation: fill-text 1.5s ease-in-out infinite alternate;
   } */
+
 .commenthead{
     font-family: Montserrat-Semibold;
 }
-  #fit-fusion{
+
+#fit-fusion{
     background: linear-gradient(
       to right,
       #007BFF,
@@ -420,8 +420,8 @@ body{
     background-clip: text;
     color: transparent;
     animation: gradient-wave 5s linear infinite;
-  }
-  #foothead1{
+}
+#foothead1{
     background: linear-gradient(
       to right,
       #007BFF,
@@ -434,12 +434,15 @@ body{
     background-clip: text;
     color: transparent;
     animation: gradient-wave 6s linear infinite;
-  }
-  @keyframes gradient-wave {
+}
+@keyframes gradient-wave {
     0% {
       background-position: 0% 50%;
     }
     100% {
       background-position: 300% 50%;
     }
-  }    
+}
+  
+  
+  
