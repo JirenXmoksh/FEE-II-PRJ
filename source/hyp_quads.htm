@@ -16,7 +16,6 @@
         <script src="../styles/js/bootstrap.bundle.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://unpkg.com/scrollreveal@4"></script>
-        <script src="../scripting/hyp_quads.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
         
     </head>
@@ -110,7 +109,7 @@
         <div class="container-fluid" id="content">
             <!-- The content head -->
             <div class="row d-flex justify-content-between" id="contenthead">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center" id="hero">
                     <p class="text-white m-2" style="letter-spacing: 2em; font-size: 1rem;">HYPERTROPHY</p>
                     <h1 class="text-white mb-2" style="font-size: 5vw; letter-spacing: 0.5em;">QUADS</h1>
                     <p class="text-white mb-4" style="letter-spacing: 1em; font-size: 1rem;">Quadriceps Femoris</p>
@@ -388,6 +387,9 @@
           ScrollReveal().reveal('#footer', {duration: 2000 });
         </script>
         <!-- footer -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="../scripting/hyp_quads.js"></script>
         <button onclick="topFunction()" id="returnToTop" title="Go to top">
           <i class="fa fa-arrow-up"></i>
         </button>

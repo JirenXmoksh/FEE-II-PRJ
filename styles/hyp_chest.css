@@ -1,3 +1,12 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+}
 @font-face{
     font-family: Montserrat-SemiBold;
     src: url(../assets/Fonts/Montserrat-SemiBold.ttf);
@@ -143,6 +152,7 @@ html, body{
 
 body{
   width: 100%;
+  overflow-x: hidden;
 }
 .navbar ul li a{
     color: white;
@@ -311,7 +321,26 @@ body{
 }
 /* The submuscle buttons */
 
-  
+/* #INFO{
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  background-color: #676767;
+  text-transform: uppercase;
+}
+   */
+
+#INFO{
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 5vh 0;
+    align-items: center;
+    justify-content: center;
+}
+#INFO h1{
+    text-transform: uppercase;
+}
 .subhead1{
     font-family: Montserrat-Semibold;
     background: linear-gradient(to right, #0523b7, #1886fc, #1886fc);
