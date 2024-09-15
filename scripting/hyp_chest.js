@@ -103,3 +103,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+
+var tl = gsap.timeline();
+tl.from("#hero h1", {
+  opacity: 0,
+  duration: 1,
+  y: -1000,
+  stagger: 0.15
+})
+tl.from("#hero p", {
+  opacity: 0,
+  duration: 1,
+  x: -1000,
+  stagger: -0.3
+})
