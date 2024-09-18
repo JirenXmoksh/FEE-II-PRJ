@@ -30,6 +30,9 @@ html, body{
 html, body{
     scroll-behavior: smooth;
 }
+body{
+  overflow-x: hidden;
+}
 @media(min-width: 1441px){
   #INFO{
     font-size: 90px;
@@ -330,17 +333,6 @@ body{
 }
    */
 
-#INFO{
-    width: 100%;
-    height: 100%;
-    color: white;
-    padding: 5vh 0;
-    align-items: center;
-    justify-content: center;
-}
-#INFO h1{
-    text-transform: uppercase;
-}
 .subhead1{
     font-family: Montserrat-Semibold;
     background: linear-gradient(to right, #0523b7, #1886fc, #1886fc);

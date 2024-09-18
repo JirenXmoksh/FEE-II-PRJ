@@ -21,7 +21,9 @@
 html, body{
   scroll-behavior: smooth;
 }
-
+body{
+  overflow-x: hidden;
+}
 @media(min-width: 1441px){
 #INFO{
   font-size: 90px;
