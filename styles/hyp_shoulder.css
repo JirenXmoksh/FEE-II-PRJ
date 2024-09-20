@@ -1,0 +1,449 @@
+@font-face{
+  font-family: Montserrat-SemiBold;
+  src: url(../assets/Fonts/Montserrat-SemiBold.ttf);
+}
+@font-face{
+  font-family: Montserrat-Light;
+  src: url(../assets/Fonts/Montserrat-Light.ttf);
+}
+@font-face{
+  font-family: Montserrat-LightItalic;
+  src: url(../assets/Fonts/Montserrat-LightItalic.ttf);
+}
+@font-face{
+  font-family: Montserrat-Medium;
+  src: url(../assets/Fonts/Montserrat-Medium.ttf);
+}
+@font-face{
+  font-family: Montserrat-Bold;
+  src: url(../assets/Fonts/Montserrat-Bold.ttf);
+}
+html, body{
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
+}
+@media(min-width: 1441px){
+#INFO{
+  font-size: 90px;
+}
+iframe{
+  width: 500px;
+  height: 300px;
+}
+}
+@media(max-width: 1440px) and (min-width: 1056px){
+#INFO{
+  font-size: 85px;
+}
+iframe{
+  width: 480px;
+  height: 280px;
+}
+}
+@media (max-width: 1055px) and (min-width: 861px){
+#INFO{
+  font-size: 65px;
+}
+iframe{
+  width: 420px;
+  height: 280px;
+  margin-top: 20px;
+}
+}
+@media(max-width: 860px) and (min-width: 760px){
+#INFO{
+  font-size: 45px;
+}
+iframe{
+  width: 480px;
+  height: 280px;
+}
+}
+
+@media (max-width: 760px) and (min-width: 661px){
+#INFO{
+  font-size: 40px;
+}
+iframe{
+  width: 500px;
+  height: 280px;
+}
+}
+@media (max-width: 660px) and (min-width: 571px){
+#INFO{
+  font-size: 35px;
+}
+#text1{
+  font-size: 14px;
+}
+iframe{
+  width: 440px;
+  height: 220px;
+}
+}
+@media (max-width: 571px) and (min-width: 530px){
+#text1{
+  font-size: 12px;
+}
+iframe{
+  width: 300px;
+  height: 200px;
+}
+}
+@media (max-width: 530px) and (min-width: 495px){
+#text1{
+  font-size: 12px;
+}
+iframe{
+  width: 300px;
+  height: 200px;
+}
+}
+@media (max-width: 495px) and (min-width: 450px){
+#text1{
+  font-size: 12px;
+}
+iframe{
+  width: 250px;
+  height: 150px;
+}
+}
+
+
+@media (max-width: 450px) and (min-width: 400px){
+#text1{
+  font-size: 12px;
+}
+iframe{
+  width: 200px;
+  height: 100px;
+}
+}
+
+
+@media (max-width: 400px) and (min-width: 350px){
+#text1{
+  font-size: 12px;
+}
+iframe{
+  width: 200px;
+  height: 100px;
+}
+}
+
+@media (max-width: 350px){
+#text1{
+  font-size: 12px;
+}
+iframe{
+  width: 170px;
+  height: 90px;
+}
+}
+
+body{
+width: 100%;
+}
+.navbar ul li a{
+  color: white;
+  font-family: Montserrat-Medium;
+}
+.navbar ul li a:hover{
+  color: rgb(81, 81, 253);
+  transition: 0.4s;
+}
+::placeholder{
+  font-family: Montserrat-LightItalic;
+}
+.stylish-hr {
+  border: none; /* Remove default border */
+  height: 1px; /* Set the height of the line */
+  background: linear-gradient(to right, #007bff, #232323, #007bff); /* Gradient color */
+  border-radius: 5px; /* Rounded edges */
+}
+#userDrop ul{
+background-color: #110f0e;
+}
+#content{
+  min-height: 100vh;
+  width: 100%;
+  font-family: Montserrat-Medium;
+  background-color: #110f0e;
+  border-bottom: 1px solid white;
+  padding: 0; /* Remove padding */
+  padding-bottom: 50px;
+  margin: 0; /* Remove margin */
+}
+#contenthead{
+  --sz: 25px;
+  --c0: #000;
+  --c1: #0a1381;
+  --ts: 50% / calc(var(--sz) * 8) calc(var(--sz) * 16);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  --dot: var(--c1) 0 calc(var(--sz) * 0.78),
+    #fff0 calc(calc(var(--sz) * 0.78) + 1px) 100%;
+  --dot2: radial-gradient(circle at 90% 0%, var(--dot)) var(--ts),
+    radial-gradient(circle at 65% 0%, var(--dot)) var(--ts),
+    radial-gradient(circle at 40% 0%, var(--dot)) var(--ts),
+    radial-gradient(circle at 15% 0%, var(--dot)) var(--ts);
+  --cg1: conic-gradient(from -90deg at 5% 51%, var(--c0) 0 90deg, #fff0 0 100%)
+    var(--ts);
+  --cg2: conic-gradient(from -90deg at 25% 50%, var(--c1) 0 90deg, #fff0 0 100%)
+    var(--ts);
+  --cg3: conic-gradient(
+      from -90deg at 30% 38.5%,
+      var(--c0) 0 90deg,
+      #fff0 0 100%
+    )
+    var(--ts);
+  --cg4: conic-gradient(
+      from -90deg at 50% 37.5%,
+      var(--c1) 0 90deg,
+      #fff0 0 100%
+    )
+    var(--ts);
+  --cg5: conic-gradient(from -90deg at 55% 26%, var(--c0) 0 90deg, #fff0 0 100%)
+    var(--ts);
+  --cg6: conic-gradient(from -90deg at 75% 25%, var(--c1) 0 90deg, #fff0 0 100%)
+    var(--ts);
+  --cg7: conic-gradient(
+      from -90deg at 80% 13.5%,
+      var(--c0) 0 90deg,
+      #fff0 0 100%
+    )
+    var(--ts);
+  --cg8: conic-gradient(
+      from -90deg at 100% 12.5%,
+      var(--c1) 0 90deg,
+      #fff0 0 100%
+    )
+    var(--ts);
+
+  background: var(--dot2), var(--dot2),
+    radial-gradient(circle at 90% 100%, var(--dot)) var(--ts),
+    radial-gradient(circle at 65% 100%, var(--dot)) var(--ts),
+    radial-gradient(circle at 40% 100%, var(--dot)) var(--ts),
+    radial-gradient(circle at 15% 100%, var(--dot)) var(--ts),
+    radial-gradient(circle at 90% 12.5%, var(--dot)) var(--ts),
+    radial-gradient(circle at 65% 25%, var(--dot)) var(--ts),
+    radial-gradient(circle at 40% 37.5%, var(--dot)) var(--ts),
+    radial-gradient(circle at 15% 50%, var(--dot)) var(--ts), var(--cg1),
+    var(--cg1), var(--cg2), var(--cg2), var(--cg3), var(--cg3), var(--cg4),
+    var(--cg4), var(--cg5), var(--cg5), var(--cg6), var(--cg6), var(--cg7),
+    var(--cg7), var(--cg8), var(--cg8),
+    linear-gradient(-45deg, #fff0 0 32.25%, #0002 50%, #000 77.5%) var(--ts),
+    linear-gradient(-45deg, #fff0 0 32.25%, #000 60%) var(--ts),
+    repeating-linear-gradient(90deg, var(--c0) 0 5%, var(--c1) 0 25%) var(--ts);
+
+      box-shadow: 0 2px 15px 1px #fff;
+  margin-top: 64px;
+  width: 100%;
+  padding: 10px;
+} 
+
+/* The submuscle buttons */
+#btn {
+  all: unset;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: rgba(255, 255, 255) solid 0.15em;
+  border-radius: 0.25em;
+  color: rgba(255, 255, 255);
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+}
+
+#btn p {
+  z-index: 1;
+}
+#btn:hover {
+  color: #fff;
+  border: rgba(255, 255, 255, 1) solid 0.15em;
+}
+#btn:active {
+  border-color: #000;
+}
+
+#btn::after, #btn::before {
+  content: "";
+  position: absolute;
+  width: 9em;
+  aspect-ratio: 1;
+  background: #2a38f1;
+  opacity: 60%;
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
+}
+
+#btn::before {
+  left: 0;
+  transform: translateX(-8em);
+}
+
+#btn::after {
+  right: 0;
+  transform: translateX(8em);
+}
+
+#btn:hover:before {
+  transform: translateX(-1em);
+}
+
+#btn:hover:after {
+  transform: translateX(1em);
+}
+
+#btn:active:before,
+#btn:active:after {
+  background: #000;
+}
+/* The submuscle buttons */
+
+
+.subhead1{
+  font-family: Montserrat-Semibold;
+  background: linear-gradient(to right, #0523b7, #1886fc, #1886fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px 25px #007bff;
+  text-transform: uppercase;
+}
+.subhead2{
+  font-family: Montserrat-Semibold;
+  background: linear-gradient(to right, #0523b7, #1886fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px 25px #fff;
+  text-transform: uppercase;
+}
+#text1{
+  color: white;
+  text-shadow: 0 0 3px white;
+}
+.justifythis{
+  text-align: justify;
+}
+.exdiv{
+  border-left: 2px solid #232323;
+  
+}
+
+#footer{
+  height: auto;
+  font-family: Montserrat-Light;
+  background-color: black;
+}
+
+#foothead2{
+  background: linear-gradient(to right, #007BFF, #ff0d00);
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-fill-color: transparent;
+}
+#medialink:hover{
+  transition: 0.4s;
+  transform: scale(0.965);
+}
+#returnToTop {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 10px; /* Place the button 20px from the bottom */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: 2px solid #2444fb; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(0, 0, 0, 0.6); /* Green background color */
+  color: #2444fb; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 60%; /* Rounded corners */
+  font-size: 14px; /* Increase font size */
+  height: 55px;
+  width: 55px;
+  transition: 0.2s ease-in-out;
+}
+
+#returnToTop:hover {
+  transform: scale(0.996); /* Add a dark-grey background on hover */
+  background-color: #2444fb;
+  color: white;
+  border: 2px solid #2444fb;
+}
+
+/* This is the code for text to fill in its outline (stroke) */
+
+/* #fit-fusion {
+  font-family: 'Montserrat-Light', sans-serif;
+  font-weight: bold;
+  position: relative;
+  color: transparent;
+  -webkit-text-stroke: 0px black;
+} */
+/* #fit-fusion::before {
+  content: 'FIT FUSION';
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #007BFF, #ff0d00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  overflow: hidden;
+  animation: fill-text 1.5s ease-in-out infinite alternate;
+} */
+
+.commenthead{
+  font-family: Montserrat-Semibold;
+}
+
+#fit-fusion{
+  background: linear-gradient(
+    to right,
+    #007BFF,
+    #ff0d00,
+    #007BFF,
+    #ff0d00
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-wave 5s linear infinite;
+}
+#foothead1{
+  background: linear-gradient(
+    to right,
+    #007BFF,
+    #ff0d00,
+    #007BFF,
+    #ff0d00
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-wave 6s linear infinite;
+}
+@keyframes gradient-wave {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+
