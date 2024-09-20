@@ -93,12 +93,12 @@ document.addEventListener('DOMContentLoaded', () => {
  .on('enter', () => {
   anime({
     targets: spans,
-    duration: 4000, // Increase total duration (from 4000 to 8000 milliseconds)
+    duration: 2500, // Increase total duration (from 4000 to 8000 milliseconds)
     easing: 'easeInOutQuad',
     delay: (el, i) => i * 200, // Increase staggered delay (from 100 to 200 milliseconds)
     update: function(anim) {
         spans.forEach((span, index) => {
-            if (anim.progress < 60 || index > anim.progress / 100 * spans.length) {
+            if (anim.progress < 40 || index > anim.progress / 100 * spans.length) {
                 span.textContent = getRandomChar();
             } else {
                 span.textContent = span.dataset.originalChar;

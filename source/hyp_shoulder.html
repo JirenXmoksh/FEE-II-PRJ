@@ -74,9 +74,7 @@
                       </ul>
                     </li>
                     <li class="nav-item">
-
                         <a href="AboutUs.html" target="_blank" class="nav-link">About</a>
-
                     </li>
                     <li class="nav-item">
                         <a href="ContactUs.html" class="nav-link">Contact</a>
@@ -89,10 +87,18 @@
                     </li>
                   </ul>
             </div>
-            <form class="d-flex">
-              <input type="text" class="form-control me-2" placeholder="Type something...">
-              <button type="submit" class="btn btn-outline-primary border border-2 border-primary" style="font-family: Montserrat-Semibold; text-wrap: nowrap"> <i class="fa fa-search"></i></button>
-            </form>
+            <div class="d-flex align-items-center">
+              <div class="dropdown" id="userDrop">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="../assets/Images/user.jpg" alt="User" width="36" height="36" class="rounded-circle me-2 border border-dark border-2">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end border border-dark" aria-labelledby="userDropdown">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </nav>
         <!-- The scroll reveal animation -->
@@ -101,29 +107,24 @@
         </script>
         
         <!-- Navbar -->
-
+        <div class="cursor"></div>
         <!-- Content Section -->
         <div class="container-fluid" id="content">
             <!-- The content head -->
             <div class="row d-flex justify-content-between" id="contenthead">
                 <div class="col-12 text-center" id="hero">
                     <p class="text-white m-2" style="letter-spacing: 2em; font-size: 1rem;">HYPERTROPHY</p>
-                    <h1 class="text-white mb-2" style="font-size: 5vw; letter-spacing: 0.5em;">SHOULDER</h1>
-                    <p class="text-white mb-4" style="letter-spacing: 1em; font-size: 1rem;"> musculus deltoideus</p>
+                    <h1 class="text-white mb-2" style="font-size: 5vw; letter-spacing: 0.5em;">SHOULDERS</h1>
+                    <p class="text-white mb-4" style="letter-spacing: 1em; font-size: 1rem;">MUSCULUS DELTOIDEUS</p>
                     <div class="row text-center justify-content-center align-items-center" id="contbuttons">
-                  
                       <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
                           <a href="#major" class="text-decoration-none">
                               <button class="btn btn-primary mx-4 my-2" id="btn">
                                   <p class="mb-0">xPlore Now</p>
                               </button>
                           </a>
-                          
-                         
                       </div>
-                     
                   </div>
-
                 </div>
             </div>
             
@@ -146,30 +147,6 @@
                     The trapezius is a large, triangular muscle located across the upper back and neck. It has three distinct parts: the upper, middle, and lower fibers. The upper fibers originate from the base of the skull and the cervical vertebrae, the middle fibers from the thoracic vertebrae, and the lower fibers from the lower thoracic vertebrae. All parts converge to attach to the clavicle, acromion process, and spine of the scapula (shoulder blade). The trapezius plays a critical role in moving and stabilizing the shoulder blades, including actions like elevating (lifting) and retracting (pulling together) the scapula. It also assists in extending the neck and supporting the weight of the arms, making it essential for posture and a range of upper body movements.
                 </div>
               </div>
-              <div class="row my-2" id="text1"> 
-                <div class="col-lg-12 col-md-12 col-sm-12 my-1">
-                  <span class="subhead1" style="font-family: Montserrat-Bold">Rotator Cuff</span>
-                  <p>The rotator cuff is a group of four key muscles that stabilize and support the shoulder joint. These muscles work together to keep the head of the humerus (upper arm bone) securely positioned in the shallow socket of the shoulder blade. Below are the four Rotator Cuff Muscles</p>
-                  <ul>
-                      <li>
-                          <span class="subhead1" style="font-family: Montserrat-Bold">Supraspinatus:</span>
-                          Located above the spine of the scapula, this muscle assists in arm abduction, which involves lifting the arm away from the body.
-                      </li>
-                      <li>
-                          <span class="subhead1" style="font-family: Montserrat-Bold">Infraspinatus:</span>
-                          Found below the spine of the scapula, it plays a crucial role in external rotation of the shoulder, allowing the arm to rotate outward.
-                      </li>
-                      <li>
-                          <span class="subhead1" style="font-family: Montserrat-Bold">Teres Minor:</span>
-                          Positioned below the infraspinatus, this muscle also aids in external rotation of the shoulder.
-                      </li>
-                      <li>
-                          <span class="subhead1" style="font-family: Montserrat-Bold">Subscapularis:</span>
-                          Located on the front of the scapula, it is responsible for internal rotation of the shoulder, enabling the arm to rotate inward.
-                      </li>
-                  </ul>
-              </div>
-             </div>
              </div> 
             <!-- The content description ends -->
 
@@ -179,64 +156,94 @@
               Here are some of the best 
               <span class="subhead1"> Hypertrophy centered </span> 
               exercises for the 
-              <span class="subhead1">Shoulder</span>
+              <span class="subhead1">Deltoids</span>
             </h1>
-      
-          
-                
                 <!-- EX 1 -->
                 <div class="row mx-5 my-4 p-2" id="major">
                   <!-- EX 1 -->
                   <div class="row mx-2 my-5 p-3 justifythis exdiv" >
                     <div class="col-lg-6 col-sm-12 text-justify ">
-                      <h3 class="subhead1 mt-4 mx-3">Overhead Shoulder Press</h3>
+                      <h3 class="subhead1 mt-4 mx-3">Machine Shoulder Press</h3>
                         <p class="p-3 text-justify" id="text1">
-                          The Overhead Shoulder Press targets the deltoid muscles, focusing primarily on the anterior and lateral heads, and also engages the trapezius for stability. To perform this exercise, sit or stand with a dumbbell or barbell at shoulder height. Press the weight upward until your arms are fully extended overhead, then slowly lower it back to the starting position. This movement strengthens the entire shoulder region, enhancing both size and strength.
+                          To perform the machine shoulder press, start by adjusting the seat height so that the handles are level with your shoulders while you sit with your back against the pad and your feet flat on the ground. Grip the handles with your palms facing forward and your elbows slightly in front of your body. Begin with the weights at shoulder level, then inhale and press the handles upward until your arms are fully extended above your head, keeping a slight bend in your elbows at the top. Exhale as you slowly lower the weights back to shoulder level with controlled movements. Aim for 8-12 repetitions for 2-4 sets, resting 30-60 seconds between sets, while keeping your core engaged and your back pressed against the pad for stability.
                           <span class="subhead1">EVERY REP COUNTS</span>
                         </p>
                     </div>
-                  <div class="col-lg-6 col-sm-12 text-center my-3 py-4 embed-responsive embed-responsive-16by9">
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
                       <h3 class="subhead1">demonstration</h3>
-                      <iframe class="embed-responsive-item border border-dark rounded" src="https://youtube.com/embed/kIXcoivzGf8?start=121" allowfullscreen></iframe>
+                      <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/SgyUoY0IZ7A?start=349" allowfullscreen></iframe>
                     </div>
                   </div>
   
+                  
                   <!-- EX 2 -->
                   <div class="row mx-2 my-5 p-3 justifythis exdiv" >
                     <div class="col-lg-6 col-sm-12 text-justify ">
-                      <h3 class="subhead1 mt-4 mx-3">Lateral Raises</h3>
-                        <p class="p-3 text-justify" id="text1"> Lateral Raises primarily target the lateral head of the deltoid. Stand with a dumbbell in each hand, arms by your sides. Keeping your elbows slightly bent, lift the weights out to the sides until they reach shoulder height, then slowly lower them back down. This exercise isolates the outer shoulder, contributing to increased width and definition.
-                           <span class="subhead1">EVERY REP COUNTS</span> </p>
-                    </div>
-                  <div class="col-lg-6 col-sm-12 text-center my-3 py-4 embed-responsive embed-responsive-16by9">
+                      <h3 class="subhead1 mt-4 mx-3">Overhead press</h3>
+                        <p class="p-3 text-justify" id="text1">
+                          To perform the standing barbell overhead press, begin by setting up a barbell on a rack at about chest height. Stand with your feet shoulder-width apart and grasp the barbell with an overhand grip, hands slightly wider than shoulder-width. Step back from the rack, hold the barbell at shoulder level with your elbows slightly in front of the bar, and engage your core. Inhale and press the barbell upwards in a straight line until your arms are fully extended overhead, avoiding locking your elbows. Exhale as you lower the barbell back to shoulder level in a controlled manner. Focus on maintaining a straight posture throughout the movement, and aim for 8-12 repetitions for 2-4 sets, resting 60-90 seconds between sets.
+                          <span class="subhead1">EVERY REP COUNTS</span> </p></p>
+                        </div>
+                    <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
                       <h3 class="subhead1">demonstration</h3>
-                      <iframe class="embed-responsive-item border border-dark rounded" src="https://youtube.com/embed/kIXcoivzGf8?start=307" allowfullscreen></iframe>
+                      <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/SgyUoY0IZ7A?start=230" allowfullscreen></iframe>
                     </div>
                   </div>
   
                   <!-- EX 3 -->
                   <div class="row mx-2 my-5 p-3 justifythis exdiv" >
                     <div class="col-lg-6 col-sm-12 text-justify ">
-                      <h3 class="subhead1 mt-4 mx-3">Front Raises</h3>
-                        <p class="p-3 text-justify" id="text1">Front Raises focus on the anterior head of the deltoid. Stand with a dumbbell in each hand, arms straight in front of you. Lift the weights upward to shoulder height while keeping your arms straight, then slowly lower them back to the starting position. This exercise targets the front part of the shoulders, enhancing overall shoulder strength and appearance.
+                      <h3 class="subhead1 mt-4 mx-3">Cable Lateral Raises</h3>
+                        <p class="p-3 text-justify" id="text1"> 
+                          To perform cable lateral raises, adjust the pulley on a cable machine to the lowest setting and stand beside the machine with the side you're raising away from the pulley. Grasp the handle with the opposite hand (the one farthest from the machine), keeping your feet shoulder-width apart and a slight bend in your knees. Starting with your arm at your side, lift the cable handle out to the side in a smooth, controlled motion until your arm is parallel to the floor, ensuring a slight bend in your elbow throughout the movement. Exhale as you raise the handle and inhale as you lower it back to the starting position. Focus on using your shoulder muscles rather than your back or momentum to lift the weight, and aim for 8-12 repetitions for 2-4 sets on each side, resting 30-60 seconds between sets.
+                           <span class="subhead1">EVERY REP COUNTS</span> </p>
+                    </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                      <h3 class="subhead1">demonstration</h3>
+                      <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/SgyUoY0IZ7A?start=477" allowfullscreen></iframe>
+                    </div>
+                  </div>
+
+                  <!-- EX 4-->
+                  <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                    <div class="col-lg-6 col-sm-12 text-justify ">
+                      <h3 class="subhead1 mt-4 mx-3">Behind-the-back cuffed Cable Lateral Raises</h3>
+                        <p class="p-3 text-justify" id="text1"> 
+                          To perform behind-the-back cuffed lateral raises, start by attaching ankle cuffs to both wrists and adjusting the weight to an appropriate level. Stand with your feet shoulder-width apart and hold onto a stable surface for balance if needed. Position your arms behind your back, allowing the cuffs to hang down towards the ground with your palms facing inward. Keeping a slight bend in your elbows, lift your arms outward and upward to the sides in a controlled manner until they are parallel to the floor, focusing on using your shoulder muscles rather than momentum. Exhale as you raise your arms and inhale as you lower them back down to the starting position. Aim for 10-15 repetitions for 2-4 sets, resting for 30-60 seconds between sets, and ensure your movements are slow and deliberate to maximize muscle engagement.
+                           <span class="subhead1">EVERY REP COUNTS</span> </p>
+                    </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                      <h3 class="subhead1">demonstration</h3>
+                      <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/SgyUoY0IZ7A?start=546" allowfullscreen></iframe>
+                    </div>
+                  </div>
+
+                  <!-- EX 5 -->
+                  <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                    <div class="col-lg-6 col-sm-12 text-justify ">
+                      <h3 class="subhead1 mt-4 mx-3">Reverse Pec Deck</h3>
+                        <p class="p-3 text-justify" id="text1">
+                          To perform reverse pec deck flies, sit on the reverse pec deck machine while adjusting the seat height so that your chest is against the pad and your arms are positioned in front of you with the handles at shoulder level. Grasp the handles with your palms facing each other and elbows slightly bent. Engage your core and, while exhaling, pull the handles out and back in a wide arc, squeezing your shoulder blades together as your arms move backward until they are nearly parallel to the floor. Inhale as you slowly return to the starting position, maintaining control throughout the movement. Aim for 10-15 repetitions for 2-4 sets, allowing for 30-60 seconds of rest between sets, and focus on maintaining proper form to effectively target the rear deltoids and upper back muscles.
+                          Check out the video demonstration and an even better variation of this exercise.
                           <span class="subhead1">EVERY REP COUNTS</span> </p></p>
                     </div>
                     <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
                       <h3 class="subhead1">demonstration</h3>
-                      <iframe class="embed-responsive-item border border-dark rounded" src="https://youtube.com/embed/kIXcoivzGf8?start=574" allowfullscreen></iframe>
+                      <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/SgyUoY0IZ7A?start=627" allowfullscreen></iframe>
                     </div>
                   </div>
-  
-                  <!-- EX 4 -->
+
+                  <!-- EX 6 -->
                   <div class="row mx-2 my-5 p-3 justifythis exdiv" >
                     <div class="col-lg-6 col-sm-12 text-justify ">
-                      <h3 class="subhead1 mt-4 mx-3">Rear Delt Flyes</h3>
-                        <p class="p-3 text-justify" id="text1">Rear Delt Flyes are designed to target the posterior head of the deltoid and engage the rotator cuff muscles for stabilization. Bend at the waist with a dumbbell in each hand, palms facing each other. With a slight bend in your elbows, lift the weights out to the sides until your arms are parallel to the ground, then slowly lower them back down. This movement isolates the rear deltoids and supports strength and definition in the back of the shoulders. 
+                      <h3 class="subhead1 mt-4 mx-3">Reverse cable crossover</h3>
+                        <p class="p-3 text-justify" id="text1">
+                          To perform reverse cable crossovers, set the pulleys on a cable machine to the highest position and stand in the center, facing away from the stack. Grasp the handles with your palms down and step forward to create tension, keeping your feet shoulder-width apart. With a slight bend in your knees and your core engaged, position your arms at shoulder height or lower, slightly bent at the elbows. As you exhale, pull the handles outward and backward in a wide arc, squeezing your shoulder blades together; the handles should stay parallel to the ground. Pause briefly at the peak for maximum contraction, then inhale and slowly return to the starting position, controlling the movement. Aim for 10-15 repetitions for 2-4 sets, resting 30-60 seconds between sets, while maintaining good posture and focusing on muscle engagement rather than lifting heavy. This exercise effectively targets the rear deltoids and upper back, enhancing shoulder stability and muscular development. 
                           <span class="subhead1">EVERY REP COUNTS</span> </p></p>
                     </div>
-                    <div class="col-lg-6 col-sm-12 text-center my-3 py-3 embed-responsive embed-responsive-16by9">
+                    <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
                       <h3 class="subhead1">demonstration</h3>
-                      <iframe class="embed-responsive-item border border-dark rounded" src="https://youtube.com/embed/kIXcoivzGf8?start=276" allowfullscreen></iframe>
+                      <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/SgyUoY0IZ7A?start=719" allowfullscreen></iframe>
                     </div>
                   </div>
   
