@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>FF / Hypertrophy / Biceps</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../styles/hyp_biceps.css">
+        <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
+        <link rel="icon" type="image/x-icon" href="../assets/Images/fficon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="../styles/fosm/css/font-awesome.min.css">
+
+        <script src="../styles/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        
+        <style>
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black">
+          <div class="container">
+            <a 
+            class="navbar-brand mb-0 h1" 
+            href="index.htm">
+              <img 
+              src="../assets/Images/fficon.png" 
+              width="40px"
+              height="40px" 
+              class="d-inline-block align-right border border-2 border-dark rounded ">
+              <strong class="mx-3" style="font-family: Montserrat-Bold" id="fit-fusion">FIT FUSION</strong>
+            </a>
+            <!-- collapse toggle button -->
+            <button 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            class="navbar-toggler"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle Navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div 
+            class="collapse navbar-collapse" 
+            id="navbarNav">
+                <ul class="navbar-nav mx-5">
+                    <li class="nav-item active">
+                        <a href="index.htm" class="nav-link">Home </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a 
+                        href="#" 
+                        class="nav-link dropdown-toggle" 
+                        id="navDrop" 
+                        role="button" 
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Training
+                      </a>
+                      <ul class="dropdown-menu border border-dark"
+                      aria-labelledby="navDrop">
+                      <li><a href="#" class="dropdown-item text text-dark">Hypertrophy</a></li>
+                      <li><a href="#" class="dropdown-item text text-dark">Strength</a></li>
+                      <li><a href="#" class="dropdown-item text text-dark">General</a></li>
+                      <li><a href="#" class="dropdown-item text text-dark">Others</a></li>
+
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="AboutUs.html" target="_blank" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ContactUs.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="register.html" target="_blank" class="nav-link">Sign up </a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="login.html"  target="_blank" class="nav-link">Login</a>
+                    </li>
+                  </ul>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="dropdown" id="userDrop">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="../assets/Images/user.jpg" alt="User" width="36" height="36" class="rounded-circle me-2 border border-dark border-2">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end border border-dark" aria-labelledby="userDropdown">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- The scroll reveal animation -->
+        <script>
+          ScrollReveal().reveal('.navbar', {duration: 1000 });
+        </script>
+        
+        <!-- Navbar -->
+        <div class="cursor"></div>
+        <!-- Content Section -->
+        <div class="container-fluid" id="content">
+            <!-- The content head -->
+            <div class="row d-flex justify-content-between" id="contenthead">
+                <div class="col-12 text-center" id="hero">
+                    <p class="text-white m-2" style="letter-spacing: 2em; font-size: 1rem;">HYPERTROPHY</p>
+                    <h1 class="text-white mb-2" style="font-size: 5vw; letter-spacing: 0.5em;">BICEPS</h1>
+                    <p class="text-white mb-4" style="letter-spacing: 1em; font-size: 1rem;">Biceps brachii</p>
+                    <div class="row text-center justify-content-center align-items-center" id="contbuttons">
+                      <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                          <a href="#major" class="text-decoration-none">
+                              <button class="btn btn-primary mx-4 my-2" id="btn">
+                                  <p class="mb-0">xPlore Now</p>
+                              </button>
+                          </a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            
+            <br>
+            <!-- The content description starts -->
+            <div class="col-12 p-5 mt-2 justifythis" id="contdesc">
+              <h1 class="col-12 subhead1">Aesthetic and Physiological Importance of the Biceps Muscles</h1>
+              <div class="row my-2" id="text1">
+                <div class="col-12">
+                  The biceps muscles are highly valued for both their aesthetic appeal and functional importance. From a visual standpoint, well-defined biceps add shape and volume to the upper arms, contributing to a muscular and toned appearance. Functionally, the biceps are essential for performing key upper-body movements, including elbow flexion (bending the arm) and forearm supination (rotating the palm upwards). These muscles are critical for lifting, pulling, and gripping objects, whether in daily tasks or during exercise. Strong biceps also help support the elbow joint, enhancing stability and reducing the risk of injury, making them vital for both strength and mobility.
+                </div>
+              </div>
+              <div class="row my-2" id="text1">
+                <div class="col-lg-6 col-md-6 col-sm-12 my-1">
+                    <span class="subhead1" style="font-family: Montserrat-Bold"> Long head </span> 
+                    The long head of the biceps brachii is one of two heads of the biceps muscle, located on the upper arm. It originates from the supraglenoid tubercle of the scapula (shoulder blade), running through the bicipital groove of the humerus (upper arm bone), and inserts into the radial tuberosity of the radius (forearm bone). The long head is primarily responsible for elbow flexion (bending the arm) and forearm supination (rotating the palm upward). It also assists with shoulder stabilization and contributes to shoulder flexion (raising the arm forward). The long head of the biceps plays a critical role in movements requiring pulling, lifting, and rotational activities, contributing both to arm strength and the overall appearance of the upper arm.
+                </div> 
+                <div class="col-lg-6 col-md-6 col-sm-12 my-1">
+                    <span class="subhead1" style="font-family: Montserrat-Bold"> Short head</span> 
+                    The short head of the biceps brachii is the second of the two heads of the biceps muscle, located on the inner side of the upper arm. It originates from the coracoid process of the scapula (shoulder blade) and joins with the long head to insert into the radial tuberosity of the radius (forearm bone). The short head is responsible for elbow flexion (bending the arm) and forearm supination (rotating the palm upward), similar to the long head. Additionally, it helps with shoulder stabilization and assists in adduction (bringing the arm closer to the body). The short head plays an essential role in pulling and lifting movements, contributing to arm strength, endurance, and overall functional mobility of the upper body.
+                </div>
+              </div>
+             </div> 
+            <!-- The content description ends -->
+
+            <hr class="stylish-hr mx-5 mt-0 mb-5">
+            
+            <h1 class="text text-light text-uppercase mb-5 mx-5" style="text-align: center" id="INFO">
+              Here are some of the best 
+              <span class="subhead1"> Hypertrophy centered </span> 
+              exercises for the 
+              <span class="subhead1">Biceps</span>
+            </h1>
+                <!-- EX 1 -->
+                <div class="row mx-5 my-4 p-2" id="major">
+                  <!-- EX 1 -->
+                  <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                    <div class="col-lg-6 col-sm-12 text-justify ">
+                      <h3 class="subhead1 mt-4 mx-3">Concentration Curls</h3>
+                        <p class="p-3 text-justify" id="text1">
+                          To perform this exercise, sit on the edge of a flat bench with your legs spread in a V-shape, placing a dumbbell between them. Grip the dumbbell in one hand, resting your elbow on the inside of your thigh for stability, while your opposite hand rests on your other thigh for support. With your palm facing forward, tighten your core and maintain an upright chest. Curl the dumbbell toward your chest, keeping your wrist in a neutral position throughout the movement. At the top of the curl, squeeze your bicep before slowly lowering the dumbbell back to the starting position. Complete 8-12 repetitions, then switch arms.
+                          <span class="subhead1">EVERY REP COUNTS</span>
+                        </p>
+                    </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                      <h3 class="subhead1">demonstration</h3>
+                      <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/SgyUoY0IZ7A?start=349" allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                  
+                  <!-- EX 2 -->
+                  <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                    <div class="col-lg-6 col-sm-12 text-justify ">
+                      <h3 class="subhead1 mt-4 mx-3">Bicep Curls</h3>
+                        <p class="p-3 text-justify" id="text1">
+                          To perform bicep curls, select an appropriate set of dumbbells and stand with your feet shoulder-width apart, arms by your sides, and palms facing forward. Brace your core, keep your chest lifted, and maintain a slight bend in your knees. Curl the dumbbells upward by bending at the elbows, ensuring that only your forearms move while keeping your upper arms stationary. Continue lifting until the dumbbells reach shoulder level. Squeeze your biceps at the top of the movement, then slowly lower the weights back to the starting position. Repeat for 8-12 reps, focusing on controlled movements throughout each set.
+                          <span class="subhead1">EVERY REP COUNTS</span> </p></p>
+                        </div>
+                    <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                      <h3 class="subhead1">demonstration</h3>
+                      <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/SgyUoY0IZ7A?start=230" allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                  <!-- EX 3 -->
+                  <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                    <div class="col-lg-6 col-sm-12 text-justify ">
+                      <h3 class="subhead1 mt-4 mx-3">Preacher Curl</h3>
+                        <p class="p-3 text-justify" id="text1"> 
+                          Adjust the preacher curl machine so that the pad sits just below your chest when you're seated. Ensure the EZ bar is loaded with a suitable weight for your rep range and placed in the rack. Sit on the machine, facing it, and press your torso against the pad. Reach forward to unrack the EZ bar and grip it shoulder-width apart with your palms facing up. Rest your upper arms on the front of the pad, keeping your feet flat on the floor. Curl the EZ bar by bending your elbows, lifting it toward your shoulders. Pause at the top and squeeze your biceps, ensuring only your forearms move throughout the exercise. Lower the bar back to the starting position with your arms fully extended. Repeat for 8-12 reps over three sets.
+                           <span class="subhead1">EVERY REP COUNTS</span> </p>
+                    </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                      <h3 class="subhead1">demonstration</h3>
+                      <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/SgyUoY0IZ7A?start=477" allowfullscreen></iframe>
+                    </div>
+                  </div>
+
+                  <!-- EX 4-->
+                  <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                    <div class="col-lg-6 col-sm-12 text-justify ">
+                      <h3 class="subhead1 mt-4 mx-3">Hammer Curls</h3>
+                        <p class="p-3 text-justify" id="text1"> 
+                          Select an appropriate set of dumbbells and stand with your arms at your sides, holding them in a neutral grip with palms facing your thighs. Brace your core, keep your chest up, and pull your shoulders back. Curl the dumbbells upward by bending at the elbows, ensuring only your forearms move while keeping your elbows tucked into your sides. Continue curling until your thumbs are close to your shoulders, with palms still facing inward. Squeeze your biceps and pause for a second at the top, then slowly lower the dumbbells back to the starting position. Perform 8-12 repetitions for three sets.
+                           <span class="subhead1">EVERY REP COUNTS</span> </p>
+                    </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                      <h3 class="subhead1">demonstration</h3>
+                      <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/SgyUoY0IZ7A?start=546" allowfullscreen></iframe>
+                    </div>
+                  </div>
+
+                  <!-- EX 5 -->
+                  <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                    <div class="col-lg-6 col-sm-12 text-justify ">
+                      <h3 class="subhead1 mt-4 mx-3">High Cable Bicep Curl</h3>
+                        <p class="p-3 text-justify" id="text1">
+                          At the cable crossover station, attach stirrup handles to both pulleys and adjust them to the highest height on the towers. Stand centered between the cables and grab the handles with your arms extended, forming a ‘T’ shape with your body. Position your feet directly under your hips, or take a staggered stance if preferred, and engage your core for stability. Begin curling the cables by bending both forearms simultaneously, bringing your hands toward your ears while keeping your elbows back and aligned with your body. Squeeze your biceps at the top of the movement, then slowly return to the starting position. Perform 8-12 repetitions for three sets.
+                          <span class="subhead1">EVERY REP COUNTS</span> </p></p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                      <h3 class="subhead1">demonstration</h3>
+                      <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/SgyUoY0IZ7A?start=627" allowfullscreen></iframe>
+                    </div>
+                  </div>
+
+                  <!-- EX 6 -->
+                  <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                    <div class="col-lg-6 col-sm-12 text-justify ">
+                      <h3 class="subhead1 mt-4 mx-3">Chin Ups</h3>
+                        <p class="p-3 text-justify" id="text1">
+                          Begin by placing your hands on the bar just outside shoulder width, using a supinated grip. Start in a hanging position with your arms straight, bracing your core and squeezing your glutes. You can either point your feet slightly out in front of you or cross them behind you. Pull yourself upward by driving your elbows back and down until your chin is above the bar, keeping your legs still and your neck in a neutral position with your head facing forward. Pause for a moment at the top before lowering yourself back to the starting position. Repeat for the prescribed number of repetitions. 
+                          <span class="subhead1">EVERY REP COUNTS</span> </p></p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                      <h3 class="subhead1">demonstration</h3>
+                      <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/SgyUoY0IZ7A?start=719" allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                  
+
+            <script>
+              ScrollReveal().reveal('.contenthead', {delay: 1000}, {duration: 2000});
+              ScrollReveal().reveal('#contbuttons', {delay: 500}, {duration: 2000});
+              ScrollReveal().reveal('#INFO', {delay: 1000}, {duration: 2000});
+            </script>
+          </div>
+          <!-- The scroll reveal animation -->
+          <script>
+            ScrollReveal().reveal('#content', {duration: 2000});
+            ScrollReveal().reveal('.exdiv', {delay: 100, duration: 2000});
+          </script>
+        <!-- Content Section -->
+        
+
+        <!-- footer -->
+        <div class="container-fluid py-5 text-white" id="footer">
+            <div class="container  p-2">
+              <div class="row">
+                <div class="col-md-3 mb-4">
+                  <a class="text-decoration-none text-primary navbar-brand"
+                    href="index.htm">
+                      <img 
+                      src="../assets/Images/fficon.png" 
+                      width="80px"
+                      height="70px" 
+                      class="d-inline-block align-right border border-2 border-dark rounded">
+                    <h1 style="font-family: Montserrat-Bold" class="mt-2" id="foothead1">FIT FUSION</h1>
+                  </a>
+                  <p class="text-left-sm" style="font-size: 12px">Science over Bro-Science</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h3 style="font-family: Montserrat-Medium" id="foothead2">Quick Links</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="index.htm" class="text-white text-decoration-none" ><i class="fa fa-home" aria-hidden="true"> </i> Home</a></li>
+                    <li><a href="AboutUs.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-question" aria-hidden="true"></i> About</a></li>
+                    <li><a href="ContactUs.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+                    <li><a href="register.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-user-plus" aria-hidden="true"></i >  Sign up</a></li>
+                    <li><a href="login.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h3 style="font-family: Montserrat-Medium" id="foothead2">Connect with us</h3>
+                  <div class="our-team">
+                    <!-- <a href="#" class="btn btn-primary square btn-sm m-1"><i class="fab fa-facebook"></i></a>-->     
+                      <a href="https://www.facebook.com/MoXMogZ" target="_blank" ><img src="../assets/Images/fbook.svg" id="medialink" width="40" height="40"></a>                   
+                      <a href="https://www.instagram.com/moxmogz?igsh=emtxaWZ0dTVubDBv" target="_blank" ><img src="../assets/Images/insta.svg" id="medialink" width="40" height="40"></a>
+                      <a href="https://www.linkedin.com/in/vishwanath-singh-7bb593298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="../assets/Images/linkedin.svg" id="medialink"  width="40" height="40"></a>
+                      <a href="https://discord.gg/tw29QC2a" target="_blank "><img src="../assets/Images/discord.svg" id="medialink" width="40" height="40"></a>
+                      <a href="https://github.com/Himanshu1237" target="_blank" ><img src="../assets/Images/github.svg" id="medialink" width="40" height="40"></a>
+                      
+                    <!-- <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fa fa-discord" aria-hidden="true"></i> --> <!-- alternate icons (fontawesome cdn)-->
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h3 style="font-family: Montserrat-Medium" id="foothead2">Explore Training</h3>
+                  <ul class="list-unstyled">
+                    <li id="linkk"><a href="index.htm" class="text-white text-decoration-none" id="linkk">Hypertrophy</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Strength</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">General</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-4">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <p class="mb-0"> <i class="fa fa-copyright"></i> 2024 Fit Fusion | All rights reserved.</p>
+                  <p class="mb-0"><a href="#" class="text-decoration-none fw-bold text-primary">Terms of Service</a> | <a href=# class="text-decoration-none fw-bold text-primary">Privacy Policy</a></p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- the scroll reveal animation -->
+        <script>
+          ScrollReveal().reveal('#footer', {duration: 2000 });
+        </script>
+        <!-- footer -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="../scripting/hyp_biceps.js"></script>
+        <button onclick="topFunction()" id="returnToTop" title="Go to top">
+          <i class="fa fa-arrow-up"></i>
+        </button>
+    </body>
+</html>
