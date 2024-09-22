@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>FF / Hypertrophy / Calves</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../styles/hyp_quads.css">
+        <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
+        <link rel="icon" type="image/x-icon" href="../assets/Images/fficon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="../styles/fosm/css/font-awesome.min.css">
+
+        <script src="../styles/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        
+    </head>
+    <body>
+        <!-- Navbar starts-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black">
+          <div class="container">
+            <a 
+            class="navbar-brand mb-0 h1" 
+            href="index.htm">
+              <img 
+              src="../assets/Images/fficon.png" 
+              width="40px"
+              height="40px" 
+              class="d-inline-block align-right border border-2 border-dark rounded ">
+              <strong class="mx-3" style="font-family: Montserrat-Bold" id="fit-fusion">FIT FUSION</strong>
+            </a>
+            <!-- collapse toggle button -->
+            <button 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            class="navbar-toggler"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle Navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div 
+            class="collapse navbar-collapse" 
+            id="navbarNav">
+                <ul class="navbar-nav mx-5">
+                    <li class="nav-item active">
+                        <a href="index.htm" class="nav-link">Home </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a 
+                        href="#" 
+                        class="nav-link dropdown-toggle" 
+                        id="navDrop" 
+                        role="button" 
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Training
+                      </a>
+                      <ul class="dropdown-menu border border-dark"
+                      aria-labelledby="navDrop">
+                      <li><a href="#" class="dropdown-item text text-dark">Hypertrophy</a></li>
+                      <li><a href="#" class="dropdown-item text text-dark">Strength</a></li>
+                      <li><a href="#" class="dropdown-item text text-dark">General</a></li>
+                      <li><a href="#" class="dropdown-item text text-dark">Others</a></li>
+
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="AboutUs.html" target="_blank" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ContactUs.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="register.html" target="_blank" class="nav-link">Sign up </a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="login.html"  target="_blank" class="nav-link">Login</a>
+                    </li>
+                  </ul>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="dropdown" id="userDrop">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="../assets/Images/user.jpg" alt="User" width="36" height="36" class="rounded-circle me-2 border border-dark border-2">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end border border-dark" aria-labelledby="userDropdown">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- The scroll reveal animation -->
+        <script>
+          ScrollReveal().reveal('.navbar', {duration: 1000 });
+        </script>
+        <!-- Navbar ends-->
+
+        <!-- Content Section starts-->
+        <div class="container-fluid" id="content">
+            <!-- The content head -->
+            <div class="row d-flex justify-content-between" id="contenthead">
+                <div class="col-12 text-center" id="hero">
+                    <p class="text-white m-2" style="letter-spacing: 2em; font-size: 1rem;">HYPERTROPHY</p>
+                    <h1 class="text-white mb-2" style="font-size: 5vw; letter-spacing: 0.5em;">Calves</h1>
+                    <p class="text-white mb-4" style="letter-spacing: 1em; font-size: 1rem;">gastrocnemius</p>
+                    <div class="row text-center justify-content-center align-items-center" id="contbuttons">
+                      <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                          <a href="#major" class="text-decoration-none">
+                              <button class="btn btn-primary mx-4 mb-2" id="btn">
+                                  <p class="mb-0">xPlore Now</p>
+                              </button>
+                          </a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            
+            <br>
+            <!-- The content description starts -->
+            <div class="col-12 p-5 mt-2 justifythis" id="contdesc">
+              <h1 class="col-12 subhead1">Aesthetic and Physiological Importance of the Calves</h1>
+              <div class="row my-2" id="text1">
+                <div class="col-12">
+                  The calf muscles are a crucial muscle group located at the back of the lower leg, essential for both aesthetic appeal and functional movement. This group consists of two primary muscles: the gastrocnemius and the soleus. The gastrocnemius, the larger muscle with two heads, gives the calf its prominent shape and is involved in activities such as walking, running, and jumping. Beneath it lies the soleus, a broad muscle that plays a vital role in maintaining posture and providing stability, particularly during standing and walking. Together, these muscles facilitate plantar flexion of the foot and contribute to various athletic and everyday movements.
+                </div>
+              </div>
+              <div class="row my-2" id="text1">
+                <div class="col-lg-6 col-md-6 col-sm-12 my-1">
+                    <span class="subhead1" style="font-family: Montserrat-Bold">Gastrocnemius</span> 
+                    The gastrocnemius is a large, prominent muscle located at the back of the lower leg, forming the bulk of the calf. It consists of two heads—medial and lateral—that originate from the femur and converge to insert into the Achilles tendon. This muscle plays a critical role in movements such as walking, running, and jumping, as it is primarily responsible for plantar flexion of the foot, allowing for pushing off the ground. Additionally, the gastrocnemius aids in stabilizing the knee joint during activities that involve bending and extending the leg. Its significant size and shape contribute not only to the aesthetic appearance of the calf but also to overall lower limb functionality.
+                </div> 
+                <div class="col-lg-6 col-md-6 col-sm-12 my-1">
+                    <span class="subhead1" style="font-family: Montserrat-Bold">Soleus</span> 
+                    The soleus is a broad, flat muscle located beneath the gastrocnemius at the back of the lower leg. It originates from the upper portion of the fibula and the soleal line of the tibia, converging to insert into the Achilles tendon. This muscle plays a critical role in maintaining posture and stability, especially during activities like standing and walking. Unlike the gastrocnemius, which is more active during explosive movements, the soleus is primarily engaged during sustained activities, helping to stabilize the body during motion. Its importance in plantar flexion of the foot contributes significantly to overall lower limb functionality and endurance.
+                </div>
+              
+              
+              </div>
+            </div>
+            <!-- The content description ends -->
+
+            <hr class="stylish-hr mx-5 mt-0 mb-5">
+            
+            <h1 class="text text-light text-uppercase mb-5 mx-5" style="text-align: center" id="INFO">
+              Here are some of the best 
+              <span class="subhead1"> Hypertrophy centered </span> 
+              exercises for the 
+              <span class="subhead1">Calves</span>
+            </h1>
+      
+            <!-- Exercises start. No submuscles because isolating each sub muscle is not possible incase of quads -->
+            <div class="row mx-5 my-4 p-2" id="major">
+          
+                <!-- EX 1 -->
+                <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                  <div class="col-lg-6 col-sm-12 text-justify ">
+                    <h3 class="subhead1 mt-4 mx-3">Standing Calf Raises</h3>
+                      <p class="p-3 text-justify" id="text1">
+                        This exercise can be done using either a dedicated machine or a calf block. The number of reps you do for this exercise will vary depending on your current calf mass and workout routine. Test different ranges to see which works for the density of your calf muscles.
+Stand under the machine pads or bar with the balls of your feet on the calf block. Start with your heels low, approximately 2 to 4 inches below the block. This will offer the best stretch on your calves. Slowly raise yourself up on the balls of your feet as high as you’re able and contract your calf muscles as you reach the peak. Hold briefly and lower under control to repeat.
+                        <span class="subhead1">EVERY REP COUNTS</span>
+                      </p>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                    <h3 class="subhead1">demonstration</h3>
+                    <iframe class="embed-responsive-item border border-dark rounded" src="https://youtube.com/embed/kIXcoivzGf8?start=121" allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <!-- EX 2 -->
+                <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                  <div class="col-lg-6 col-sm-12 text-justify ">
+                    <h3 class="subhead1 mt-4 mx-3">Seated Calf Raise</h3>
+                      <p class="p-3 text-justify" id="text1">This is a calf exercise that is necessary to achieve complete development of the calf muscles. While this movement is similar to the standing calf raise, the seated calf raise will actually target the lower muscles of the calf (the soleus).
+
+                        Sit with the machine pads resting on your thighs. Again, drop your heel to 2-4 inches depending on how flexible you are. Raise again and squeeze the calf muscles once you reach the top. The rep range for this workout, as well as the standing calf raise, should between 10 and 20 depending on the needs of your body and what you can tolerate. 
+                         <span class="subhead1">EVERY REP COUNTS</span> </p>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                    <h3 class="subhead1">demonstration</h3>
+                    <iframe class="embed-responsive-item border border-dark rounded" src="https://youtube.com/embed/kIXcoivzGf8?start=307" allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <!-- EX 3 -->
+                <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                  <div class="col-lg-6 col-sm-12 text-justify ">
+                    <h3 class="subhead1 mt-4 mx-3">Leg Press Calf Raises</h3>
+                      <p class="p-3 text-justify" id="text1">This is a tried and true exercise that has been in use for years known also as the donkey raise. Because of the nature of the exercise it has the most potential for getting a deeper pull in the calf muscles. The workout can be intensified with added weights, so you can avoid having to do calf presses with someone sitting on your back.
+
+                        Sit on the leg press machine and hold the sled with only your toes and the balls of your feet. Do not move with your hips or knees and instead put all the movement into your ankles. This puts all the emphasis on your calf muscles and nowhere else in the leg.
+                        
+                        
+                        <span class="subhead1">EVERY REP COUNTS</span> </p></p>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                    <h3 class="subhead1">demonstration</h3>
+                    <iframe class="embed-responsive-item border border-dark rounded" src="https://youtube.com/embed/kIXcoivzGf8?start=574" allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <!-- EX 4 -->
+                <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                  <div class="col-lg-6 col-sm-12 text-justify ">
+                    <h3 class="subhead1 mt-4 mx-3">Box Jumps</h3>
+                      <p class="p-3 text-justify" id="text1">In many lifting exercises you need to have explosive strength in your legs. The box jump offers that, as it’s a functional exercise made to give your calf muscles far more power and “spring”. This exercise can train your muscles to react and contract much more quickly, and will deliver some serious tone to your calf muscles.
+
+                        Stand on the balls of your feet and you toes in front of a box, with the height appropriate to your limitations. Jump onto the box and land again on your toes and the balls of your feet. Jump back down to the floor and repeat for 8 to 10 reps. Do not use dumbbells or other held weights during this exercise as you may need your hands free in order to catch yourself if you trip.
+                        <span class="subhead1">EVERY REP COUNTS</span> </p></p>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-3 embed-responsive embed-responsive-16by9">
+                    <h3 class="subhead1">demonstration</h3>
+                    <iframe class="embed-responsive-item border border-dark rounded" src="https://youtube.com/embed/kIXcoivzGf8?start=276" allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <!-- EX 5 -->
+                <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                  <div class="col-lg-6 col-sm-12 text-justify ">
+                    <h3 class="subhead1 mt-4 mx-3">Jump Squat</h3>
+                      <p class="p-3 text-justify" id="text1">While this movement does also work the upper leg muscles it focuses a great deal of attention on the calf muscles as well and is an integral part of any whole body workout. Like the box jump, the jump squat can help add explosive power to your workout routine. This form of exercise helps to develop muscle quickly – increased mass equals a higher metabolism and a better calorie burn through your other workouts.
+
+                        To perform, simply place yourself in a position for a standard squat and lower your body into the squat, moving to the balls of your feet and toes as you do so. Once you’re at your lowest point, propel yourself up and explode upward into a jump. Land on the balls of your feet and immediately move into another squat. Add dumbbells to this exercise to increase the difficult, but avoid using a barbell. Dumbbells will provide a lower center of gravity and give you more central control of your balance.
+                        <span class="subhead1">EVERY REP COUNTS</span> </p></p>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-3 embed-responsive embed-responsive-16by9">
+                    <h3 class="subhead1">demonstration</h3>
+                    <iframe class="embed-responsive-item border border-dark rounded" src="https://youtube.com/embed/kIXcoivzGf8?start=350" allowfullscreen></iframe>
+                  </div>
+                </div>
+            </div>
+            <!-- Exercises End. No submuscles because isolating each sub muscle is not possible incase of quads -->
+            <script>
+              ScrollReveal().reveal('.contenthead', {delay: 1000}, {duration: 2000});
+              ScrollReveal().reveal('#contbuttons', {delay: 500}, {duration: 2000});
+              ScrollReveal().reveal('#INFO', {delay: 1000}, {duration: 2000});
+            </script>
+            
+            <div class="container commenthead text-center" id="foothead2">
+                <h2>How'd you like these exercises? Anything we can do better?</h2>
+            </div>
+          </div>
+          <script>
+            ScrollReveal().reveal('#content', {duration: 2000});
+            ScrollReveal().reveal('.exdiv', {delay: 100, duration: 2000});
+          </script>
+        <!-- Content Section ends-->
+
+        <!-- footer -->
+        <div class="container-fluid py-5 text-white" id="footer">
+            <div class="container  p-2">
+              <div class="row">
+                <div class="col-md-3 mb-4">
+                  <a class="text-decoration-none text-primary navbar-brand"
+                    href="index.htm">
+                      <img 
+                      src="../assets/Images/fficon.png" 
+                      width="80px"
+                      height="70px" 
+                      class="d-inline-block align-right border border-2 border-dark rounded">
+                    <h1 style="font-family: Montserrat-Bold" class="mt-2" id="foothead1">FIT FUSION</h1>
+                  </a>
+                  <p class="text-left-sm" style="font-size: 12px">Science over Bro-Science</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h3 style="font-family: Montserrat-Medium" id="foothead2">Quick Links</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="index.htm" class="text-white text-decoration-none" ><i class="fa fa-home" aria-hidden="true"> </i> Home</a></li>
+                    <li><a href="AboutUs.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-question" aria-hidden="true"></i> About</a></li>
+                    <li><a href="ContactUs.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+                    <li><a href="register.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-user-plus" aria-hidden="true"></i >  Sign up</a></li>
+                    <li><a href="login.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h3 style="font-family: Montserrat-Medium" id="foothead2">Connect with us</h3>
+                  <div class="our-team">
+                    <!-- <a href="#" class="btn btn-primary square btn-sm m-1"><i class="fab fa-facebook"></i></a>-->     
+                      <a href="https://www.facebook.com/MoXMogZ" target="_blank" ><img src="../assets/Images/fbook.svg" id="medialink" width="40" height="40"></a>                   
+                      <a href="https://www.instagram.com/moxmogz?igsh=emtxaWZ0dTVubDBv" target="_blank" ><img src="../assets/Images/insta.svg" id="medialink" width="40" height="40"></a>
+                      <a href="https://www.linkedin.com/in/vishwanath-singh-7bb593298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="../assets/Images/linkedin.svg" id="medialink"  width="40" height="40"></a>
+                      <a href="https://discord.gg/tw29QC2a" target="_blank "><img src="../assets/Images/discord.svg" id="medialink" width="40" height="40"></a>
+                      <a href="https://github.com/Himanshu1237" target="_blank" ><img src="../assets/Images/github.svg" id="medialink" width="40" height="40"></a>
+                      
+                    <!-- <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fa fa-discord" aria-hidden="true"></i> --> <!-- alternate icons (fontawesome cdn)-->
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h3 style="font-family: Montserrat-Medium" id="foothead2">Explore Training</h3>
+                  <ul class="list-unstyled">
+                    <li id="linkk"><a href="index.htm" class="text-white text-decoration-none" id="linkk">Hypertrophy</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Strength</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">General</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-4">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <p class="mb-0"> <i class="fa fa-copyright"></i> 2024 Fit Fusion | All rights reserved.</p>
+                  <p class="mb-0"><a href="#" class="text-decoration-none fw-bold text-primary">Terms of Service</a> | <a href=# class="text-decoration-none fw-bold text-primary">Privacy Policy</a></p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- the scroll reveal animation -->
+        <script>
+          ScrollReveal().reveal('#footer', {duration: 2000 });
+        </script>
+        <!-- footer -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="../scripting/hyp_quads.js"></script>
+        <button onclick="topFunction()" id="returnToTop" title="Go to top">
+          <i class="fa fa-arrow-up"></i>
+        </button>
+    </body>
+</html>

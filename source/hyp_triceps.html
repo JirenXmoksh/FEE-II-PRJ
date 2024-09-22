@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>FF / Hypertrophy / Triceps</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../styles/hyp_quads.css">
+        <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
+        <link rel="icon" type="image/x-icon" href="../assets/Images/fficon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="../styles/fosm/css/font-awesome.min.css">
+
+        <script src="../styles/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        
+    </head>
+    <body>
+        <!-- Navbar starts-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black">
+          <div class="container">
+            <a 
+            class="navbar-brand mb-0 h1" 
+            href="index.htm">
+              <img 
+              src="../assets/Images/fficon.png" 
+              width="40px"
+              height="40px" 
+              class="d-inline-block align-right border border-2 border-dark rounded ">
+              <strong class="mx-3" style="font-family: Montserrat-Bold" id="fit-fusion">FIT FUSION</strong>
+            </a>
+            <!-- collapse toggle button -->
+            <button 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            class="navbar-toggler"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle Navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div 
+            class="collapse navbar-collapse" 
+            id="navbarNav">
+                <ul class="navbar-nav mx-5">
+                    <li class="nav-item active">
+                        <a href="index.htm" class="nav-link">Home </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a 
+                        href="#" 
+                        class="nav-link dropdown-toggle" 
+                        id="navDrop" 
+                        role="button" 
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Training
+                      </a>
+                      <ul class="dropdown-menu border border-dark"
+                      aria-labelledby="navDrop">
+                      <li><a href="#" class="dropdown-item text text-dark">Hypertrophy</a></li>
+                      <li><a href="#" class="dropdown-item text text-dark">Strength</a></li>
+                      <li><a href="#" class="dropdown-item text text-dark">General</a></li>
+                      <li><a href="#" class="dropdown-item text text-dark">Others</a></li>
+
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="AboutUs.html" target="_blank" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ContactUs.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="register.html" target="_blank" class="nav-link">Sign up </a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="login.html"  target="_blank" class="nav-link">Login</a>
+                    </li>
+                  </ul>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="dropdown" id="userDrop">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="../assets/Images/user.jpg" alt="User" width="36" height="36" class="rounded-circle me-2 border border-dark border-2">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end border border-dark" aria-labelledby="userDropdown">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- The scroll reveal animation -->
+        <script>
+          ScrollReveal().reveal('.navbar', {duration: 1000 });
+        </script>
+        <!-- Navbar ends-->
+
+        <!-- Content Section starts-->
+        <div class="container-fluid" id="content">
+            <!-- The content head -->
+            <div class="row d-flex justify-content-between" id="contenthead">
+                <div class="col-12 text-center" id="hero">
+                    <p class="text-white m-2" style="letter-spacing: 2em; font-size: 1rem;">HYPERTROPHY</p>
+                    <h1 class="text-white mb-2" style="font-size: 5vw; letter-spacing: 0.5em;">TRICEPS</h1>
+                    <p class="text-white mb-4" style="letter-spacing: 1em; font-size: 1rem;">Triceps Brachii</p>
+                    <div class="row text-center justify-content-center align-items-center" id="contbuttons">
+                      <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                          <a href="#major" class="text-decoration-none">
+                              <button class="btn btn-primary mx-4 mb-2" id="btn">
+                                  <p class="mb-0">xPlore Now</p>
+                              </button>
+                          </a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            
+            <br>
+            <!-- The content description starts -->
+            <div class="col-12 p-5 mt-2 justifythis" id="contdesc">
+              <h1 class="col-12 subhead1">Aesthetic and Physiological Importance of the Triceps Muscles</h1>
+              <div class="row my-2" id="text1">
+                <div class="col-12">
+                  The triceps brachii is a prominent muscle located at the back of the upper arm and is essential for both aesthetic and functional movements. This muscle consists of three distinct heads: the long head, the lateral head, and the medial head. Together, these heads facilitate elbow extension and play a vital role in various pushing movements and overhead activities.
+                </div>
+              </div>
+              <div class="row my-2" id="text1">
+                <div class="col-lg-6 col-md-6 col-sm-12 my-1">
+                    <span class="subhead1" style="font-family: Montserrat-Bold">Long head</span> 
+                    The long head of the triceps brachii significantly enhances the muscular appearance of the upper arm, contributing to its overall definition and shape. This head plays a crucial role in elbow extension and shoulder stabilization, particularly during overhead movements. It also aids in various activities requiring pushing strength, such as bench pressing and overhead lifting, while providing support for shoulder joint stability during dynamic actions.
+                </div> 
+                <div class="col-lg-6 col-md-6 col-sm-12 my-1">
+                    <span class="subhead1" style="font-family: Montserrat-Bold">Medial head</span> 
+                    The medial head of the triceps brachii contributes to the overall muscular aesthetic of the upper arm while playing a critical role in elbow extension. This head is particularly engaged during activities that require controlled, steady movements, such as lifting and lowering objects. It provides stability to the elbow joint and assists in maintaining proper alignment during various pushing and pressing exercises, enhancing both functional strength and endurance.
+                </div>
+              </div>
+              <div class="row my-2" id="text1"> 
+                <div class="col-lg-6 col-md-6 col-sm-12 my-1">
+                    <span class="subhead1" style="font-family: Montserrat-Bold">Lateral head</span>
+                    The lateral head of the triceps brachii enhances the muscular contour of the upper arm, contributing to a defined and sculpted appearance. This head is primarily engaged during powerful pushing movements, playing a vital role in elbow extension and shoulder stabilization. It is particularly active in exercises like push-ups and tricep dips, supporting the overall strength and functionality of the upper body while helping to maintain balance and coordination during dynamic activities.
+                </div>
+               
+              </div>
+            </div>
+            <!-- The content description ends -->
+
+            <hr class="stylish-hr mx-5 mt-0 mb-5">
+            
+            <h1 class="text text-light text-uppercase mb-5 mx-5" style="text-align: center" id="INFO">
+              Here are some of the best 
+              <span class="subhead1"> Hypertrophy centered </span> 
+              exercises for the 
+              <span class="subhead1">Triceps</span>
+            </h1>
+      
+            <!-- Exercises start. No submuscles because isolating each sub muscle is not possible incase of quads -->
+            <div class="row mx-5 my-4 p-2" id="major">
+          
+                <!-- EX 1 -->
+                <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                  <div class="col-lg-6 col-sm-12 text-justify ">
+                    <h3 class="subhead1 mt-4 mx-3">Overhead Tricep Extension </h3>
+                      <p class="p-3 text-justify" id="text1">
+                        To perform the overhead tricep extension, select a suitable dumbbell or use a cable with a handle. Stand with your feet shoulder-width apart and hold the dumbbell with both hands, raising it overhead with your arms fully extended. Your palms should be facing upward, and your elbows should be close to your head. Brace your core and maintain a straight posture. Slowly lower the dumbbell behind your head by bending your elbows, ensuring that your upper arms remain stationary. Once your forearms reach a comfortable stretch, extend your arms back to the starting position, squeezing your triceps at the top of the movement. Aim for 3 sets of 10-15 repetitions, starting with a weight that allows you to maintain good form throughout. Focus on controlled movements to maximize muscle engagement and minimize injury risk.
+                        <span class="subhead1">EVERY REP COUNTS</span>
+                      </p>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                    <h3 class="subhead1">demonstration</h3>
+                    <iframe class="embed-responsive-item border border-dark rounded" src="https://youtube.com/embed/kIXcoivzGf8?start=121" allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <!-- EX 2 -->
+                <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                  <div class="col-lg-6 col-sm-12 text-justify ">
+                    <h3 class="subhead1 mt-4 mx-3">Tricep Dips </h3>
+                      <p class="p-3 text-justify" id="text1">To perform tricep dips, find a sturdy bench or dip station. Sit on the edge with your hands resting beside your hips, fingers facing forward and gripping the edge. Extend your legs in front of you with your heels on the ground or elevated on another surface. Brace your core and keep your chest lifted. Slowly lower your body by bending your elbows, keeping them close to your sides, until your upper arms are parallel to the ground. Pause briefly at the bottom, then push through your palms to lift your body back to the starting position. Aim for 3 sets of 8-12 repetitions, focusing on controlled movements to engage your triceps effectively and reduce the risk of injury.
+                         <span class="subhead1">EVERY REP COUNTS</span> </p>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                    <h3 class="subhead1">demonstration</h3>
+                    <iframe class="embed-responsive-item border border-dark rounded" src="https://youtube.com/embed/kIXcoivzGf8?start=307" allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <!-- EX 3 -->
+                <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                  <div class="col-lg-6 col-sm-12 text-justify ">
+                    <h3 class="subhead1 mt-4 mx-3"> Skull Crushers</h3>
+                      <p class="p-3 text-justify" id="text1">To perform skull crushers, lie on a flat bench and hold a dumbbell in each hand or use an EZ bar. Start with your arms extended straight up above your chest, palms facing each other. Keeping your elbows stationary, slowly lower the weights towards your forehead by bending your elbows. Make sure your upper arms remain perpendicular to the ground throughout the movement. Once the weights are close to your forehead, pause briefly before extending your arms back to the starting position, squeezing your triceps at the top. Aim for 3 sets of 10-15 repetitions, focusing on controlled movements to maximize muscle engagement and minimize the risk of injury. 
+                        <span class="subhead1">EVERY REP COUNTS</span> </p></p>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                    <h3 class="subhead1">demonstration</h3>
+                    <iframe class="embed-responsive-item border border-dark rounded" src="https://youtube.com/embed/kIXcoivzGf8?start=574" allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <!-- EX 4 -->
+                <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                  <div class="col-lg-6 col-sm-12 text-justify ">
+                    <h3 class="subhead1 mt-4 mx-3">Tricep Pushdown</h3>
+                      <p class="p-3 text-justify" id="text1">To perform tricep pushdowns, stand facing a cable machine with a straight or EZ bar attachment at the high pulley. Grip the bar with both hands, palms facing down, and take a step back to create tension in the cable. Start with your elbows bent at about 90 degrees, keeping them close to your sides. Brace your core and maintain a straight posture. Push the bar down until your arms are fully extended, squeezing your triceps at the bottom of the movement. Pause briefly before slowly returning to the starting position, ensuring that your elbows remain stationary throughout the exercise. Aim for 3 sets of 10-15 repetitions, focusing on controlled movements to effectively target your triceps while minimizing the risk of injury.
+                        <span class="subhead1">EVERY REP COUNTS</span> </p></p>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-3 embed-responsive embed-responsive-16by9">
+                    <h3 class="subhead1">demonstration</h3>
+                    <iframe class="embed-responsive-item border border-dark rounded" src="https://youtube.com/embed/kIXcoivzGf8?start=276" allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <!-- EX 5 -->
+                <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                  <div class="col-lg-6 col-sm-12 text-justify ">
+                    <h3 class="subhead1 mt-4 mx-3">Diamond Press-Ups </h3>
+                      <p class="p-3 text-justify" id="text1">To perform diamond push-ups, start by positioning your hands on the floor directly beneath your chest, forming a diamond shape with your thumbs and index fingers touching. Extend your legs behind you, balancing on your toes with your body in a straight line from head to heels. Brace your core and keep your elbows close to your body as you lower yourself down until your chest nearly touches the ground. Pause for a moment at the bottom, then push yourself back up to the starting position, squeezing your triceps at the top. Aim for 3 sets of 8-12 repetitions, focusing on maintaining good form throughout to effectively target your triceps and chest while minimizing the risk of injury.
+                        <span class="subhead1">EVERY REP COUNTS</span> </p></p>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-3 embed-responsive embed-responsive-16by9">
+                    <h3 class="subhead1">demonstration</h3>
+                    <iframe class="embed-responsive-item border border-dark rounded" src="https://youtube.com/embed/kIXcoivzGf8?start=350" allowfullscreen></iframe>
+                  </div>
+                </div>
+            </div>
+            <!-- Exercises End. No submuscles because isolating each sub muscle is not possible incase of quads -->
+            <script>
+              ScrollReveal().reveal('.contenthead', {delay: 1000}, {duration: 2000});
+              ScrollReveal().reveal('#contbuttons', {delay: 500}, {duration: 2000});
+              ScrollReveal().reveal('#INFO', {delay: 1000}, {duration: 2000});
+            </script>
+            
+            <div class="container commenthead text-center" id="foothead2">
+                <h2>How'd you like these exercises? Anything we can do better?</h2>
+            </div>
+          </div>
+          <script>
+            ScrollReveal().reveal('#content', {duration: 2000});
+            ScrollReveal().reveal('.exdiv', {delay: 100, duration: 2000});
+          </script>
+        <!-- Content Section ends-->
+
+        <!-- footer -->
+        <div class="container-fluid py-5 text-white" id="footer">
+            <div class="container  p-2">
+              <div class="row">
+                <div class="col-md-3 mb-4">
+                  <a class="text-decoration-none text-primary navbar-brand"
+                    href="index.htm">
+                      <img 
+                      src="../assets/Images/fficon.png" 
+                      width="80px"
+                      height="70px" 
+                      class="d-inline-block align-right border border-2 border-dark rounded">
+                    <h1 style="font-family: Montserrat-Bold" class="mt-2" id="foothead1">FIT FUSION</h1>
+                  </a>
+                  <p class="text-left-sm" style="font-size: 12px">Science over Bro-Science</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h3 style="font-family: Montserrat-Medium" id="foothead2">Quick Links</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="index.htm" class="text-white text-decoration-none" ><i class="fa fa-home" aria-hidden="true"> </i> Home</a></li>
+                    <li><a href="AboutUs.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-question" aria-hidden="true"></i> About</a></li>
+                    <li><a href="ContactUs.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+                    <li><a href="register.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-user-plus" aria-hidden="true"></i >  Sign up</a></li>
+                    <li><a href="login.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h3 style="font-family: Montserrat-Medium" id="foothead2">Connect with us</h3>
+                  <div class="our-team">
+                    <!-- <a href="#" class="btn btn-primary square btn-sm m-1"><i class="fab fa-facebook"></i></a>-->     
+                      <a href="https://www.facebook.com/MoXMogZ" target="_blank" ><img src="../assets/Images/fbook.svg" id="medialink" width="40" height="40"></a>                   
+                      <a href="https://www.instagram.com/moxmogz?igsh=emtxaWZ0dTVubDBv" target="_blank" ><img src="../assets/Images/insta.svg" id="medialink" width="40" height="40"></a>
+                      <a href="https://www.linkedin.com/in/vishwanath-singh-7bb593298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="../assets/Images/linkedin.svg" id="medialink"  width="40" height="40"></a>
+                      <a href="https://discord.gg/tw29QC2a" target="_blank "><img src="../assets/Images/discord.svg" id="medialink" width="40" height="40"></a>
+                      <a href="https://github.com/Himanshu1237" target="_blank" ><img src="../assets/Images/github.svg" id="medialink" width="40" height="40"></a>
+                      
+                    <!-- <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fa fa-discord" aria-hidden="true"></i> --> <!-- alternate icons (fontawesome cdn)-->
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h3 style="font-family: Montserrat-Medium" id="foothead2">Explore Training</h3>
+                  <ul class="list-unstyled">
+                    <li id="linkk"><a href="index.htm" class="text-white text-decoration-none" id="linkk">Hypertrophy</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Strength</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">General</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-4">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <p class="mb-0"> <i class="fa fa-copyright"></i> 2024 Fit Fusion | All rights reserved.</p>
+                  <p class="mb-0"><a href="#" class="text-decoration-none fw-bold text-primary">Terms of Service</a> | <a href=# class="text-decoration-none fw-bold text-primary">Privacy Policy</a></p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- the scroll reveal animation -->
+        <script>
+          ScrollReveal().reveal('#footer', {duration: 2000 });
+        </script>
+        <!-- footer -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="../scripting/hyp_quads.js"></script>
+        <button onclick="topFunction()" id="returnToTop" title="Go to top">
+          <i class="fa fa-arrow-up"></i>
+        </button>
+    </body>
+</html>
