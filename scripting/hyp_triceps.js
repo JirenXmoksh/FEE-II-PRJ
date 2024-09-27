@@ -114,6 +114,20 @@ document.addEventListener('DOMContentLoaded', () => {
  .addTo(controller); // Add scene to controller
 });
 
+var tl3 = gsap.timeline();
+tl3.from(".navbar .container a", {
+    delay: 0.5,
+    opacity: 0,
+    scale: 2,
+    duration: 0.5,
+    stagger: 0.05
+})
+tl3.from("#navbarNav ul li", {
+    opacity: 0,
+    scale: 2,
+    duration: 0.3,
+    stagger: 0.15
+})
 
 var tl = gsap.timeline();
 tl.from("#hero h1", {

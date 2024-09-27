@@ -17,3 +17,43 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+var tl = gsap.timeline();
+tl.from(".hero-section", {
+  y: -200,
+  opacity: 0,
+  duration: 0.5,
+  delay: 0.6,
+})
+tl.from("form h2", {
+  scale: 2,
+  opacity: 0,
+  duration: 0.5,
+})
+tl.from("form input", {
+  scale: 2,
+  opacity: 0,
+  duration: 0.5,
+  stagger: 0.15,
+})
+tl.from("form button", {
+  scale: 2,
+  opacity: 0,
+  duration: 0.5,
+  stagger: 0.15,
+})
+
+var tl2 = gsap.timeline();
+tl2.from(".navbar .container a", {
+    delay: 0.5,
+    scale: 2,
+    opacity: 0,
+    duration: 0.5,
+    stagger: 0.05
+})
+tl2.from("#navbarNav ul li", {
+    opacity: 0,
+    scale: 2,
+    duration: 0.3,
+    stagger: 0.15
+})
