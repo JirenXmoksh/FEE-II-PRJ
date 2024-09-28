@@ -155,3 +155,43 @@ tl2.from("#contdesc #text1", {
   duration: 0.7,
   stagger: 0.2,
 })
+// ------ footer animation -------
+gsap.registerPlugin(ScrollTrigger);
+let tl4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#footer",
+    start: "top 60%", // Adjust as necessary
+  }
+});
+
+tl4.from("#footer h1", {
+  scale: 3,
+  opacity: 0,
+  duration: 1,
+  ease: "bounce.inOut"
+})
+.from("#footer h3", {
+  scale: 0,
+  x: -560,
+  opacity: 0,
+  duration: 0.4,
+  stagger: 0.2,
+  ease: "expo.out"
+})
+.from("#footer ul li", {
+  scale: 0,
+  x: -500,
+  opacity: 0,
+  duration: 0.7,
+  stagger: 0.1,
+  ease: "expo.out"
+})
+.from("#footer img", {
+  scale: 0,
+  x: -500,
+  opacity: 0,
+  duration: 0.7,
+  stagger: 0.15,
+  rotate: 360,
+  ease: "expo.out",
+});

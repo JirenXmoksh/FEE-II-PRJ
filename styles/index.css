@@ -315,6 +315,9 @@
 #userDrop ul{
   background-color: #110f0e;
 }
+body{
+  overflow-x:hidden;
+}
 #hero{
     height: 100vh;
     padding: 0px;

@@ -21,14 +21,14 @@ function topFunction() {
 var tl = gsap.timeline();
 tl.from(".navbar .container a", {
     delay: 0.5,
-    y: 50,
     opacity: 0,
+    scale: 2,
     duration: 0.5,
     stagger: 0.05
 })
 tl.from("#navbarNav ul li", {
-    y: 20,
     opacity: 0,
+    scale: 2,
     duration: 0.3,
     stagger: 0.15
 })
@@ -67,3 +67,44 @@ tl2.from(".submit", {
     duration: 0.3,
     stagger: 0.3
 })
+
+// ------ footer animation -------
+gsap.registerPlugin(ScrollTrigger);
+let tl3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#footer",
+    start: "top 60%", // Adjust as necessary
+  }
+});
+
+tl3.from("#footer h1", {
+  scale: 3,
+  opacity: 0,
+  duration: 1,
+  ease: "bounce.inOut"
+})
+.from("#footer h3", {
+  scale: 0,
+  x: -560,
+  opacity: 0,
+  duration: 0.4,
+  stagger: 0.2,
+  ease: "expo.out"
+})
+.from("#footer ul li", {
+  scale: 0,
+  x: -500,
+  opacity: 0,
+  duration: 0.7,
+  stagger: 0.1,
+  ease: "expo.out"
+})
+.from("#footer img", {
+  scale: 0,
+  x: -500,
+  opacity: 0,
+  duration: 0.7,
+  stagger: 0.15,
+  rotate: 360,
+  ease: "expo.out",
+});
