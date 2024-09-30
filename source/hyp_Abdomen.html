@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>FF / Hypertrophy / Hamstrings</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../styles/hyp_hamstrings.css">
+        <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
+        <link rel="icon" type="image/x-icon" href="../assets/Images/fficon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="../styles/fosm/css/font-awesome.min.css">
+
+        <script src="../styles/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        
+        <style>
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black">
+          <div class="container">
+            <a 
+            class="navbar-brand mb-0 h1" 
+            href="index.htm">
+              <img 
+              src="../assets/Images/fficon.png" 
+              width="40px"
+              height="40px" 
+              class="d-inline-block align-right border border-2 border-dark rounded ">
+              <strong class="mx-3" style="font-family: Montserrat-Bold" id="fit-fusion">FIT FUSION</strong>
+            </a>
+            <!-- collapse toggle button -->
+            <button 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            class="navbar-toggler"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle Navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div 
+            class="collapse navbar-collapse" 
+            id="navbarNav">
+                <ul class="navbar-nav mx-5">
+                    <li class="nav-item active">
+                        <a href="index.htm" class="nav-link">Home </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a 
+                        href="#" 
+                        class="nav-link dropdown-toggle" 
+                        id="navDrop" 
+                        role="button" 
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Training
+                      </a>
+                      <ul class="dropdown-menu border border-dark"
+                      aria-labelledby="navDrop">
+                      <li><a href="#" class="dropdown-item text text-dark">Hypertrophy</a></li>
+                      <li><a href="#" class="dropdown-item text text-dark">Strength</a></li>
+                      <li><a href="#" class="dropdown-item text text-dark">General</a></li>
+                      <li><a href="#" class="dropdown-item text text-dark">Others</a></li>
+
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+
+                        <a href="AboutUs.html" target="_blank" class="nav-link">About</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="ContactUs.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="register.html" target="_blank" class="nav-link">Sign up </a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="login.html"  target="_blank" class="nav-link">Login</a>
+                    </li>
+                  </ul>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="dropdown" id="userDrop">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="../assets/Images/user.jpg" alt="User" width="36" height="36" class="rounded-circle me-2 border border-dark border-2">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end border border-dark" aria-labelledby="userDropdown">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- The scroll reveal animation -->
+        <script>
+          ScrollReveal().reveal('.navbar', {duration: 1000 });
+        </script>
+        
+        <!-- Navbar -->
+
+        <!-- Content Section -->
+        <div class="container-fluid" id="content">
+            <!-- The content head -->
+            <div class="row d-flex justify-content-between" id="contenthead">
+                <div class="col-12 text-center" id="hero">
+                    <p class="text-white m-2" style="letter-spacing: 2em; font-size: 1rem;">HYPERTROPHY</p>
+                    <h1 class="text-white mb-2" style="font-size: 5vw; letter-spacing: 0.5em;">Abdomen</h1>
+                    <p class="text-white mb-4" style="letter-spacing: 1em; font-size: 1rem;">Abdominal Cavity</p>
+                    <div class="row text-center justify-content-center align-items-center" id="contbuttons">
+                  
+                      <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                          <a href="#major" class="text-decoration-none">
+                              <button class="btn btn-primary mx-4 my-2" id="btn">
+                                  <p class="mb-0">xPlore Now</p>
+                              </button>
+                          </a>                         
+                      </div>
+                  </div>
+                </div>
+            </div>
+            
+            <br>
+            <!-- The content description starts -->
+            <div class="col-12 p-5 mt-2 justifythis" id="contdesc">
+              <h1 class="col-12 subhead1">Aesthetic and Physiological Importance of the Abdomen</h1>
+              <div class="row my-2" id="text1">
+                <div class="col-12">
+                  The abdomen holds both aesthetic and physiological significance. Aesthetically, a toned abdomen is associated with fitness and attractiveness, with defined muscles like the rectus abdominis and obliques contributing to its appeal. Physiologically, the abdomen houses key organs, such as the stomach and intestines, essential for digestion and waste elimination. The abdominal muscles also support posture, protect organs, and aid in movement, making the abdomen crucial for both form and function.
+                </div>
+              </div>
+              <div class="row my-2" id="text1">
+                <div class="col-lg-6 col-md-6 col-sm-12 my-1">
+                    <span class="subhead1" style="font-family: Montserrat-Bold">Rectus Abdominis</span> 
+                    Commonly known as the "six-pack" muscle, this long, flat muscle runs vertically along the front of the abdomen. It is responsible for flexing the spine, allowing movements like bending forward, and plays a role in stabilizing the torso.
+                </div> 
+                <div class="col-lg-6 col-md-6 col-sm-12 my-1">
+                    <span class="subhead1" style="font-family: Montserrat-Bold"> External Obliques</span> 
+                    These muscles are located on the sides of the abdomen, running diagonally from the lower ribs to the pelvis. The external obliques help with rotating the torso and bending it sideways. They are also involved in compressing the abdominal cavity during activities like exhaling forcefully or coughing.  
+                </div>
+              </div>
+              <div class="row my-2" id="text1"> 
+                <div class="col-lg-6 col-md-12 col-sm-12 my-1">
+                    <span class="subhead1" style="font-family: Montserrat-Bold"> Internal Obliques</span>
+                    Found beneath the external obliques, these muscles also run diagonally but in the opposite direction. They assist in twisting and bending movements and provide additional support for the abdominal wall and spine, working closely with the external obliques.
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 my-1">
+                  <span class="subhead1" style="font-family: Montserrat-Bold"> Transverse Abdominis</span>
+                  This is the deepest layer of abdominal muscles, running horizontally around the abdomen like a corset. It is crucial for core stability, helping to protect the spine, support posture, and maintain abdominal pressure during breathing and strenuous activities. This muscle plays a central role in maintaining core strength and overall body stability.
+              </div>
+              </div>
+            </div>
+            <!-- The content description ends -->
+
+            <hr class="stylish-hr mx-5 mt-0 mb-5">
+            
+            <h1 class="text text-light text-uppercase mb-5 mx-5" style="text-align: center" id="INFO">
+              Here are some of the best 
+              <span class="subhead1"> Hypertrophy centered </span> 
+              exercises for the 
+              <span class="subhead1">Abdomen</span>
+            </h1>
+      
+          
+                
+                <!-- EX 1 -->
+                <div class="row mx-5 my-4 p-2" id="major">
+                  <!-- EX 1 -->
+                  <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                    <div class="col-lg-6 col-sm-12 text-justify ">
+                      <h3 class="subhead1 mt-4 mx-3">Plank</h3>
+                        <p class="p-3 text-justify" id="text1">
+                          Target Muscles: Transverse abdominis, rectus abdominis, obliques.
+                          How to Perform: Start in a push-up position, with your body in a straight line from head to heels. Keep your elbows directly under your shoulders and hold this position for 30-60 seconds. Engage your core by pulling your belly button toward your spine.
+                          Benefits: Builds core stability and strength, engages deep abdominal muscles, and improves posture. 
+                          <span class="subhead1">EVERY REP COUNTS</span>
+                        </p>
+                    </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                      <h3 class="subhead1">demonstration</h3>
+                      <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/5rIqP63yWFg" allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                  <!-- EX 2 -->
+                  <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                    <div class="col-lg-6 col-sm-12 text-justify ">
+                      <h3 class="subhead1 mt-4 mx-3">Bicycle Crunches</h3>
+                        <p class="p-3 text-justify" id="text1"> Target Muscles: Rectus abdominis, obliques.
+                          How to Perform: Lie flat on your back with your hands behind your head and legs lifted. Alternate bringing your opposite knee to the opposite elbow in a cycling motion. Make sure to twist your torso to engage the obliques.
+                          Benefits: Strengthens the rectus abdominis and obliques, improves coordination and balance.
+                           <span class="subhead1">EVERY REP COUNTS</span> </p>
+                    </div>
+                  <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                      <h3 class="subhead1">demonstration</h3>
+                      <iframe class="embed-responsive-item border border-dark rounded" src="https://youtube.com/embed/eKGgmvTVHDg" allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                  <!-- EX 3 -->
+                  <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                    <div class="col-lg-6 col-sm-12 text-justify ">
+                      <h3 class="subhead1 mt-4 mx-3">Russian Twists</h3>
+                        <p class="p-3 text-justify" id="text1">Target Muscles: Obliques, transverse abdominis.
+                          How to Perform: Sit on the floor with your knees bent and feet slightly lifted off the ground. Lean back slightly and twist your torso from side to side, touching the floor beside you with both hands. Keep your core tight throughout.
+                          Benefits: Targets the obliques, enhances rotational strength, and improves core stability.
+                          <span class="subhead1">EVERY REP COUNTS</span> </p></p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                      <h3 class="subhead1">demonstration</h3>
+                      <iframe class="embed-responsive-item border border-dark rounded" src="https://youtube.com/embed/3-4pKUhkzoQ?" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <!-- EX-4 -->
+                  <div class="row mx-2 my-5 p-3 justifythis exdiv" ></div>
+                    <div class="col-lg-6 col-sm-12 text-justify ">
+                      <h3 class="subhead1 mt-4 mx-3"> Leg Raises</h3>
+                        <p class="p-3 text-justify" id="text1">Target Muscles: Lower rectus abdominis, hip flexors.
+                          How to Perform: Lie on your back with your legs straight. Slowly lift your legs until they form a 90-degree angle with your torso, then lower them back down without letting them touch the ground.
+                          Benefits: Strengthens the lower abdominal muscles, improves hip flexibility, and enhances core control.
+                          <span class="subhead1">EVERY REP COUNTS</span> </p></p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                      <h3 class="subhead1">demonstration</h3>
+                      <iframe class="embed-responsive-item border border-dark rounded" src="https://youtube.com/embed/3-4pKUhkzoQ?" allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                  
+
+            <script>
+              ScrollReveal().reveal('.contenthead', {delay: 1000}, {duration: 2000});
+              ScrollReveal().reveal('#contbuttons', {delay: 500}, {duration: 2000});
+              ScrollReveal().reveal('#INFO', {delay: 1000}, {duration: 2000});
+            </script>
+          </div>
+          <!-- The scroll reveal animation -->
+          <script>
+            ScrollReveal().reveal('#content', {duration: 2000});
+            ScrollReveal().reveal('.exdiv', {delay: 100, duration: 2000});
+          </script>
+        <!-- Content Section -->
+        
+
+        <!-- footer -->
+        <div class="container-fluid py-5 text-white" id="footer">
+            <div class="container  p-2">
+              <div class="row">
+                <div class="col-md-3 mb-4">
+                  <a class="text-decoration-none text-primary navbar-brand"
+                    href="index.htm">
+                      <img 
+                      src="../assets/Images/fficon.png" 
+                      width="80px"
+                      height="70px" 
+                      class="d-inline-block align-right border border-2 border-dark rounded">
+                    <h1 style="font-family: Montserrat-Bold" class="mt-2" id="foothead1">FIT FUSION</h1>
+                  </a>
+                  <p class="text-left-sm" style="font-size: 12px">Science over Bro-Science</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h3 style="font-family: Montserrat-Medium" id="foothead2">Quick Links</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="index.htm" class="text-white text-decoration-none" ><i class="fa fa-home" aria-hidden="true"> </i> Home</a></li>
+                    <li><a href="AboutUs.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-question" aria-hidden="true"></i> About</a></li>
+                    <li><a href="ContactUs.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+                    <li><a href="register.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-user-plus" aria-hidden="true"></i >  Sign up</a></li>
+                    <li><a href="login.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h3 style="font-family: Montserrat-Medium" id="foothead2">Connect with us</h3>
+                  <div class="our-team">
+                    <!-- <a href="#" class="btn btn-primary square btn-sm m-1"><i class="fab fa-facebook"></i></a>-->     
+                      <a href="https://www.facebook.com/MoXMogZ" target="_blank" ><img src="../assets/Images/fbook.svg" id="medialink" width="40" height="40"></a>                   
+                      <a href="https://www.instagram.com/moxmogz?igsh=emtxaWZ0dTVubDBv" target="_blank" ><img src="../assets/Images/insta.svg" id="medialink" width="40" height="40"></a>
+                      <a href="https://www.linkedin.com/in/vishwanath-singh-7bb593298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="../assets/Images/linkedin.svg" id="medialink"  width="40" height="40"></a>
+                      <a href="https://discord.gg/tw29QC2a" target="_blank "><img src="../assets/Images/discord.svg" id="medialink" width="40" height="40"></a>
+                      <a href="https://github.com/Himanshu1237" target="_blank" ><img src="../assets/Images/github.svg" id="medialink" width="40" height="40"></a>
+                      
+                    <!-- <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fa fa-discord" aria-hidden="true"></i> --> <!-- alternate icons (fontawesome cdn)-->
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h3 style="font-family: Montserrat-Medium" id="foothead2">Explore Training</h3>
+                  <ul class="list-unstyled">
+                    <li id="linkk"><a href="index.htm" class="text-white text-decoration-none" id="linkk">Hypertrophy</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Strength</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">General</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-4">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <p class="mb-0"> <i class="fa fa-copyright"></i> 2024 Fit Fusion | All rights reserved.</p>
+                  <p class="mb-0"><a href="#" class="text-decoration-none fw-bold text-primary">Terms of Service</a> | <a href=# class="text-decoration-none fw-bold text-primary">Privacy Policy</a></p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- the scroll reveal animation -->
+        <script>
+          ScrollReveal().reveal('#footer', {duration: 2000 });
+        </script>
+        <!-- footer -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="../scripting/hyp_hamstrings.js"></script>
+        <button onclick="topFunction()" id="returnToTop" title="Go to top">
+          <i class="fa fa-arrow-up"></i>
+        </button>
+    </body>
+</html>
