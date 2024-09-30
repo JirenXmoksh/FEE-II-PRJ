@@ -127,6 +127,7 @@ body{
     height: auto;
     font-family: Montserrat-Light;
     background-color: black;
+    border-top: 1px solid white;
 }
 #foothead2{
     background: linear-gradient(to right, #007BFF, #ff0d00);
