@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>FF / Hypertrophy / Dorsals</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../styles/hyp_back.css">
+        <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
+        <link rel="icon" type="image/x-icon" href="../assets/Images/fficon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="../styles/fosm/css/font-awesome.min.css">
+
+        <script src="../styles/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        
+        <style>
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black">
+          <div class="container">
+            <a 
+            class="navbar-brand mb-0 h1" 
+            href="index.htm">
+              <img 
+              src="../assets/Images/fficon.png" 
+              width="40px"
+              height="40px" 
+              class="d-inline-block align-right border border-2 border-dark rounded ">
+              <strong class="mx-3" style="font-family: Montserrat-Bold" id="fit-fusion">FIT FUSION</strong>
+            </a>
+            <!-- collapse toggle button -->
+            <button 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            class="navbar-toggler"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle Navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div 
+            class="collapse navbar-collapse" 
+            id="navbarNav">
+                <ul class="navbar-nav mx-5">
+                    <li class="nav-item active">
+                        <a href="index.htm" class="nav-link">Home </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a 
+                        href="#" 
+                        class="nav-link dropdown-toggle" 
+                        id="navDrop" 
+                        role="button" 
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Training
+                      </a>
+                      <ul class="dropdown-menu border border-dark"
+                      aria-labelledby="navDrop">
+                      <li><a href="#" class="dropdown-item text text-dark">Hypertrophy</a></li>
+                      <li><a href="#" class="dropdown-item text text-dark">Strength</a></li>
+                      <li><a href="#" class="dropdown-item text text-dark">General</a></li>
+                      <li><a href="#" class="dropdown-item text text-dark">Others</a></li>
+
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+
+                        <a href="AboutUs.html" target="_blank" class="nav-link">About</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="ContactUs.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="register.html" target="_blank" class="nav-link">Sign up </a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="login.html"  target="_blank" class="nav-link">Login</a>
+                    </li>
+                  </ul>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="dropdown" id="userDrop">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="../assets/Images/user.jpg" alt="User" width="36" height="36" class="rounded-circle me-2 border border-dark border-2">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end border border-dark" aria-labelledby="userDropdown">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- The scroll reveal animation -->
+        <script>
+          ScrollReveal().reveal('.navbar', {duration: 1000 });
+        </script>
+        
+        <!-- Navbar -->
+
+        <!-- Content Section -->
+        <div class="container-fluid" id="content">
+            <!-- The content head -->
+            <div class="row d-flex justify-content-between" id="contenthead">
+                <div class="col-12 text-center" id="hero">
+                    <p class="text-white m-2" style="letter-spacing: 2em; font-size: 1rem;">HYPERTROPHY</p>
+                    <h1 class="text-white mb-2" style="font-size: 5vw; letter-spacing: 0.5em;">Core</h1>
+                    <p class="text-white mb-4" style="letter-spacing: 1em; font-size: 1rem;">Glutes Muscles</p>
+                    <div class="row text-center justify-content-center align-items-center" id="contbuttons">
+
+                      <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                          <a href="#major" class="text-decoration-none">
+                              <button class="btn btn-primary mx-4 my-2" id="btn">
+                                  <p class="mb-0">xPlore Now</p>
+                              </button>
+                          </a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            
+            <br>
+            <!-- The content description starts -->
+            <div class="col-12 p-5 mt-2 justifythis" id="contdesc">
+              <h1 class="col-12 subhead1">Aesthetic and Physiological Importance of the Glutes Muscles</h1>
+              <div class="row my-2" id="text1">
+                <div class="col-12">
+                    The glutes, comprising the gluteus maximus, medius, and minimus, hold significant aesthetic and physiological importance. Aesthetically, well-developed glutes contribute to body shape and proportions by enhancing the lower body's curvature, giving an athletic and balanced appearance. They play a key role in posture, as strong glutes help align the pelvis and spine, promoting an upright and confident stance. From a physiological perspective, the glutes are essential for powerful movements like running, jumping, and lifting. They stabilize the pelvis and hips, reducing injury risk, and support overall mobility and strength in everyday activities.
+                </div>
+              </div>
+              <div class="row my-2" id="text1">
+                <div class="col-lg-6 col-md-6 col-sm-12 my-1">
+                    <span class="subhead1" style="font-family: Montserrat-Bold">Gluteus Maximus</span> 
+                    This is the largest and most superficial of the three muscles, making it the primary muscle that gives the buttocks their rounded shape. It is responsible for powerful movements like hip extension, which is crucial during activities such as standing up from a seated position, climbing stairs, and running. Additionally, it helps with external rotation of the hip and contributes to the stabilization of the pelvis.
+                </div> 
+                <div class="col-lg-6 col-md-6 col-sm-12 my-1">
+                    <span class="subhead1" style="font-family: Montserrat-Bold">Gluteus Medius</span> 
+                    Located on the outer surface of the pelvis, just underneath the gluteus maximus, this muscle plays a key role in hip abduction, which is the movement of lifting the leg away from the body. The gluteus medius is also essential for maintaining balance and stability when walking or running, as it prevents the hip from dropping to one side.  
+                </div>
+              </div>
+              <div class="row my-2" id="text1"> 
+                <div class="col-lg-12 col-md-6 col-sm-12 my-1">
+                    <span class="subhead1" style="font-family: Montserrat-Bold"> Gluteus Minimus</span>
+                    The smallest and deepest of the gluteal muscles, the gluteus minimus is found beneath the gluteus medius. Despite its size, it plays a crucial role in hip abduction and internal rotation. Along with the gluteus medius, it works to stabilize the pelvis, particularly during single-leg movements, helping to prevent injury and ensuring smooth, efficient movement.
+                </div>
+              </div>
+            </div>
+            <!-- The content description ends -->
+
+            <hr class="stylish-hr mx-5 mt-0 mb-5">
+            
+            <h1 class="text text-light text-uppercase mb-5 mx-5" style="text-align: center" id="INFO">
+              Here are some of the best 
+              <span class="subhead1"> Hypertrophy centered </span> 
+              exercises for the 
+              <span class="subhead1">Glutes</span>
+            </h1>
+
+                <!-- EX 1 -->
+                <div class="row mx-5 my-4 p-2" id="major">
+          
+                  <!-- EX 1 -->
+                  <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                    <div class="col-lg-6 col-sm-12 text-justify ">
+                      <h3 class="subhead1 mt-4 mx-3">Squats</h3>
+                        <p class="p-3 text-justify" id="text1">
+                            Squats are a foundational exercise that effectively targets the gluteus maximus, along with the quadriceps and hamstrings. To perform a squat, stand with your feet shoulder-width apart and lower your hips back and down as if you are sitting in a chair, keeping your chest lifted and your back straight. This movement engages the glutes to help control and power the ascent back to a standing position. The deeper the squat, the more emphasis is placed on the glutes, making it essential for overall lower body strength. Variations like sumo squats, where your feet are positioned wider apart, can enhance inner thigh and glute activation, while deep squats maximize glute stretch and engagement.
+                          <span class="subhead1">EVERY REP COUNTS</span>
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                      <h3 class="subhead1">demonstration</h3>
+                      <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/jLvqKgW-_G8?si=HGTYcqdTYT7utb9s&start=226" allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                  <!-- EX 2 -->
+                  <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                    <div class="col-lg-6 col-sm-12 text-justify ">
+                      <h3 class="subhead1 mt-4 mx-3">Glute Bridges</h3>
+                        <p class="p-3 text-justify" id="text1">
+                            Glute bridges are an effective isolation exercise that primarily targets the gluteus maximus. To perform this exercise, lie on your back with your knees bent and feet flat on the floor, hip-width apart. By pressing through your heels, lift your hips towards the ceiling while squeezing your glutes at the top of the movement. This exercise not only strengthens the glutes but also engages the core and hamstrings. To increase intensity, you can add resistance by placing a barbell or resistance band across your hips. Glute bridges are excellent for improving hip extension and can be incorporated into any workout routine focused on glute development.
+                           <span class="subhead1">EVERY REP COUNTS</span> </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                      <h3 class="subhead1">demonstration</h3>
+                      <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/jLvqKgW-_G8?si=HGTYcqdTYT7utb9s&start=299" allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                  <!-- EX 3 -->
+                  <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                    <div class="col-lg-6 col-sm-12 text-justify ">
+                      <h3 class="subhead1 mt-4 mx-3"> Hip Thrusts</h3>
+                        <p class="p-3 text-justify" id="text1">
+                            Hip thrusts are a powerful glute exercise that specifically targets the gluteus maximus. To perform this exercise, sit on the ground with your upper back against a bench or elevated surface. Roll a barbell or place a weight plate over your hips and, with your feet flat on the ground, push through your heels to lift your hips upwards. Squeeze your glutes at the top of the movement before lowering back down. Hip thrusts isolate the glutes effectively and allow for heavier weights to be used, making them one of the best exercises for glute growth and strength development. Incorporating hip thrusts into your routine can lead to significant improvements in glute strength and overall lower body power.
+                          <span class="subhead1">EVERY REP COUNTS</span> </p></p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                      <h3 class="subhead1">demonstration</h3>
+                      <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/jLvqKgW-_G8?si=HGTYcqdTYT7utb9s&start=217" allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                  <!-- EX 4 -->
+                  <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                    <div class="col-lg-6 col-sm-12 text-justify ">
+                      <h3 class="subhead1 mt-4 mx-3">Bulgarian Split Squats</h3>
+                        <p class="p-3 text-justify" id="text1">
+                            Bulgarian split squats are a challenging variation of the traditional squat and are highly effective for glute development. To perform this exercise, position your rear foot on an elevated surface (like a bench) while standing with your front foot a couple of feet away. Lower your body into a lunge by bending your front knee, ensuring your knee does not extend past your toes. The gluteus maximus of the front leg is engaged to lift you back to the starting position. This exercise not only strengthens the glutes but also improves balance and stability in the lower body. To increase intensity, you can hold weights in each hand or perform the movement without any support. Bulgarian split squats are a powerful addition to any lower-body workout, effectively isolating and strengthening the glutes.
+                          <span class="subhead1">EVERY REP COUNTS</span> </p></p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                      <h3 class="subhead1">demonstration</h3>
+                      <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/jLvqKgW-_G8?si=HGTYcqdTYT7utb9s&start=534" allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                  <!-- EX 5 -->
+                  <div class="row mx-2 my-5 p-3 justifythis exdiv" >
+                    <div class="col-lg-6 col-sm-12 text-justify ">
+                      <h3 class="subhead1 mt-4 mx-3"> Step-Ups</h3>
+                        <p class="p-3 text-justify" id="text1">
+                            Step-ups are an effective exercise for targeting the gluteus maximus while also engaging the quadriceps and hamstrings. To perform a step-up, find a sturdy bench or elevated surface. Stand facing the bench, place one foot firmly on it, and push through your heel to lift your body onto the platform. The gluteus maximus of the working leg is primarily engaged during this movement, while the other leg remains elevated. This exercise is excellent for building strength and stability in the lower body, as well as enhancing balance. To increase difficulty, add weights by holding dumbbells in each hand or use a higher step to intensify the workout.
+                          <span class="subhead1">EVERY REP COUNTS</span> </p></p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 text-center my-3 py-2 embed-responsive embed-responsive-16by9">
+                      <h3 class="subhead1">demonstration</h3>
+                      <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/jLvqKgW-_G8?si=HGTYcqdTYT7utb9s&start=562"  allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  
+                  
+                  </div>
+                  <div class="container my-5 p-4 rounded text-center" id="comments" style="box-shadow: 5px 5px 3px 2px #fff; border: 1px solid white; background-color: rgba(0, 0, 0, 0.3)">
+                    <div class="text-white" style="font-family: Montserrat-Semibold"><h1>So... how did you feel after trying these exercises? How good was the pump? Let the FITFUSION community know ^_^</h1></div>
+                        <script src="https://giscus.app/client.js"
+                        data-repo="JirenXmoksh/FEE-II-PRJ"
+                        data-repo-id="R_kgDOMcHQUQ"
+                        data-category="General"
+                        data-category-id="DIC_kwDOMcHQUc4Ci6XX"
+                        data-mapping="title"
+                        data-strict="0"
+                        data-reactions-enabled="1"
+                        data-emit-metadata="0"
+                        data-input-position="top"
+                        data-theme="preferred_color_scheme"
+                        data-lang="en"
+                        crossorigin="anonymous"
+                        async>
+                        </script>
+                  </div>
+              </div>
+            <script>
+              ScrollReveal().reveal('#comments', {delay: 1000}, {duration: 3000});
+              ScrollReveal().reveal('.contenthead', {delay: 1000}, {duration: 2000});
+              ScrollReveal().reveal('#contbuttons', {delay: 500}, {duration: 2000});
+              ScrollReveal().reveal('#INFO', {delay: 1000}, {duration: 2000});
+            </script>
+          </div>
+          <!-- The scroll reveal animation -->
+          <script>
+            ScrollReveal().reveal('#content', {duration: 2000});
+            ScrollReveal().reveal('.exdiv', {delay: 100, duration: 2000});
+          </script>
+        <!-- Content Section -->
+        
+
+        <!-- footer -->
+        <div class="container-fluid py-5 text-white" id="footer">
+            <div class="container  p-2">
+              <div class="row">
+                <div class="col-md-3 mb-4">
+                  <a class="text-decoration-none text-primary navbar-brand"
+                    href="index.htm">
+                      <img 
+                      src="../assets/Images/fficon.png" 
+                      width="80px"
+                      height="70px" 
+                      class="d-inline-block align-right border border-2 border-dark rounded">
+                    <h1 style="font-family: Montserrat-Bold" class="mt-2" id="foothead1">FIT FUSION</h1>
+                  </a>
+                  <p class="text-left-sm" style="font-size: 12px">Science over Bro-Science</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h3 style="font-family: Montserrat-Medium" id="foothead2">Quick Links</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="index.htm" class="text-white text-decoration-none" ><i class="fa fa-home" aria-hidden="true"> </i> Home</a></li>
+                    <li><a href="AboutUs.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-question" aria-hidden="true"></i> About</a></li>
+                    <li><a href="ContactUs.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+                    <li><a href="register.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-user-plus" aria-hidden="true"></i >  Sign up</a></li>
+                    <li><a href="login.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h3 style="font-family: Montserrat-Medium" id="foothead2">Connect with us</h3>
+                  <div class="our-team">
+                    <!-- <a href="#" class="btn btn-primary square btn-sm m-1"><i class="fab fa-facebook"></i></a>-->     
+                      <a href="https://www.facebook.com/MoXMogZ" target="_blank" ><img src="../assets/Images/fbook.svg" id="medialink" width="40" height="40"></a>                   
+                      <a href="https://www.instagram.com/moxmogz?igsh=emtxaWZ0dTVubDBv" target="_blank" ><img src="../assets/Images/insta.svg" id="medialink" width="40" height="40"></a>
+                      <a href="https://www.linkedin.com/in/vishwanath-singh-7bb593298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="../assets/Images/linkedin.svg" id="medialink"  width="40" height="40"></a>
+                      <a href="https://discord.gg/tw29QC2a" target="_blank "><img src="../assets/Images/discord.svg" id="medialink" width="40" height="40"></a>
+                      <a href="https://github.com/Himanshu1237" target="_blank" ><img src="../assets/Images/github.svg" id="medialink" width="40" height="40"></a>
+                      
+                    <!-- <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fa fa-discord" aria-hidden="true"></i> --> <!-- alternate icons (fontawesome cdn)-->
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <h3 style="font-family: Montserrat-Medium" id="foothead2">Explore Training</h3>
+                  <ul class="list-unstyled">
+                    <li id="linkk"><a href="index.htm" class="text-white text-decoration-none" id="linkk">Hypertrophy</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Strength</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">General</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-4">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <p class="mb-0"> <i class="fa fa-copyright"></i> 2024 Fit Fusion | All rights reserved.</p>
+                  <p class="mb-0"><a href="#" class="text-decoration-none fw-bold text-primary">Terms of Service</a> | <a href=# class="text-decoration-none fw-bold text-primary">Privacy Policy</a></p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- the scroll reveal animation -->
+        <script>
+          ScrollReveal().reveal('#footer', {duration: 2000 });
+        </script>
+        <!-- footer -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="../scripting/hyp_back.js"></script>
+        <button onclick="topFunction()" id="returnToTop" title="Go to top">
+          <i class="fa fa-arrow-up"></i>
+        </button>
+    </body>
+</html>
