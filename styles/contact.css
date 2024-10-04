@@ -40,6 +40,9 @@ body {
   background-color: white;
   color: red;
 }
+nav{
+  box-shadow: 0 0 20px 10px black;
+}
 .navbar ul li a{
     color: white;
     font-family: Montserrat-Medium;

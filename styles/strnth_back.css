@@ -146,12 +146,15 @@
   body{
   width: 100%;
   }
+  nav{
+    box-shadow: 0 0 20px 10px black;
+  }
   .navbar ul li a{
     color: white;
     font-family: Montserrat-Medium;
   }
   .navbar ul li a:hover{
-    color: rgb(81, 81, 253);
+    color: rgb(255, 0, 0);
     transition: 0.4s;
   }
   ::placeholder{
@@ -160,7 +163,7 @@
   .stylish-hr {
     border: none; /* Remove default border */
     height: 1px; /* Set the height of the line */
-    background: linear-gradient(to right, #007bff, #232323, #007bff); /* Gradient color */
+    background: linear-gradient(to right, #ff0d00, #232323, #ff0d00); /* Gradient color */
     border-radius: 5px; /* Rounded edges */
   }
   #userDrop ul{
@@ -179,7 +182,7 @@
   #contenthead{
     --sz: 25px;
     --c0: #000;
-    --c1: #0a1381;
+    --c1: #9f0800;
     --ts: 50% / calc(var(--sz) * 8) calc(var(--sz) * 16);
     margin: 0;
     padding: 0;
@@ -224,22 +227,22 @@
       var(--ts);
   
     background: var(--dot2), var(--dot2),
-      radial-gradient(circle at 90% 100%, var(--dot)) var(--ts),
-      radial-gradient(circle at 65% 100%, var(--dot)) var(--ts),
-      radial-gradient(circle at 40% 100%, var(--dot)) var(--ts),
-      radial-gradient(circle at 15% 100%, var(--dot)) var(--ts),
-      radial-gradient(circle at 90% 12.5%, var(--dot)) var(--ts),
-      radial-gradient(circle at 65% 25%, var(--dot)) var(--ts),
-      radial-gradient(circle at 40% 37.5%, var(--dot)) var(--ts),
-      radial-gradient(circle at 15% 50%, var(--dot)) var(--ts), var(--cg1),
-      var(--cg1), var(--cg2), var(--cg2), var(--cg3), var(--cg3), var(--cg4),
-      var(--cg4), var(--cg5), var(--cg5), var(--cg6), var(--cg6), var(--cg7),
-      var(--cg7), var(--cg8), var(--cg8),
-      linear-gradient(-45deg, #fff0 0 32.25%, #0002 50%, #000 77.5%) var(--ts),
-      linear-gradient(-45deg, #fff0 0 32.25%, #000 60%) var(--ts),
-      repeating-linear-gradient(90deg, var(--c0) 0 5%, var(--c1) 0 25%) var(--ts);
+    radial-gradient(circle at 90% 100%, var(--dot)) var(--ts),
+    radial-gradient(circle at 65% 100%, var(--dot)) var(--ts),
+    radial-gradient(circle at 40% 100%, var(--dot)) var(--ts),
+    radial-gradient(circle at 15% 100%, var(--dot)) var(--ts),
+    radial-gradient(circle at 90% 12.5%, var(--dot)) var(--ts),
+    radial-gradient(circle at 65% 25%, var(--dot)) var(--ts),
+    radial-gradient(circle at 40% 37.5%, var(--dot)) var(--ts),
+    radial-gradient(circle at 15% 50%, var(--dot)) var(--ts), var(--cg1),
+    var(--cg1), var(--cg2), var(--cg2), var(--cg3), var(--cg3), var(--cg4),
+    var(--cg4), var(--cg5), var(--cg5), var(--cg6), var(--cg6), var(--cg7),
+    var(--cg7), var(--cg8), var(--cg8),
+    linear-gradient(-45deg, #fff0 0 32.25%, #0002 50%, #000 77.5%) var(--ts),
+    linear-gradient(-45deg, #fff0 0 32.25%, #000 60%) var(--ts),
+    repeating-linear-gradient(90deg, var(--c0) 0 5%, var(--c1) 0 25%) var(--ts);
   
-    box-shadow: inset 0 0px 25px 5px #007bff;
+    box-shadow: inset 0 0px 25px 5px red;
     margin-top: 64px;
     width: 100%;
     padding: 10px;
@@ -280,7 +283,7 @@
     position: absolute;
     width: 9em;
     aspect-ratio: 1;
-    background: #2a38f1;
+    background: #ff0d00;
     opacity: 60%;
     border-radius: 50%;
     transition: transform 500ms, background 300ms;
@@ -311,140 +314,113 @@
   /* The submuscle buttons */
   
   
-  .subhead1{
-    font-family: Montserrat-Semibold;
-    background: linear-gradient(to right, #0523b7, #1886fc, #1886fc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0px 0px 25px #007bff;
-    text-transform: uppercase;
-  }
-  .subhead2{
-    font-family: Montserrat-Semibold;
-    background: linear-gradient(to right, #0523b7, #1886fc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0px 0px 25px #fff;
-    text-transform: uppercase;
-  }
-  #text1{
-    color: white;
-    text-shadow: 0 0 3px white;
-  }
-  .justifythis{
-    text-align: justify;
-  }
-  .exdiv{
-    border-left: 2px solid #232323;
-    
-  }
-  
-  #footer{
-    height: auto;
-    font-family: Montserrat-Light;
-    background-color: black;
-  }
-  
-  #foothead2{
-    background: linear-gradient(to right, #007BFF, #ff0d00);
-    -webkit-background-clip: text;
-    background-clip: none;
-    -webkit-text-fill-color: transparent;
-  }
-  #medialink:hover{
-    transition: 0.4s;
-    transform: scale(0.965);
-  }
-  #returnToTop {
-    position: fixed; /* Fixed/sticky position */
-    bottom: 10px; /* Place the button 20px from the bottom */
-    right: 20px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: 2px solid #2444fb; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: rgba(0, 0, 0, 0.6); /* Green background color */
-    color: #2444fb; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 60%; /* Rounded corners */
-    font-size: 14px; /* Increase font size */
-    height: 55px;
-    width: 55px;
-    transition: 0.2s ease-in-out;
-  }
-  
-  #returnToTop:hover {
-    transform: scale(0.996); /* Add a dark-grey background on hover */
-    background-color: #2444fb;
-    color: white;
-    border: 2px solid #2444fb;
-  }
-  
-  /* This is the code for text to fill in its outline (stroke) */
-  
-  /* #fit-fusion {
-    font-family: 'Montserrat-Light', sans-serif;
-    font-weight: bold;
-    position: relative;
-    color: transparent;
-    -webkit-text-stroke: 0px black;
-  } */
-  /* #fit-fusion::before {
-    content: 'FIT FUSION';
-    font-weight: bold;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to right, #007BFF, #ff0d00);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    overflow: hidden;
-    animation: fill-text 1.5s ease-in-out infinite alternate;
-  } */
-  
-  .commenthead{
-    font-family: Montserrat-Semibold;
-  }
-  
-  #fit-fusion{
-    background: linear-gradient(
-      to right,
-      #007BFF,
-      #ff0d00,
-      #007BFF,
-      #ff0d00
-    );
-    background-size: 300% 100%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: gradient-wave 5s linear infinite;
-  }
-  #foothead1{
-    background: linear-gradient(
-      to right,
-      #007BFF,
-      #ff0d00,
-      #007BFF,
-      #ff0d00
-    );
-    background-size: 300% 100%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: gradient-wave 6s linear infinite;
-  }
-  @keyframes gradient-wave {
-    0% {
-      background-position: 0% 50%;
-    }
-    100% {
-      background-position: 300% 50%;
-    }
-  }
-  
-  
-  
+.subhead1{
+font-family: Montserrat-Semibold;
+background: linear-gradient(to right, #9f0800, #ff655d, #ff655d);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-shadow: 0px 0px 25px #ff0d00;
+text-transform: uppercase;
+}
+.subhead2{
+font-family: Montserrat-Semibold;
+background: linear-gradient(to right, #9f0800, #ff0d00);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-shadow: 0px 0px 25px #fff;
+text-transform: uppercase;
+}
+#text1{
+color: white;
+text-shadow: 0 0 3px white;
+}
+.justifythis{
+text-align: justify;
+}
+.exdiv{
+border-left: 2px solid #232323;
+}
+
+#footer{
+height: auto;
+font-family: Montserrat-Light;
+background-color: black;
+}
+
+#foothead2{
+background: linear-gradient(to right, #007BFF, #ff0d00);
+-webkit-background-clip: text;
+background-clip: none;
+-webkit-text-fill-color: transparent;
+}
+#medialink:hover{
+transition: 0.4s;
+transform: scale(0.965);
+}
+#returnToTop {
+position: fixed; /* Fixed/sticky position */
+bottom: 10px; /* Place the button 20px from the bottom */
+right: 20px; /* Place the button 30px from the right */
+z-index: 99; /* Make sure it does not overlap */
+border: 2px solid #e60b00; /* Remove borders */
+outline: none; /* Remove outline */
+background-color: rgba(0, 0, 0, 0.6); /* Green background color */
+color: #e60b00; /* Text color */
+cursor: pointer; /* Add a mouse pointer on hover */
+padding: 15px; /* Some padding */
+border-radius: 60%; /* Rounded corners */
+font-size: 14px; /* Increase font size */
+height: 55px;
+width: 55px;
+transition: 0.2s ease-in-out;
+}
+
+#returnToTop:hover {
+transform: scale(0.996); /* Add a dark-grey background on hover */
+background-color: #e60b00;
+color: white;
+border: 2px solid #e60b00;
+}
+
+.commenthead{
+font-family: Montserrat-Semibold;
+}
+
+#fit-fusion{
+background: linear-gradient(
+    to right,
+    #007BFF,
+    #ff0d00,
+    #007BFF,
+    #ff0d00
+);
+background-size: 300% 100%;
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+animation: gradient-wave 5s linear infinite;
+}
+#foothead1{
+background: linear-gradient(
+    to right,
+    #007BFF,
+    #ff0d00,
+    #007BFF,
+    #ff0d00
+);
+background-size: 300% 100%;
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+animation: gradient-wave 6s linear infinite;
+}
+@keyframes gradient-wave {
+0% {
+    background-position: 0% 50%;
+}
+100% {
+    background-position: 300% 50%;
+}
+}
+
+

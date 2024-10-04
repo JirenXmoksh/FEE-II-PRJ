@@ -146,6 +146,9 @@
   body{
   width: 100%;
   }
+  nav{
+    box-shadow: 0 0 20px 10px black;
+  }
   .navbar ul li a{
     color: white;
     font-family: Montserrat-Medium;
@@ -239,7 +242,7 @@
       linear-gradient(-45deg, #fff0 0 32.25%, #000 60%) var(--ts),
       repeating-linear-gradient(90deg, var(--c0) 0 5%, var(--c1) 0 25%) var(--ts);
   
-        box-shadow: 0 2px 15px 1px #fff;
+    box-shadow: inset 0 0px 25px 5px #007bff;
     margin-top: 64px;
     width: 100%;
     padding: 10px;
