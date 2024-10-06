@@ -63,6 +63,24 @@ nav{
     color: #fff;
     font-family: Montserrat-Medium;
 }
+.form-floating {
+  position: relative;
+}
+
+#togglePassword {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+#togglePassword:focus {
+  outline: none;
+}
 .custom-form .form-control {
     border-radius: 30px;
 }

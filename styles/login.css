@@ -81,6 +81,24 @@ body{
 #password:hover{
     border: 1px solid grey;
 }
+.form-floating {
+  position: relative;
+}
+
+#togglePassword {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+#togglePassword:focus {
+  outline: none;
+}
 .form-control{
     color: white;
 }
@@ -130,7 +148,6 @@ body{
     height: auto;
     font-family: Montserrat-Light;
     background-color: black;
-    border-top: 1px solid white;
 }
 #foothead2{
     background: linear-gradient(to right, #007BFF, #ff0d00);

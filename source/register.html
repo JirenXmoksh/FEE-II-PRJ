@@ -130,18 +130,21 @@
                                     </div>
 
                                     <div class="col-lg-6 col-md-6 col-12">
-                                        <div class="form-floating text-light mb-4" style="font-family: Montserrat-Light">
-                                            <input type="password" name="password" id="password" class="form-control" placeholder="Password" required="">
-                                            <label for="password"><i class="fa fa-lock"></i> Password</label>
-                                        </div>
+                                      <div class="form-floating text-light mb-4" style="font-family: Montserrat-Light">
+                                        <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+                                        <label for="password"><i class="fa fa-lock"></i> Password</label>
+                                        <button type="button" id="togglePassword" class="btn btn-outline-secondary">
+                                            <i class="fa fa-eye"></i>
+                                        </button>
+                                      </div>
                                     </div>
+
                                     <div class="col-lg-12 col-12" style="font-family: Montserrat-Light">
                                         <div class="form-floating text-light mb-4">
                                             <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
                                             <label for="email"><i class="fa fa-envelope-o"></i> Email address</label>
                                         </div>
                                     </div>
-
 
                                     <label class="cont d-flex text-center justify-content-center">
                                       <input type="checkbox"><span id="foothead2" style="font-family: Montserrat-Semibold; font-size: 18px">I agree to the terms of services</span>

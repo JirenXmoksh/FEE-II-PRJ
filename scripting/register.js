@@ -12,6 +12,22 @@ function scrollFunction() {
   }
 }
 
+// Toggle Password
+
+// Get the password input and toggle button elements
+const passwordInput = document.getElementById('password');
+const togglePasswordButton = document.getElementById('togglePassword');
+
+// Add click event listener to the toggle button
+togglePasswordButton.addEventListener('click', function() {
+    // Toggle the type attribute of the password input
+    const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordInput.setAttribute('type', type);
+    
+    // Toggle the eye / eye-slash icon
+    this.querySelector('i').classList.toggle('fa-eye');
+    this.querySelector('i').classList.toggle('fa-eye-slash');
+});
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
