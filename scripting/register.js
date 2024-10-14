@@ -28,11 +28,72 @@ togglePasswordButton.addEventListener('click', function() {
     this.querySelector('i').classList.toggle('fa-eye');
     this.querySelector('i').classList.toggle('fa-eye-slash');
 });
+
+function validatePassword(password) {
+  // Check length
+  if (password.length < 10) {
+    return "Password must be at least 10 characters long.";
+  }
+  
+  // Check for lowercase
+  if (!/[a-z]/.test(password)) {
+    return "Password must contain at least one lowercase letter.";
+  }
+  
+  // Check for uppercase
+  if (!/[A-Z]/.test(password)) {
+    return "Password must contain at least one uppercase letter.";
+  }
+  if (!/[0-9]/.test(password)) {
+    return "Password must contain at least one digit.";
+  }
+  
+  // Check for special character
+  if (!/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(password)) {
+    return "Password must contain at least one special character.";
+  }
+  
+  // If all checks pass
+  return null;
+}
+
+// Get the password input and form elements
+const registrationForm = document.getElementById('registrationForm');
+const passwordError = document.getElementById('passwordError');
+
+// Add input event listener to the password field for real-time validation
+passwordInput.addEventListener('input', function() {
+  const password = this.value;
+  const errorMessage = validatePassword(password);
+  
+  if (errorMessage) {
+    passwordError.textContent = errorMessage;
+    passwordError.style.display = 'block';
+  } else {
+    passwordError.textContent = '';
+    passwordError.style.display = 'none';
+  }
+});
+
+// Add submit event listener to the form
+registrationForm.addEventListener('submit', function(event) {
+  const password = passwordInput.value;
+  const errorMessage = validatePassword(password);
+  
+  if (errorMessage) {
+    event.preventDefault(); // Prevent form submission
+    passwordError.textContent = errorMessage;
+    passwordError.style.display = 'block';
+  }
+});
+
+
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
 
 var tl = gsap.timeline();
 tl.from(".hero-section", {

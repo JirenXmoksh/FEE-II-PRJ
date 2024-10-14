@@ -322,9 +322,7 @@ textarea::-webkit-scrollbar-thumb {
   position: absolute;
   left: 0;
   bottom: 10px;
-  background:linear-gradient(to right, #f00, #00f);
-  -webkit-background-clip:text;
-  background-clip:text;
+  color: #aaa;
   font-size: 14px;
   transition: 0.4s;
   pointer-events: none;

@@ -21,18 +21,13 @@
 body{
     width: 100%;
     height: 100%;
-    /* Add your background pattern here */
-    /* background-color: lightblue; */
     background-image: radial-gradient(black 55%, #0000),
-      /* radial-gradient(black 55%, #0000), */
         linear-gradient(
           135deg,
           red,
           blue
         );
     background-size: 100% 0.5%, contain;
-    /* background-blend-mode: hard-light; */
-    /* background-position: 0 0, 1em 1em, 0 0; */
 }
 #userDrop ul{
   background-color: #110f0e;
@@ -96,6 +91,19 @@ nav{
 .account-form h2,
 .account-form button {
     font-family: Montserrat-Medium;
+}
+#passwordError{
+  position: absolute;
+  background-color: #000;
+  color: #ff0d00;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.4);
+  z-index: 1000;
+  margin-top: 5px;
+  max-width: 250px;
+  font-size: 14px;
 }
 #email{
     font-family: Montserrat-Medium;
