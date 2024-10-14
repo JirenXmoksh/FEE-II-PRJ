@@ -42,7 +42,7 @@ nav{
   font-family: Montserrat-Semibold;
 }
 #about-content {
-  background: url("../assets/Images/fit_bg.avif") no-repeat center center/cover; /* Add your own image URL here */
+  /* background: url("../assets/Images/fit_bg.avif") no-repeat center center/cover; Add your own image URL here */
   padding: 60px;
   font-family: 'Montserrat', sans-serif;
   color: #333;
