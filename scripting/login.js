@@ -22,6 +22,7 @@ function topFunction() {
 
 // Get the password input and toggle button elements
 const passwordInput = document.getElementById('password');
+const emailInput = document.getElementById('email');
 const togglePasswordButton = document.getElementById('togglePassword');
 
 // Add click event listener to the toggle button
@@ -33,6 +34,27 @@ togglePasswordButton.addEventListener('click', function() {
     // Toggle the eye / eye-slash icon
     this.querySelector('i').classList.toggle('fa-eye');
     this.querySelector('i').classList.toggle('fa-eye-slash');
+});
+
+
+// local storage
+window.onload = function() {
+  const savedEmail = localStorage.getItem('email');
+  const savedPassword = localStorage.getItem('password');
+
+  if (savedEmail) {
+      emailInput.value = savedEmail;
+  }
+};
+
+// Add event listeners to save data
+emailInput.addEventListener('input', function() {
+  localStorage.setItem('email', emailInput.value);
+});
+
+// Optional: Clear stored data when the form is submitted
+document.querySelector('.login-form').addEventListener('submit', function() {
+  localStorage.removeItem('email');
 });
 
 var tl = gsap.timeline();

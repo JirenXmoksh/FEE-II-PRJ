@@ -46,6 +46,7 @@ nav{
 ::placeholder{
     font-family: Montserrat-LightItalic;
 }
+
 .hero-section {
     min-height: 100vh;
     display: flex;
