@@ -1,16 +1,3 @@
-// Greeting section animations //
-var headTL = gsap.timeline();
-headTL.from("#hero .main .greet", {
-  opacity: 0,
-  delay: 1,
-  duration: 2.5,
-})
-headTL.from("#hero .main .quote", {
-  opacity: 0,
-  duration: 1.5,
-})
-
-// Greeting section animations //
 
 // Get the button
 let mybutton = document.getElementById("returnToTop");
@@ -47,44 +34,10 @@ tl2.from("#navbarNav ul li", {
     stagger: 0.15
 })
 
-let tl = gsap.timeline({
-  scrollTrigger:{
-    trigger: ".overlay",
-    start: "top 70%",
-  }
-});
-tl.from(".overlay h1", {
-  delay: 0.7,
-  y: -200,
-  duration: 1,
-  opacity: 0,
-  ease: "expo.out"
-})
-tl.from(".overlay p", {
-  opacity: 0,
-  y: -50,
-  duration: 0.6,
-  ease: "expo.out"
-})
-tl.from(".overlay .button-container", {
-  duration: 1,
-  y: -50,
-  opacity: 0,
-  ease: "expo.out"
-})
+// ------ Content animations ------- 
 
-gsap.from(".contenthead", {
-  scrollTrigger:{
-    trigger: "#content",
-    start: "top 65%",
-    scroller: "body"
-  },
-  y: -100,
-  opacity: 0,
-  delay: 0.4,
-  duration: 0.6,
-  ease: "expo.out"
-})
+// ------Content Animations ------
+
 
 // ------ footer animation -------
 gsap.registerPlugin(ScrollTrigger);

@@ -79,7 +79,7 @@ nav{
     font-family: Montserrat-Medium;
 }
 .navbar ul li a:hover{
-    color: #ff0d00;
+    color: #007BFF;
     transition: 0.4s;
 }
 ::placeholder{
@@ -100,7 +100,7 @@ main{
     margin-top: 64px;
     font-family: Montserrat-Semibold;
     background: #121212
-    radial-gradient(#890700 10%, transparent 15%);
+    radial-gradient(#001bb7 10%, transparent 15%);
     background-size: 20px 20px;
 }
 .xploreBtn{
@@ -112,11 +112,11 @@ main{
     font-family: Montserrat-Medium;
 }
 .xploreBtn:hover{
-    background-color: red;
-    border: 2px solid red;
+    background-color: #004BFF;
+    border: 2px solid #004BFF;
     color: white;
     transition: 0.4s ease-out;
-    box-shadow: 0 0 15px 0px red;
+    box-shadow: 0 0 15px 0px #004BFF;
 }
 /* Muscle group divs */
 
@@ -526,15 +526,15 @@ main{
 #foothead3{
     background: linear-gradient(
         to right,
-        #ff0d00,
-        #ff0d00,
-        #ff0d00
+        #007BFF,
+        #007BFF,
+        #007BFF
         );
         background-size: 300% 100%;
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-        text-shadow: 0 0px 8px red;
+        text-shadow: 0 0px 8px blue;
 }
 
 

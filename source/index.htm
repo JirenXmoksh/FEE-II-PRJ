@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>FitFusion</title>
+  <title>FIT FUSION</title>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +19,45 @@
   <script src="https://unpkg.com/scrollreveal@4"></script>
 
   <style>
+    #quoteText{
+      width: 70%;
+      font-size: calc(1vw + 1.5vh);
+    }
+    .main {
+      text-shadow: 0 0 10px white;
+      padding: 50px;
+      min-height: 100vh;
+      font-family: Montserrat-Medium;
+      color: white;
+      background-image: radial-gradient(black 55%, #0000),
+      /* radial-gradient(black 55%, #0000), */
+        linear-gradient(
+          135deg,
+          red,
+          blue
+        );
+    background-size: 100% 0.5%, contain;
+    }
+    .greet {
+        font-size: calc(3.5vw + 2.5vh);
+        word-wrap: break-word;
+    }
+    .qotbtn {
+        font-size: calc(0.5vw + 0.75vh);
+        padding: 5px 10px;
+        border: 2px solid white;
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        background-color:rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        margin-top: 10px;
+    }
+    .qotbtn:hover {
+        box-shadow: 0 0 10px 0px white;
+        color: black;
+        background-color: white;
+    }
   </style>
 </head>
 
@@ -47,11 +86,10 @@
               Training
             </a>
             <ul class="dropdown-menu border border-dark" aria-labelledby="navDrop">
-              <li><a href="#" class="dropdown-item text text-dark">Hypertrophy</a></li>
+              <li><a href="landing_hypertrophy.html" class="dropdown-item text text-dark">Hypertrophy</a></li>
               <li><a href="landing_strnth.html" class="dropdown-item text text-dark">Strength</a></li>
-              <li><a href="#" class="dropdown-item text text-dark">General</a></li>
-              <li><a href="#" class="dropdown-item text text-dark">Others</a></li>
-
+              <li><a href="landing_general.html" class="dropdown-item text text-dark">General</a></li>
+              <li><a href="landing_others.html" class="dropdown-item text text-dark">Others</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -90,23 +128,38 @@
   <script>
     ScrollReveal().reveal('.navbar', { duration: 1000 });
   </script>
-
   <!-- Navbar -->
-
+   
   <!-- Hero Section -->
-  <br>
-  <br>
-  <div class="container-fluid" id="hero">
-    <video autoplay muted loop class="w-100" id="backgroundVideo">
-      <source src="../assets/Videos/hero.mp4" type="video/mp4">
-      This was supposed to be the hero section but apparently your browser won't allow us to function properly :P.
-    </video>
-    <div class="overlay">
-      <h1 class="text-center justify-center"><span id="foothead2">FIT FUSION</span></h1>
-      <p style="font-family: Montserrat-Light; text-transform: uppercase" class="text-center">The ultimate guide to a stronger, sexier you</p>
-      <div style="display:flex; position: relative; margin-top: 10%; text-transform: uppercase;">
-        <a href="#content" class="btn" id="explore" style="font-family:Montserrat-Light">xPlore Now</a>
-        <a href="AboutUs.html" target="_blank" class="btn" id="learnmore" style="font-family:Montserrat-Light">Why are you here?</a>
+  <div class="container-fluid mt-5 p-0" id="hero">
+    <div class="row m-0">
+      <div class="col-12 p-0">
+        <div class="main row m-0">
+          <div class="greet col-12 d-flex align-items-center text-center justify-content-center"></div>
+          <div class="quote col-12 d-flex flex-column align-items-center text-center justify-content-center">
+            <div id="quoteText">Quote of the day</div>
+            <div style="display: flex; gap: 10px">
+              <button class="qotbtn mt-3">New Quote</button>
+              <a href="#backgroundVideo"><button class="qotbtn mt-3">Train</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 p-0">
+        <div class="video-section">
+          <video autoplay muted loop id="backgroundVideo">
+            <source src="../assets/Videos/hero.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="overlay">
+            <h1><span id="foothead2">FIT FUSION</span></h1>
+            <p style="font-family: Montserrat-Light; text-transform: uppercase">The ultimate guide to a stronger, sexier you</p>
+            <div class="button-container">
+              <a href="#content" class="btn" id="explore" style="font-family:Montserrat-Light">xPlore Now</a>
+              <a href="AboutUs.html" target="_blank" class="btn" id="learnmore" style="font-family:Montserrat-Light">Why are you here?</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -123,7 +176,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12 my-3">
                 <div class="card1">
                     <div class="card12 p-5 text text-light">
-                        <h5 class="d-flex card-title pt-1 pb-3 justify-content-between">STRENGTH TRAINING <a href="landing_strnth.html" class="Btn">xPLORE</a></h5>
+                        <h5 class="d-flex card-title pt-1 pb-3 justify-content-between">STRENGTH TRAINING <a href="landing_strnth.html" target="_blank" class="Btn">xPLORE</a></h5>
                         <p class="card-text pb-3">
                           In the realm of strength, where power meets grace, we sculpt our bodies, embracing the chase. With each lift, we rise and ignite, transforming shadows into radiant light.
                           Resistance our ally, we grow and expand,
@@ -139,7 +192,7 @@
             <div class=" col-lg-6 col-md-12 col-sm-12 my-3">
                 <div class="card2">
                   <div class="card22 p-5 text text-light">
-                      <h5 class="d-flex card-title pt-1 pb-3 justify-content-between">HYPERTROPHY CENTERED <a href="#" class="Btn">xPLORE</a></h5>
+                      <h5 class="d-flex card-title pt-1 pb-3 justify-content-between">HYPERTROPHY CENTERED <a href="landing_hypertrophy.html" target="_blank" class="Btn">xPLORE</a></h5>
                       <p class="card-text pb-3">In the art of hypertrophy, where muscles bloom,
                         We nurture strength, dispelling the gloom.
                         With each rep and set, we grow and define,
@@ -158,7 +211,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12 my-3">
                 <div class="card3">
                   <div class="card32 p-5 text text-light">
-                      <h5 class="d-flex card-title pt-1 pb-3 justify-content-between">GENERAL FITNESS <a href="#" class="Btn">xPLORE</a></h5>
+                      <h5 class="d-flex card-title pt-1 pb-3 justify-content-between">GENERAL FITNESS <a href="landing_general.html" target="_blank" class="Btn">xPLORE</a></h5>
                       <p class="card-text pb-3">In the tapestry of fitness, where balance unfolds,
                         We weave health and vitality, stories untold.
                         With each stride and stretch, we nurture our core,
@@ -177,7 +230,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12 my-3">
                 <div class="card4">
                   <div class="card42 p-5 text text-light">
-                      <h5 class="d-flex card-title pt-1 pb-3 justify-content-between">OTHER GOOD DOMAINS <a href="#" class="Btn">xPLORE</a></h5>
+                      <h5 class="d-flex card-title pt-1 pb-3 justify-content-between">OTHER GOOD DOMAINS <a href="landing_others.html" target="_blank" class="Btn">xPLORE</a></h5>
                       <p class="card-text pb-3">CALISTHENICS: In the dance of calisthenics, where strength and grace meet,
                         We stretch and we soar, with every movement sweet.
                         FLEXIBILITY: Flexibility guides us, empowering our flow,
@@ -199,11 +252,6 @@
               <div class="item" style="--position: 5"><img src="../assets/Images/sam.jpg" alt="image"></div>  
               <div class="item" style="--position: 6"><img src="../assets/Images/ronnie2.jpg" alt="image"></div>  
           </div>
-          <!-- <div class="content">
-              <h1 id="foothead3">
-                  Legends
-              </h1>
-          </div> -->
         </div>
         <div class="text-uppercase mt-5" id="foothead1" style="font-family: Montserrat-Bold"><h1>We'd love to hear about your experiences at FITFUSION!</h1></div>
           <script src="https://giscus.app/client.js"
@@ -258,7 +306,6 @@
         <div class="col-md-3 mb-4">
           <h3 style="font-family: Montserrat-Medium" id="foothead2">Connect with us</h3>
           <div class="our-team">
-            <!-- <a href="#" class="btn btn-primary square btn-sm m-1"><i class="fab fa-facebook"></i></a>-->
             <a href="https://www.facebook.com/MoXMogZ" target="_blank"><img src="../assets/Images/fbook.svg"
                 id="medialink" width="40" height="40"></a>
             <a href="https://www.instagram.com/moxmogz?igsh=emtxaWZ0dTVubDBv" target="_blank"><img
@@ -270,19 +317,15 @@
                 id="medialink" width="40" height="40"></a>
             <a href="https://github.com/Himanshu1237" target="_blank"><img src="../assets/Images/github.svg"
                 id="medialink" width="40" height="40"></a>
-
-            <!-- <i class="fa fa-instagram" aria-hidden="true"></i>
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    <i class="fa fa-discord" aria-hidden="true"></i> --> <!-- alternate icons (fontawesome cdn)-->
           </div>
         </div>
         <div class="col-md-3 mb-4">
           <h3 style="font-family: Montserrat-Medium" id="foothead2">Explore Training</h3>
           <ul class="list-unstyled">
-            <li id="linkk"><a href="index.htm" class="text-white text-decoration-none" id="linkk">Hypertrophy</a></li>
+            <li><a href="landing_hypertrophy.html" class="text-white text-decoration-none" id="linkk">Hypertrophy</a></li>
             <li><a href="landing_strnth.html" class="text-white text-decoration-none">Strength</a></li>
-            <li><a href="#" class="text-white text-decoration-none">General</a></li>
+            <li><a href="landing_general.html" class="text-white text-decoration-none">General</a></li>
+            <li><a href="landing_others.html" class="text-white text-decoration-none">Others</a></li>
           </ul>
         </div>
       </div>
@@ -303,16 +346,83 @@
     ScrollReveal().reveal('#footer', { duration: 2000 });
   </script> -->
   <!-- footer -->
+  <div id="bmi-popup-root"></div>
+  <div id="subscription-popup-root"></div>
+  <script>
+    const greet = document.querySelector(".greet");
+        const quoteElement = document.getElementById("quoteText");
+        const quoteButton = document.querySelector(".qotbtn");
 
+        function updateGreeting() {
+            const now = new Date();
+            const hours = now.getHours();
+            const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            const dayName = days[now.getDay()];
+            const username = "Moksh"; // Replace with actual username
+
+            let greeting;
+            if (hours >= 5 && hours < 12) {
+                greeting = "Good morning";
+            } else if (hours >= 12 && hours < 18) {
+                greeting = "Good afternoon";
+            } else if (hours >= 18 && hours < 22) {
+                greeting = "Good evening";
+            } else {
+                greeting = "Good night";
+            }
+
+            greet.textContent = `${greeting} ${username}! Happy ${dayName} ^_^`;
+        }
+
+        
+
+        const quotes = [
+            "The only bad workout is the one that didn't happen.",
+            "Sweat is just fat crying.",
+            "Your body can stand almost anything. It's your mind that you have to convince.",
+            "The pain you feel today will be the strength you feel tomorrow.",
+            "Fitness is not about being better than someone else. It's about being better than you used to be.",
+            "The only way to do great work is to love what you do.",
+            "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+            "Believe you can and you're halfway there.",
+            "The future belongs to those who believe in the beauty of their dreams.",
+            "Strive not to be a success, but rather to be of value.",
+            "Discipline is the bridge between goals and accomplishments.",
+            "Success isn't always about greatness. It's about consistency. Consistent hard work gains success. Greatness will come.",
+            "Champions aren't made in the gyms. Champions are made from something they have deep inside them-a desire, a dream, a vision.",
+            "It's not what you do once in a while; it's what you do day in and day out that makes the difference.",
+            "Talent is cheaper than table salt. What separates the talented individual from the successful one is a lot of hard work.",
+            "When you hit failure, your workout has just begun.",
+            "Some people want it to happen, some wish it would happen, others make it happen.",
+            "Exercise is king. Nutrition is queen. Put them together and you've got a kingdom.",
+
+        ];
+
+        function generateQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            quoteElement.textContent = quotes[randomIndex];
+        }
+
+        // Initial calls
+        updateGreeting();
+        generateQuote();
+
+        // Update greeting every minute
+        setInterval(updateGreeting, 60000);
+
+        // Event listener for quote generation
+        quoteButton.addEventListener("click", generateQuote);
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="../scripting/index.js"></script>
   <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
   <script src="../scripting/bmi-popup.js"></script>
+  <script type="text/babel" src="../scripting/subscription-popup.js"></script>
   <button onclick="topFunction()" id="returnToTop" title="Go to top">
       <i class="fa fa-arrow-up"></i>
   </button>
-  <div id="bmi-popup-root"></div>
 </body>
 </html>
