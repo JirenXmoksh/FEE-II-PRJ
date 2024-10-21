@@ -4,13 +4,13 @@ function SubscriptionPopup() {
     React.useEffect(() => {
         const showPopupInterval = setInterval(() => {
             setShowPopup(true);
-        }, 60000); // 1 minutes in milliseconds
+        },1000); // 1 minutes in milliseconds
 
         return () => clearInterval(showPopupInterval);
     }, []);
 
     const handleGoPro = () => {
-        window.location.href = 'your-pro-page-url-here';
+        window.location.href = 'source/Pricing.html';
     };
 
     const handleNotNow = () => {
