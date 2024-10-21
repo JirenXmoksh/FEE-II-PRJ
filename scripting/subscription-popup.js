@@ -4,7 +4,7 @@ function SubscriptionPopup() {
     React.useEffect(() => {
         const showPopupInterval = setInterval(() => {
             setShowPopup(true);
-        },1000); // 1 minutes in milliseconds
+        },60000); // 1 minutes in milliseconds
 
         return () => clearInterval(showPopupInterval);
     }, []);
