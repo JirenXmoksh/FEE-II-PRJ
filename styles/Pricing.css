@@ -103,6 +103,7 @@ body{
     /* text-shadow: 0 0px 20px white;   */
     font-size: 7vw;
     overflow: hidden;
+    background-color: #222;
 }
 #tick {
     background: linear-gradient(to right, #3cff00, #208701);

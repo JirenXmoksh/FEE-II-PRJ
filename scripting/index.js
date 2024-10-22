@@ -1,3 +1,17 @@
+// Greeting section animations //
+var headTL = gsap.timeline();
+headTL.from("#hero .main .greet", {
+  opacity: 0,
+  delay: 1,
+  duration: 2.5,
+})
+headTL.from("#hero .main .quote", {
+  opacity: 0,
+  duration: 1.5,
+})
+
+// Greeting section animations //
+
 // Get the button
 let mybutton = document.getElementById("returnToTop");
 
@@ -5,8 +19,8 @@ let mybutton = document.getElementById("returnToTop");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "none";
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
   }
@@ -33,26 +47,42 @@ tl2.from("#navbarNav ul li", {
     stagger: 0.15
 })
 
-let tl = gsap.timeline();
+let tl = gsap.timeline({
+  scrollTrigger:{
+    trigger: ".overlay",
+    start: "top 70%",
+  }
+});
 tl.from(".overlay h1", {
   delay: 0.7,
-  scale: 3,
+  y: -200,
   duration: 1,
   opacity: 0,
   ease: "expo.out"
 })
 tl.from(".overlay p", {
-  y: -500,
   opacity: 0,
-  scale: 2,
+  y: -50,
   duration: 0.6,
   ease: "expo.out"
 })
-tl.from(".overlay div", {
-  scale: 2,
-  duration: 0.6,
+tl.from(".overlay .button-container", {
+  duration: 1,
+  y: -50,
   opacity: 0,
-  stagger: 0.15,
+  ease: "expo.out"
+})
+
+gsap.from(".contenthead", {
+  scrollTrigger:{
+    trigger: "#content",
+    start: "top 65%",
+    scroller: "body"
+  },
+  y: -100,
+  opacity: 0,
+  delay: 0.4,
+  duration: 0.6,
   ease: "expo.out"
 })
 

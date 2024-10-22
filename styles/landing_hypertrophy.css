@@ -1,0 +1,605 @@
+html{
+    user-select: none;
+}
+body{
+    overflow-x:hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: Montserrat-SemiBold;
+    src: url(../assets/Fonts/Montserrat-SemiBold.ttf);
+}
+@font-face{
+    font-family: Montserrat-Light;
+    src: url(../assets/Fonts/Montserrat-Light.ttf);
+}
+@font-face{
+    font-family: Montserrat-LightItalic;
+    src: url(../assets/Fonts/Montserrat-LightItalic.ttf);
+}
+@font-face{
+    font-family: Montserrat-Medium;
+    src: url(../assets/Fonts/Montserrat-Medium.ttf);
+}
+@font-face{
+    font-family: Montserrat-Bold;
+    src: url(../assets/Fonts/Montserrat-Bold.ttf);
+}
+
+@media(min-width: 1441px){
+
+}
+@media(max-width: 1440px) and (min-width: 1056px){
+
+}
+@media (max-width: 1055px) and (min-width: 861px){
+
+}
+@media(max-width: 860px) and (min-width: 760px){
+
+}
+
+@media (max-width: 760px) and (min-width: 661px){
+ 
+}
+@media (max-width: 660px) and (min-width: 571px){
+
+}
+@media (max-width: 571px) and (min-width: 530px){
+
+}
+@media (max-width: 530px) and (min-width: 495px){
+
+}
+@media (max-width: 495px) and (min-width: 450px){
+
+}
+
+@media (max-width: 450px) and (min-width: 400px){
+
+}
+
+
+@media (max-width: 400px) and (min-width: 350px){
+
+}
+
+@media (max-width: 350px){
+
+}
+nav{
+    box-shadow: 0 0 20px 10px black;
+}
+.navbar ul li a{
+    color: white;
+    font-family: Montserrat-Medium;
+}
+.navbar ul li a:hover{
+    color: #007BFF;
+    transition: 0.4s;
+}
+::placeholder{
+    font-family: Montserrat-LightItalic;
+}
+#userDrop ul{
+    background-color: #110f0e;
+}
+
+/* Content section */
+
+main{
+    background-color: #121212;
+}
+
+#heading{
+    overflow: hidden;
+    margin-top: 64px;
+    font-family: Montserrat-Semibold;
+    background: #121212
+    radial-gradient(#001bb7 10%, transparent 15%);
+    background-size: 20px 20px;
+}
+.xploreBtn{
+    border: 2px solid #ddd;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-family: Montserrat-Medium;
+}
+.xploreBtn:hover{
+    background-color: #004BFF;
+    border: 2px solid #004BFF;
+    color: white;
+    transition: 0.4s ease-out;
+    box-shadow: 0 0 15px 0px #004BFF;
+}
+/* Muscle group divs */
+
+/* Biceps */
+#biceps h3{
+    text-shadow: 0 0px 10px black;
+    font-size: 10vw;
+}
+#biceps {
+    overflow: hidden;
+    border-radius: 20px;
+    background-image: url('../assets/Images/Biceps.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+  
+#biceps::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+#bicepContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background: #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+}
+/* Biceps */
+#triceps h3{
+    text-shadow: 0 0px 15px black;
+    font-size: 10vw;
+}
+#triceps {
+    overflow: hidden;
+    border-radius: 20px;
+    background-image: url('../assets/Images/Triceps.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+  
+#triceps::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+#tricepContent{
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background: #ddd;
+}
+
+/* Chest */
+#chest h3{
+    text-shadow: 0 0px 15px black;
+    font-size: 7vw;
+}
+#chest {
+    overflow: hidden;
+    border-radius: 20px;
+    background-image: url('../assets/Images/Chest2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+  
+#chest::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+#chestContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background: #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Back */
+#back h3{
+    text-shadow: 0 0px 10px black;
+    font-size: 8vw;
+    color: white;
+}
+#back {
+    overflow: hidden;
+    border-radius: 20px;
+    background-image: url('../assets/Images/Back2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+  
+#back::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+#backContent{
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+/* Shoulder */
+#shoulders h3{
+    text-shadow: 0 0px 15px black;
+    font-size: 8vw;
+}
+#shoulders {
+    overflow: hidden;
+    border-radius: 20px;
+    background-image: url('../assets/Images/Shoulders.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+  
+#shoulders::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+#shoulderContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background: #ddd;
+    text-shadow: 0 0px 10px red;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Quads */
+#quads h3{
+    text-shadow: 0 0px 15px black;
+    font-size: 11vw;
+}
+#quads {
+    overflow: hidden;
+    border-radius: 20px;
+    background-image: url('../assets/Images/Quads.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+  
+#quads::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+#quadsContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background: #ddd;
+    text-shadow: 0 0px 10px black;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Hamstrings */
+#hamstrings h3{
+    text-shadow: 0 0px 10px black;
+    font-size: 6vw;
+}
+#hamstrings {
+    overflow: hidden;
+    border-radius: 20px;
+    background-image: url('../assets/Images/Hamstrings.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+  
+#hamstrings::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+#hamstringsContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background: #ddd;
+    text-shadow: 0 0px 10px black;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Calves */
+#calves h3{
+    text-shadow: 0 0px 15px black;
+    font-size: 11vw;
+}
+#calves {
+    overflow: hidden;
+    border-radius: 20px;
+    background-image: url('../assets/Images/Calves.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+  
+#calves::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+#calvesContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background: #ddd;
+    text-shadow: 0 0px 10px black;
+    border-radius: 15px;
+    overflow: hidden;
+}
+/* Core */
+#core h3{
+    text-shadow: 0 0px 15px black;
+    font-size: 14vw;
+}
+#core {
+    overflow: hidden;
+    border-radius: 20px;
+    background-image: url('../assets/Images/Core.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+  
+#core::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+#coreContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background: #ddd;
+    text-shadow: 0 0px 10px black;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#footer{
+    border-top: 1px solid white;
+    height: auto;
+    font-family: Montserrat-Light;
+    background-color: black;
+}
+
+#foothead2{
+    background: linear-gradient(to right, #007BFF, #ff0d00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#foothead3{
+    background: linear-gradient(
+        to right,
+        #007BFF,
+        #007BFF,
+        #007BFF
+        );
+        background-size: 300% 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0 0px 8px blue;
+}
+
+
+#medialink:hover{
+    transition: 0.4s;
+    transform: scale(0.965);
+}
+#returnToTop {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 10px; /* Place the button 20px from the bottom */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: 2px solid white; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(0, 0, 0, 0.6); /* Green background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 60%; /* Rounded corners */
+    font-size: 14px; /* Increase font size */
+    height: 55px;
+    width: 55px;
+    transition: 0.3s ease-in-out;
+}
+
+#returnToTop:hover {
+    transform: scale(0.996); /* Add a dark-grey background on hover */
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+}
+
+#fit-fusion{
+    background: linear-gradient(
+    to right,
+    #007BFF,
+    #ff0d00,
+    #007BFF,
+    #ff0d00
+    );
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-wave 5s linear infinite;
+}
+#foothead1{
+    background: linear-gradient(
+    to right,
+    #007BFF,
+    #ff0d00,
+    #007BFF,
+    #ff0d00
+    );
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-wave 6s linear infinite;
+}
+@keyframes gradient-wave {
+    0% {
+    background-position: 0% 50%;
+    }
+    100% {
+    background-position: 300% 50%;
+    }
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>FF / Hypertrophy</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../styles/landing_hypertrophy.css">
+  <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
+  <link rel="icon" type="image/x-icon" href="../assets/Images/fficon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../styles/fosm/css/font-awesome.min.css">
+
+  <script src="../styles/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4"></script>
+
+  <style>
+    .jumbotron {
+      background-color: #f8f9fa;
+      padding: 4rem 2rem;
+    }
+    
+    .muscle-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+    
+    .muscle-group h3 {
+      color: #fff;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      align-self: flex-start;
+      font-family: Montserrat-Medium;
+    }
+    
+    .muscle-description {
+      max-width: 60%;
+      text-align: justify;
+      color: black;
+      text-shadow: 0 0 12px black;
+      font-family: Montserrat-Medium;
+      font-size: 1.1vw;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-xl navbar-dark" style="background-color: black">
+    <div class="container">
+      <a class="navbar-brand mb-0 h1" href="../index.htm">
+        <img src="../assets/Images/fficon.png" width="40px" height="40px"
+          class="d-inline-block align-right border border-2 border-dark rounded ">
+        <strong class="mx-3" style="font-family: Montserrat-Bold" id="fit-fusion">FIT FUSION</strong>
+      </a>
+      <!-- collapse toggle button -->
+      <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-5">
+          <li class="nav-item active">
+            <a href="../index.htm" class="nav-link">Home </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="navDrop" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Training
+            </a>
+            <ul class="dropdown-menu border border-dark" aria-labelledby="navDrop">
+              <li><a href="landing_hypertrophy.html" class="dropdown-item text text-dark">Hypertrophy</a></li>
+              <li><a href="landing_strnth.html" class="dropdown-item text text-dark">Strength</a></li>
+              <li><a href="landing_general.html" class="dropdown-item text text-dark">General</a></li>
+              <li><a href="landing_others.html" class="dropdown-item text text-dark">Others</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="AboutUs.html" target="_blank" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="ContactUs.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="register.html" target="_blank" class="nav-link">Sign up </a>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" target="_blank" class="nav-link">Login</a>
+          </li>
+        </ul>
+      </div>
+     
+      <div class="d-flex align-items-center">
+        <div class="dropdown" id="userDrop">
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="../assets/Images/user.jpg" alt="User" width="36" height="36" class="rounded-circle me-2 border border-dark border-2">
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end border border-dark" aria-labelledby="userDropdown">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+            <li><a class="dropdown-item" href="Pricing.html">Subscription</a></li>
+            <li><a class="dropdown-item" id="bmiCalculatorLink" href="#">BMI Calculator</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- The scroll reveal animation -->
+  <script>
+    ScrollReveal().reveal('.navbar', { duration: 1000 });
+  </script>
+
+  <!-- Navbar -->
+
+  <!-- Content Section Starts border border-light-->
+  <main>
+    <div class="jumbotron text-center text-uppercase" id="heading">
+      <h1 class="display-3" id="foothead3"><span style="color:rgb(255, 255, 255);text-shadow: 0 0 8px white">xPlore</span> Hypertrophy <span style="color: white; text-shadow: 0 0 8px white">Training at FITFUSION</span></h1>
+    </div>
+    
+    <div class="row back">
+      <div class="col-md-6 col-sm-12 col-lg-6 muscle-group" id="back">
+        <h3>Dorsals</h3>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 text-light d-flex align-items-center justify-content-center" id="backContent">
+        <p class="muscle-description">Is your back feeling neglected? Quit leaning back on those couch cushions! Our program will have you standing tall and proud—unless you keep canceling your workouts!</p>
+        <a href="hyp_back.html"><button class="xploreBtn">xPlore</button></a>
+      </div>
+    </div>
+
+    <div class="row chest">
+      <div class="col-lg-6 col-md-6 col-sm-12 text-light d-flex align-items-center justify-content-center" id="chestContent">
+        <p class="muscle-description">Stop waiting for the 'perfect time' to flex! Your chest won't build itself, so let's pump up those pecs before your procrastination turns into a shelf of regrets!</p>
+        <a href="hyp_chest.html"><button class="xploreBtn">xPlore</button></a>
+      </div>
+      <div class="col-md-6 col-sm-12 col-lg-6 muscle-group" id="chest">
+        <h3>Pectorals</h3>
+      </div>
+    </div>
+
+    <div class="row bicep">
+      <div class="col-md-6 col-sm-12 col-lg-6 muscle-group" id="biceps">
+        <h3>Biceps</h3>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 text-light d-flex align-items-center justify-content-center" id="bicepContent">
+        <p class="muscle-description">Still waiting to show off those biceps? Remember, the only curls you're getting from procrastination are the ones in a bag of chips! Let's build those arms instead!</p>
+        <a href="hyp_biceps.html"><button class="xploreBtn">xPlore</button></a>
+      </div>
+    </div>
+
+    <div class="row triceps">
+      <div class="col-lg-6 col-md-6 col-sm-12 text-light d-flex align-items-center justify-content-center" id="tricepContent">
+        <p class="muscle-description">Your triceps could be looking sharp, but instead, they're as flat as your motivation! Get pumped with our program and watch them transform from flab to fab!</p>
+        <a href="hyp_triceps.html"><button class="xploreBtn">xPlore</button></a>
+      </div>
+      <div class="col-md-6 col-sm-12 col-lg-6 muscle-group" id="triceps">
+        <h3>Triceps</h3>
+      </div>
+    </div>
+
+    <div class="row shoulders">
+      <div class="col-md-6 col-sm-12 col-lg-6 muscle-group" id="shoulders">
+        <h3>Deltoids</h3>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 text-light d-flex align-items-center justify-content-center" id="shoulderContent">
+        <p class="muscle-description">Don't let your shoulders carry the weight of procrastination! Lift them to new heights with our hypertrophy routine and finally say goodbye to shoulder shrugging… literally!</p>
+        <a href="hyp_shoulder.html"><button class="xploreBtn">xPlore</button></a>
+      </div>
+    </div>
+
+    <div class="row quads">
+      <div class="col-lg-6 col-md-6 col-sm-12 text-light d-flex align-items-center justify-content-center" id="quadsContent">
+        <p class="muscle-description">Are your quads more 'marshmallow' than 'muscle'? Forget about waiting for motivation to strike—our hypertrophy program will have you crushing leg day in no time!</p>
+        <a href="hyp_quads.htm"><button class="xploreBtn">xPlore</button></a>
+      </div>
+      <div class="col-md-6 col-sm-12 col-lg-6 muscle-group" id="quads">
+        <h3>Quads</h3>
+      </div>
+    </div>
+
+    <div class="row hamstrings">
+      <div class="col-md-6 col-sm-12 col-lg-6 muscle-group" id="hamstrings">
+        <h3>Hamstrings</h3>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 text-light d-flex align-items-center justify-content-center" id="hamstringsContent">
+        <p class="muscle-description">Don't let your hamstrings be the unsung heroes of your body! Stop lagging and start legging; they deserve better than just sitting around!</p>
+        <a href="hyp_hamstrings.html"><button class="xploreBtn">xPlore</button></a>
+      </div>
+    </div>
+
+    <div class="row calves">
+      <div class="col-lg-6 col-md-6 col-sm-12 text-light d-flex align-items-center justify-content-center" id="calvesContent">
+        <p class="muscle-description">Tired of having legs that look like they skipped leg day every day? Stop procrastinating and start sculpting those calves for a 'leg-endary' transformation!</p>
+        <a href="hyp_calves.html"><button class="xploreBtn">xPlore</button></a>
+      </div>
+      <div class="col-md-6 col-sm-12 col-lg-6 muscle-group" id="calves">
+        <h3>Calves</h3>
+      </div>
+    </div>
+
+    <div class="row core">
+      <div class="col-md-6 col-sm-12 col-lg-6 muscle-group" id="core">
+        <h3>Core</h3>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 text-light d-flex align-items-center justify-content-center" id="coreContent">
+        <p class="muscle-description">Getting a shredded core is more dependent on your diet but good exercises are equally important. We will help you get your biscuits, provided, you have the motivation :D</p>
+        <a href="hyp_Abdomen.html"><button class="xploreBtn">xPlore</button></a>
+      </div>
+    </div>
+  </main>
+  <script>
+    ScrollReveal().reveal('main', {delay: 200, duration: 1000 });
+  </script>
+  <!-- Content Section Ends-->
+
+  <!-- footer -->
+  <div class="container-fluid py-5 text-white" id="footer">
+    <div class="container p-2">
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <a class="text-decoration-none text-primary navbar-brand" href="../index.htm">
+            <img src="../assets/Images/fficon.png" width="80px" height="70px"
+              class="d-inline-block align-right border border-2 border-dark rounded">
+            <h1 style="font-family: Montserrat-Bold" class="mt-2" id="foothead1">FIT FUSION</h1>
+          </a>
+          <p class="text-left-sm" style="font-size: 12px">Science over Bro-Science</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h3 style="font-family: Montserrat-Medium" id="foothead2">Quick Links</h3>
+          <ul class="list-unstyled">
+            <li><a href="../index.htm" class="text-white text-decoration-none"><i class="fa fa-home" aria-hidden="true">
+                </i> Home</a></li>
+            <li><a href="AboutUs.html" target="_blank" class="text-white text-decoration-none"> <i
+                  class="fa fa-question" aria-hidden="true"></i> About</a></li>
+            <li><a href="ContactUs.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-phone"
+                  aria-hidden="true"></i> Contact</a></li>
+            <li><a href="register.html" target="_blank" class="text-white text-decoration-none"> <i
+                  class="fa fa-user-plus" aria-hidden="true"></i> Sign up</a></li>
+            <li><a href="login.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-sign-in"
+                  aria-hidden="true"></i> Login</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h3 style="font-family: Montserrat-Medium" id="foothead2">Connect with us</h3>
+          <div class="our-team">
+            <!-- <a href="#" class="btn btn-primary square btn-sm m-1"><i class="fab fa-facebook"></i></a>-->
+            <a href="https://www.facebook.com/MoXMogZ" target="_blank"><img src="../assets/Images/fbook.svg"
+                id="medialink" width="40" height="40"></a>
+            <a href="https://www.instagram.com/moxmogz?igsh=emtxaWZ0dTVubDBv" target="_blank"><img
+                src="../assets/Images/insta.svg" id="medialink" width="40" height="40"></a>
+            <a
+              href="https://www.linkedin.com/in/vishwanath-singh-7bb593298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img
+                src="../assets/Images/linkedin.svg" id="medialink" width="40" height="40"></a>
+            <a href="https://discord.gg/tw29QC2a" target="_blank "><img src="../assets/Images/discord.svg"
+                id="medialink" width="40" height="40"></a>
+            <a href="https://github.com/Himanshu1237" target="_blank"><img src="../assets/Images/github.svg"
+                id="medialink" width="40" height="40"></a>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h3 style="font-family: Montserrat-Medium" id="foothead2">Explore Training</h3>
+          <ul class="list-unstyled">
+            <li><a href="landing_hypertrophy.html" class="text-white text-decoration-none">Hypertrophy</a></li>
+            <li><a href="landing_strnth.html" class="text-white text-decoration-none">Strength</a></li>
+            <li><a href="landing_general.html" class="text-white text-decoration-none">General</a></li>
+            <li><a href="landing_others.html" class="text-white text-decoration-none">Others</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="mb-0"> <i class="fa fa-copyright"></i> 2024 Fit Fusion | All rights reserved.</p>
+          <p class="mb-0"><a href="#" class="text-decoration-none fw-bold text-primary">Terms of Service</a> | <a href=#
+              class="text-decoration-none fw-bold text-primary">Privacy Policy</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../scripting/landing_hypertrophy.js"></script>
+  <button onclick="topFunction()" id="returnToTop" title="Go to top">
+      <i class="fa fa-arrow-up"></i>
+  </button>
+</body>
+</html>

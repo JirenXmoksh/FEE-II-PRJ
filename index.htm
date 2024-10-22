@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>FIT FUSION</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/css/bootstrap.min.css">
+  <link rel="icon" type="image/x-icon" href="assets/Images/fficon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles/fosm/css/font-awesome.min.css">
+
+  <script src="styles/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4"></script>
+
+  <style>
+    #quoteText{
+      width: 70%;
+      font-size: calc(1vw + 1.5vh);
+    }
+    .main {
+      text-shadow: 0 0 10px white;
+      padding: 50px;
+      min-height: 100vh;
+      font-family: Montserrat-Medium;
+      color: white;
+      background-image: radial-gradient(black 55%, #0000),
+      /* radial-gradient(black 55%, #0000), */
+        linear-gradient(
+          135deg,
+          red,
+          blue
+        );
+    background-size: 100% 0.5%, contain;
+    }
+    .greet {
+        font-size: calc(3.5vw + 2.5vh);
+        word-wrap: break-word;
+    }
+    .qotbtn {
+        font-size: calc(0.5vw + 0.75vh);
+        padding: 5px 10px;
+        border: 2px solid white;
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        background-color:rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        margin-top: 10px;
+    }
+    .qotbtn:hover {
+        box-shadow: 0 0 10px 0px white;
+        color: black;
+        background-color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-xl navbar-dark" style="background-color: black">
+    <div class="container">
+      <a class="navbar-brand mb-0 h1" href="index.htm">
+        <img src="assets/Images/fficon.png" width="40px" height="40px"
+          class="d-inline-block align-right border border-2 border-dark rounded ">
+        <strong class="mx-3" style="font-family: Montserrat-Bold" id="fit-fusion">FIT FUSION</strong>
+      </a>
+      <!-- collapse toggle button -->
+      <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-5">
+          <li class="nav-item active">
+            <a href="index.htm" class="nav-link">Home </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="navDrop" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Training
+            </a>
+            <ul class="dropdown-menu border border-dark" aria-labelledby="navDrop">
+              <li><a href="source/landing_hypertrophy.html" class="dropdown-item text text-dark">Hypertrophy</a></li>
+              <li><a href="source/landing_strnth.html" class="dropdown-item text text-dark">Strength</a></li>
+              <li><a href="source/landing_general.html" class="dropdown-item text text-dark">General</a></li>
+              <li><a href="source/landing_others.html" class="dropdown-item text text-dark">Others</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="source/AboutUs.html" target="_blank" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="source/ContactUs.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="source/register.html" target="_blank" class="nav-link">Sign up </a>
+          </li>
+          <li class="nav-item">
+            <a href="source/login.html" target="_blank" class="nav-link">Login</a>
+          </li>
+        </ul>
+      </div>
+     
+      <div class="d-flex align-items-center">
+        <div class="dropdown" id="userDrop">
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="assets/Images/user.jpg" alt="User" width="36" height="36" class="rounded-circle me-2 border border-dark border-2">
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end border border-dark" aria-labelledby="userDropdown">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+            <li><a class="dropdown-item" href="source/Pricing.html">Subscription</a></li>
+            <li><a class="dropdown-item" id="bmiCalculatorLink" href="#">BMI Calculator</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- The scroll reveal animation -->
+  <script>
+    ScrollReveal().reveal('.navbar', { duration: 1000 });
+  </script>
+  <!-- Navbar -->
+   
+  <!-- Hero Section -->
+  <div class="container-fluid mt-5 p-0" id="hero">
+    <div class="row m-0">
+      <div class="col-12 p-0">
+        <div class="main row m-0">
+          <div class="greet col-12 d-flex align-items-center text-center justify-content-center"></div>
+          <div class="quote col-12 d-flex flex-column align-items-center text-center justify-content-center">
+            <div id="quoteText">Quote of the day</div>
+            <div style="display: flex; gap: 10px">
+              <button class="qotbtn mt-3">New Quote</button>
+              <a href="#backgroundVideo"><button class="qotbtn mt-3">Train</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 p-0">
+        <div class="video-section p-5">
+          <video autoplay muted loop id="backgroundVideo">
+            <source src="assets/Videos/intro2.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="overlay">
+            <!-- <h1><span id="foothead2">FIT FUSION</span></h1> -->
+            <!-- <p style="font-family: Montserrat-Light; text-transform: uppercase">The ultimate guide to a stronger, sexier you</p> -->
+            <div class="button-container">
+              <a href="#content" class="btn" id="explore" style="font-family:Montserrat-Light">xPlore Now</a>
+              <a href="source/AboutUs.html" target="_blank" class="btn" id="learnmore" style="font-family:Montserrat-Light">Why are you here?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- The scroll reveal animation -->
+  <script>
+    ScrollReveal().reveal('#hero', { duration: 2000 });
+  </script>
+  <!-- Hero Section -->
+
+  <!-- Content Section -->
+      <div class="container-fluid" id="content" style="justify-content: center;">
+          <div class="contenthead mt-5"><span id="foothead1">xPLORE OUR TRAINING<br></span></div>
+          <div class="row justify-content-center p-5 m-5">
+            <div class="col-lg-6 col-md-12 col-sm-12 my-3">
+                <div class="card1">
+                    <div class="card12 p-5 text text-light">
+                        <h5 class="d-flex card-title pt-1 pb-3 justify-content-between">STRENGTH TRAINING <a href="source/landing_strnth.html" target="_blank" class="Btn">xPLORE</a></h5>
+                        <p class="card-text pb-3">
+                          In the realm of strength, where power meets grace, we sculpt our bodies, embracing the chase. With each lift, we rise and ignite, transforming shadows into radiant light.
+                          Resistance our ally, we grow and expand,
+                          Building not just muscle, but a resilient strand.
+                          Join us on this journey, let your spirit take wing,
+                          Unleash your might and discover the joy it can bring.</p>
+                    </div>
+                </div>
+            </div>
+            <script>
+              ScrollReveal().reveal('.card1, .card12', { delay: 100, duration: 3000 });
+            </script>
+            <div class=" col-lg-6 col-md-12 col-sm-12 my-3">
+                <div class="card2">
+                  <div class="card22 p-5 text text-light">
+                      <h5 class="d-flex card-title pt-1 pb-3 justify-content-between">HYPERTROPHY CENTERED <a href="source/landing_hypertrophy.html" target="_blank" class="Btn">xPLORE</a></h5>
+                      <p class="card-text pb-3">In the art of hypertrophy, where muscles bloom,
+                        We nurture strength, dispelling the gloom.
+                        With each rep and set, we grow and define,
+                        Transforming our bodies, one curve at a time.
+                        
+                        Time under tension, the rhythm we seek,
+                        Crafting our form, both strong and unique.
+                        Join us on this journey, where limits are pushed,
+                        Awaken your power, as your potential is flushed.</p>
+                  </div>
+                </div>
+            </div>
+            <script>
+              ScrollReveal().reveal('.card2, .card22', { delay: 400, duration: 3000 });
+            </script>
+            <div class="col-lg-6 col-md-12 col-sm-12 my-3">
+                <div class="card3">
+                  <div class="card32 p-5 text text-light">
+                      <h5 class="d-flex card-title pt-1 pb-3 justify-content-between">GENERAL FITNESS <a href="source/landing_general.html" target="_blank" class="Btn">xPLORE</a></h5>
+                      <p class="card-text pb-3">In the tapestry of fitness, where balance unfolds,
+                        We weave health and vitality, stories untold.
+                        With each stride and stretch, we nurture our core,
+                        Building a life rich in movement and more.
+                        
+                        From laughter in sessions to the joy that we share,
+                        Discovering strength, both the body and care.
+                        Join us on this journey, embrace every part,
+                        For in the realm of fitness, we fuel the full heart.</p>
+                  </div>
+                </div>
+            </div>
+            <script>
+              ScrollReveal().reveal('.card3, .card32', { delay: 700, duration: 3000 });
+            </script>
+            <div class="col-lg-6 col-md-12 col-sm-12 my-3">
+                <div class="card4">
+                  <div class="card42 p-5 text text-light">
+                      <h5 class="d-flex card-title pt-1 pb-3 justify-content-between">OTHER GOOD DOMAINS <a href="source/landing_others.html" target="_blank" class="Btn">xPLORE</a></h5>
+                      <p class="card-text pb-3">CALISTHENICS: In the dance of calisthenics, where strength and grace meet,
+                        We stretch and we soar, with every movement sweet.
+                        FLEXIBILITY: Flexibility guides us, empowering our flow,
+                        Together we thrive, as our true potential grows.</p>
+                  </div>
+                </div>
+            </div>
+            <script>
+              ScrollReveal().reveal('.card4, .card42', { delay: 1000, duration: 3000 });
+            </script>
+        </div>
+        <div><h1 class="text-center" style="width: 100%; font-size: 4vw; padding: 20px; font-family: Montserrat-Semibold; text-shadow: 0 0 5px rgba(255, 255, 255, 0.3)" id="foothead2">Some Quotes of Motivation from the bodybuilding legends</h1></div>
+        <div class="banner my-5">
+          <div class="slider" style="--quantity: 6">
+              <div class="item" style="--position: 1"><img src="assets/Images/arnold.jpg" alt="image"></div>  
+              <div class="item" style="--position: 2"><img src="assets/Images/arnold2.jpg" alt="image"></div>  
+              <div class="item" style="--position: 3"><img src="assets/Images/arnold3.jpg" alt="image"></div>  
+              <div class="item" style="--position: 4"><img src="assets/Images/ronnie.jpg" alt="image"></div>  
+              <div class="item" style="--position: 5"><img src="assets/Images/sam.jpg" alt="image"></div>  
+              <div class="item" style="--position: 6"><img src="assets/Images/ronnie2.jpg" alt="image"></div>  
+          </div>
+        </div>
+        <div class="text-uppercase mt-5" id="foothead1" style="font-family: Montserrat-Bold"><h1>We'd love to hear about your experiences at FITFUSION!</h1></div>
+          <script src="https://giscus.app/client.js"
+          data-repo="JirenXmoksh/FEE-II-PRJ"
+          data-repo-id="R_kgDOMcHQUQ"
+          data-category="General"
+          data-category-id="DIC_kwDOMcHQUc4Ci6XX"
+          data-mapping="title"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="top"
+          data-theme="preferred_color_scheme"
+          data-lang="en"
+          crossorigin="anonymous"
+          async>
+          </script>
+      </div>
+  <!-- The scroll reveal animation -->
+  <script>
+    ScrollReveal().reveal('#content', { duration: 1000 });
+  </script>
+  <!-- Content Section -->
+
+  <!-- footer -->
+  <div class="container-fluid py-5 text-white" id="footer">
+    <div class="container p-2">
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <a class="text-decoration-none text-primary navbar-brand" href="index.htm">
+            <img src="assets/Images/fficon.png" width="80px" height="70px"
+              class="d-inline-block align-right border border-2 border-dark rounded">
+            <h1 style="font-family: Montserrat-Bold" class="mt-2" id="foothead1">FIT FUSION</h1>
+          </a>
+          <p class="text-left-sm" style="font-size: 12px">Science over Bro-Science</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h3 style="font-family: Montserrat-Medium" id="foothead2">Quick Links</h3>
+          <ul class="list-unstyled">
+            <li><a href="index.htm" class="text-white text-decoration-none"><i class="fa fa-home" aria-hidden="true">
+                </i> Home</a></li>
+            <li><a href="source/AboutUs.html" target="_blank" class="text-white text-decoration-none"> <i
+                  class="fa fa-question" aria-hidden="true"></i> About</a></li>
+            <li><a href="source/ContactUs.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-phone"
+                  aria-hidden="true"></i> Contact</a></li>
+            <li><a href="source/register.html" target="_blank" class="text-white text-decoration-none"> <i
+                  class="fa fa-user-plus" aria-hidden="true"></i> Sign up</a></li>
+            <li><a href="source/login.html" target="_blank" class="text-white text-decoration-none"> <i class="fa fa-sign-in"
+                  aria-hidden="true"></i> Login</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h3 style="font-family: Montserrat-Medium" id="foothead2">Connect with us</h3>
+          <div class="our-team">
+            <a href="https://www.facebook.com/MoXMogZ" target="_blank"><img src="assets/Images/fbook.svg"
+                id="medialink" width="40" height="40"></a>
+            <a href="https://www.instagram.com/moxmogz?igsh=emtxaWZ0dTVubDBv" target="_blank"><img
+                src="assets/Images/insta.svg" id="medialink" width="40" height="40"></a>
+            <a
+              href="https://www.linkedin.com/in/vishwanath-singh-7bb593298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img
+                src="assets/Images/linkedin.svg" id="medialink" width="40" height="40"></a>
+            <a href="https://discord.gg/tw29QC2a" target="_blank "><img src="assets/Images/discord.svg"
+                id="medialink" width="40" height="40"></a>
+            <a href="https://github.com/Himanshu1237" target="_blank"><img src="assets/Images/github.svg"
+                id="medialink" width="40" height="40"></a>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h3 style="font-family: Montserrat-Medium" id="foothead2">Explore Training</h3>
+          <ul class="list-unstyled">
+            <li><a href="source/landing_hypertrophy.html" class="text-white text-decoration-none" id="linkk">Hypertrophy</a></li>
+            <li><a href="source/landing_strnth.html" class="text-white text-decoration-none">Strength</a></li>
+            <li><a href="source/landing_general.html" class="text-white text-decoration-none">General</a></li>
+            <li><a href="source/landing_others.html" class="text-white text-decoration-none">Others</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="mb-0"> <i class="fa fa-copyright"></i> 2024 Fit Fusion | All rights reserved.</p>
+          <p class="mb-0"><a href="#" class="text-decoration-none fw-bold text-primary">Terms of Service</a> | <a href=#
+              class="text-decoration-none fw-bold text-primary">Privacy Policy</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- the scroll reveal animation -->
+  <!-- <script>
+    ScrollReveal().reveal('#footer', { duration: 2000 });
+  </script> -->
+  <!-- footer -->
+  <div id="bmi-popup-root"></div>
+  <div id="subscription-popup-root"></div>
+  <script>
+    const greet = document.querySelector(".greet");
+        const quoteElement = document.getElementById("quoteText");
+        const quoteButton = document.querySelector(".qotbtn");
+
+        function updateGreeting() {
+            const now = new Date();
+            const hours = now.getHours();
+            const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            const dayName = days[now.getDay()];
+            const username = "Moksh"; // Replace with actual username
+
+            let greeting;
+            if (hours >= 5 && hours < 12) {
+                greeting = "Good morning";
+            } else if (hours >= 12 && hours < 18) {
+                greeting = "Good afternoon";
+            } else if (hours >= 18 && hours < 22) {
+                greeting = "Good evening";
+            } else {
+                greeting = "Good night";
+            }
+
+            greet.textContent = `${greeting} ${username}! Happy ${dayName} ^_^`;
+        }
+
+        
+
+        const quotes = [
+            "The only bad workout is the one that didn't happen.",
+            "Sweat is just fat crying.",
+            "Your body can stand almost anything. It's your mind that you have to convince.",
+            "The pain you feel today will be the strength you feel tomorrow.",
+            "Fitness is not about being better than someone else. It's about being better than you used to be.",
+            "The only way to do great work is to love what you do.",
+            "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+            "Believe you can and you're halfway there.",
+            "The future belongs to those who believe in the beauty of their dreams.",
+            "Strive not to be a success, but rather to be of value.",
+            "Discipline is the bridge between goals and accomplishments.",
+            "Success isn't always about greatness. It's about consistency. Consistent hard work gains success. Greatness will come.",
+            "Champions aren't made in the gyms. Champions are made from something they have deep inside them-a desire, a dream, a vision.",
+            "It's not what you do once in a while; it's what you do day in and day out that makes the difference.",
+            "Talent is cheaper than table salt. What separates the talented individual from the successful one is a lot of hard work.",
+            "When you hit failure, your workout has just begun.",
+            "Some people want it to happen, some wish it would happen, others make it happen.",
+            "Exercise is king. Nutrition is queen. Put them together and you've got a kingdom.",
+
+        ];
+
+        function generateQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            quoteElement.textContent = quotes[randomIndex];
+        }
+
+        // Initial calls
+        updateGreeting();
+        generateQuote();
+
+        // Update greeting every minute
+        setInterval(updateGreeting, 60000);
+
+        // Event listener for quote generation
+        quoteButton.addEventListener("click", generateQuote);
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="scripting/index.js"></script>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+  <script src="scripting/bmi-popup.js"></script>
+  <script type="text/babel" src="scripting/subscription-popup.js"></script>
+  <button onclick="topFunction()" id="returnToTop" title="Go to top">
+      <i class="fa fa-arrow-up"></i>
+  </button>
+</body>
+</html>
