@@ -19,19 +19,37 @@ function topFunction() {
 }
 
 var tl2 = gsap.timeline();
+
 tl2.from(".navbar .container a", {
     y: 50,
     opacity: 0,
     duration: 0.5,
     scale: 2,
     stagger: 0.05
-})
+});
 tl2.from("#navbarNav ul li", {
     opacity: 0,
     duration: 0.3,
     scale: 2,
     stagger: 0.15
-})
+});
+tl2.from("#about-head", {
+    x: 200,
+    opacity: 0,
+});
+
+// Animate about-content sections
+tl2.from("#section-1", { x: 200, opacity: 0 });
+tl2.from("#section-2", { x: 200, opacity: 0 });
+tl2.from("#section-3", { x: 200, opacity: 0 });
+tl2.from("#section-4", { x: 200, opacity: 0 });
+tl2.from("#section-5", { x: 200, opacity: 0 });
+tl2.from("#section-6", { x: 200, opacity: 0 });
+tl2.from("#section-7", { x: 200, opacity: 0 });
+tl2.from("#section-8", { x: 200, opacity: 0 });
+tl2.from("#section-9", { x: 200, opacity: 0 });
+tl2.from("#section-10", { x: 200, opacity: 0 });
+
 
 // ------ footer animation -------
 gsap.registerPlugin(ScrollTrigger);
