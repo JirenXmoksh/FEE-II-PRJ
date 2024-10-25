@@ -2,11 +2,15 @@ function SubscriptionPopup() {
     const [showPopup, setShowPopup] = React.useState(false);
 
     React.useEffect(() => {
-        const showPopupInterval = setInterval(() => {
-            setShowPopup(true);
-        },60000); // 1 minutes in milliseconds
+        const showPopupAsync = async () => {
+            const showPopupInterval = setInterval(() => {
+                setShowPopup(true);
+            }, 60000); // 60 seconds delay
 
-        return () => clearInterval(showPopupInterval);
+            return () => clearInterval(showPopupInterval);
+        };
+
+        showPopupAsync();
     }, []);
 
     const handleGoPro = () => {
