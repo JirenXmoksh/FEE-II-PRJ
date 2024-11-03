@@ -42,13 +42,13 @@ window.onload = function() {
   const savedEmail = localStorage.getItem('email');
   const savedPassword = localStorage.getItem('password');
 
-  if (savedEmail) {
+  if (savedEmail){
       emailInput.value = savedEmail;
   }
 };
 
 // Add event listeners to save data
-emailInput.addEventListener('input', function() {
+emailInput.addEventListener('input', function(){
   localStorage.setItem('email', emailInput.value);
 });
 
